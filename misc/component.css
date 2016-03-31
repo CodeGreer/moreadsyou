@@ -1,0 +1,246 @@
+/* Popup Events */
+.popup_content {
+	pointer-events: none;
+}
+
+.popup_button.open .popup_content {
+	pointer-events: auto;
+}
+
+/* Popup Button and Modal Styles */
+
+.popup_button_fixed .popup_content {
+	width: 11.2em;
+	height: 3.5em;
+}
+.close {
+    font-size: .5em;
+    float: right;
+    padding: 3% 8% 0 0;
+    cursor: pointer;
+}
+
+.popup_title {
+    padding-top: 10%;
+    text-align: center;
+}
+
+form p {
+    line-height: 1em;
+}
+
+.popup_content p label {
+    font-size: .6em;
+    padding: 1% 5% 0 0;
+    display: block;
+}
+
+.popup_content input {
+    width: 98%;
+    line-height: 1.5em;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number], textarea {
+    font-size: .5em;
+    border-style: solid;
+    border-width: .1em;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    outline: none !important;
+    border: .15em solid #8C0750;
+    box-shadow: none;
+}
+
+.popup_content textarea {
+    width: 96%;
+    margin: -7% 1%;
+    min-height: 13em;  
+}
+
+/* Popup Send button */
+.button4 {
+    font-size: .5em;
+    width: 30%;
+    margin: 6% 35%;
+}
+
+.button_submit {
+    padding: 3% 0;
+}
+
+/* Popup Modal Styles */
+.popup_button_modal::before {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 800;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	pointer-events: none;
+}
+
+.popup_button_modal.open::before {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.popup_button_modal.active::before {
+	z-index: 1800;
+}
+
+.popup_button_modal .popup_content {
+	overflow: hidden;
+	-webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+	transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+.popup_button_modal.open .popup_content {
+	top: 50% !important;
+	left: 50% !important;
+	margin: -9em 0 0 -7em;
+	width: 15em;
+	height: auto;
+	-webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+	transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+.popup_button .popup_button_modal3 {
+	display: inline-block;
+	margin: .5em 1em;
+}
+
+.popup_button_modal3 > button {
+	background-color: #95074D;
+	color: #F9F9F9;
+}
+
+.popup_button_modal3 .popup_content {
+    background-color: #fff;
+    color: #000;
+    border-radius: 1em;
+}
+
+.popup_button_modal3.open .popup_content {
+	margin: -11em 0 0 -7em;
+    padding-bottom: 2%;
+	width: 15em;
+	height: 21em
+}
+
+.popup_button_modal3.open .popup_content > div {
+	height: auto;
+}
+
+.popup_button_modal_3.open .popup_content > div {
+ 	-webkit-transition: opacity 0.3s 0.3s;
+	transition: opacity 0.3s 0.3s;
+}
+
+/* Hides button during Popup */
+.popup_button_fixed.open > button {
+	opacity: 0;
+	-webkit-transition: opacity 0.1s;
+	transition: opacity 0.1s;
+}
+
+/* Position of Popup */
+.popup_button_fixed .popup_content {
+	position: fixed;
+	z-index: 900;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+	transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+/* Shows popup on open */
+.popup_button_fixed.open .popup_content {
+	opacity: 1;
+}
+
+/* Hides content on close */
+.popup_button_fixed .popup_content > div {
+	visibility: hidden;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
+	transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
+}
+
+/* Shows content on popup */
+.popup_button_fixed.open .popup_content > div {
+	visibility: visible;
+	height: auto;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s 0.5s;
+	transition: opacity 0.3s 0.5s;
+}
+
+.popup_button_fixed.active > button {
+	z-index: 2000;
+}
+
+.popup_button_fixed.active .popup_content {
+	z-index: 1900;
+}
+
+/* Let's add some nice easing for all cases */
+.popup_button .popup_content,
+.popup_button.open .popup_content {
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+/* Helper classes */
+.noscroll {
+	overflow: hidden;
+}
+
+/* No JS fallback: let's hide the button and show the content */
+.no-js .popup_button > button, .no-js .popup_button .popup_content .icon_close {
+	display: none;
+}
+
+.no-js .popup_content p label {
+    margin-top: 5%;
+    display: block;
+}
+
+.no-js .popup_content input, .no-js .popup_content textarea {
+    width: 100%;
+    line-height: 1.5em;
+}
+
+.no-js .popup_content textarea {
+    margin-top: -10%;
+}
+
+.no-js .popup_button {
+	margin: 0;
+	float: none;
+}
+
+.no-js .popup_button,
+.no-js .popup_button .popup_content,
+.no-js .popup_button .popup_content > div {
+	position: relative;
+	width: auto;
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+	top: auto;
+	left: auto;
+	-webkit-transform: none;
+	transform: none;
+	pointer-events: auto;
+}
+
+.no-transition {
+	-webkit-transition: none !important;
+	transition: none !important;
+}

@@ -1,0 +1,709 @@
+/* All of your setup and non media query CSS */
+
+html {
+    font: normal 100% 'Raleway', sans-serif;
+    height: auto;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1.625; /* 26px */
+    height: auto;
+}
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#container {
+    max-width: 105em;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#left, #right {
+    background: linear-gradient(0deg, rgba(85, 4, 44, 1), #95074D 100%);
+	position: fixed;
+    z-index: 11;
+    width: 10%;
+}
+
+#left, #right {
+    top: 0;
+    bottom: 0;
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+
+/* Header */
+
+#mobile_header_text, #mobile_header_two {
+    display: none;
+}
+
+#header {
+    max-width: 105em;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+}
+
+.tree {
+    max-width: 100%;
+    width: 80%;
+    margin: 0 10%;
+}
+
+#title_div {
+    position: absolute;
+    top: 0%;
+    left: 36%;
+    background-color: rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0em 0em 8em #000000;
+    -webkit-box-shadow: 0em 0em 8em #000000;
+    box-shadow: 0em 0em 8em #000000;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em; 
+}
+
+.title {
+    font-family: 'Judson', serif;
+    font-size: 4em;
+    font-style: italic;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.description {
+    font-family: 'Judson', serif;
+    font-size: 1.85em;
+    font-style: italic;
+    color: #F9F9F9;
+    text-align: center;
+    margin-top: -.8em;
+}
+
+/* Menu */ 
+
+.menu_link {
+    font-size: 1.5em;
+    color: #F9F9F9;
+    position: absolute;
+    top: 0%;
+    left: 77%;
+    z-index: 100;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0em 0em 1em #000000;
+    -webkit-box-shadow: 0em 0em 1em #000000;
+    box-shadow: 0em 0em 1em #000000;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em; 
+}
+
+.menu_link_mobile {
+    display: none;
+}
+
+.hamburger {
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu {
+    width: 20%;
+    height: auto;
+    margin-right: 10%;
+    float: right;
+} 
+
+#menu ul{
+    max-width: 105em;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #000;
+}
+
+#menu ul li {
+    font-size: 1.25em;
+    width: 100%;
+    padding: 2.75% 0;
+    list-style-type: none; 
+}
+
+.menu_links a:link {color: #000; text-decoration: none;} 
+.menu_links a:visited {color: #000;}  
+.menu_links a:hover {color: #59297F; text-decoration: underline;}  
+.menu_links a:active {color: #59297F; text-decoration: underline;}  
+
+.panel {
+    position: fixed;
+    right: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+}
+
+
+#tagline_div {
+    position: absolute;
+    top: 43%;
+    left: 55%;
+    background-color: rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0em 0em 1em #000000;
+    -webkit-box-shadow: 0em 0em 1em #000000;
+    box-shadow: 0em 0em 3em #000000;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    border-radius: 5em; 
+}
+
+.tagline {
+    font-family: 'Judson', serif;
+    font-size: 2.1em;
+    font-style: italic;
+    color: #F9F9F9;
+    text-align: right;
+}
+
+#profile_image {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 50%;
+}
+
+#profile_image img {
+    max-width: 100%;
+    width: 36%;
+}
+
+#page_header_text {
+    width: 55%;
+    margin: 0 0 0 31%;
+}
+
+.first_line, .second_line  {
+    font-size: 1.8em;
+}
+
+.purple_italic {
+    font-style: italic;
+    color: #59297F;
+}
+
+.second_line {
+    text-align: right;
+    padding-right: 3%;
+}
+
+/* Main */
+
+#main, #content {
+    max-width: 105em;
+    width: 80%;
+    margin: 1% 10% 1% 10%;
+}
+
+#content p {
+    font-size: 1.35em;
+    text-align: justify;
+    margin: 2% 5% 2% 5%;
+}
+
+a.contact:link {color: #000; } 
+a.contact:visited {color: #000; }  
+a.contact:hover {color: #000; }  
+a.contact:active {color: #000; }  
+
+.content_image {
+    max-width: 100%;
+    width: 30%;
+    float: right;
+    margin: 1% 5% 0 5%;
+}
+
+#contact_popup, #download {
+    clear: both;
+    max-width: 100%;
+    width: 30%;
+    float: right;
+    font-size: 1.8em;
+    margin: 2% 5% 3% 5%;
+}
+
+#contact_popup_index {
+    clear: both;
+    max-width: 100%;
+    width: 30%;
+    margin: 3% 35% 0 35%;
+    font-size: 1.8em;
+}
+
+#download {
+    margin: -1% 5% 1% 5%;
+}
+
+.maroon_italic {
+    color: #8C0750;
+}
+
+/* Button Styles */
+
+.button {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.button:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Buttons */
+
+/* Download Button */
+
+.button_download {
+    background: #17854D;
+    color: #F9F9F9;
+    border: .2em solid #177B4D;
+    width: 100%;
+    margin-top: 5%;
+    padding: 1em;
+    border-radius: 1.5em;
+	box-shadow: 0 .3em #0C4528;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+.button_download:hover {
+    box-shadow: 0 .2em #0E522F;
+    top: .1em;
+}
+
+.button_download:active {
+    box-shadow: 0 0 #136B3E;
+    top: .5em;
+}
+
+
+/* Index Linked Buttons */
+
+.button_index {
+    background: #F9F9F9;
+    color: #000;
+    border: .2em solid #F2F2F2;
+    margin: .5em .5em 1em .5em;
+    padding: 4% 6%;
+    border-radius: 1.5em;
+    font-size: 1.25em;
+    text-align: justify;
+	box-shadow: 0 .5em #A6A6A6;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+.button_index:hover {
+	box-shadow: 0 .3em #BFBFBF;
+	top: .1em;
+}
+
+.button_index:active {
+	box-shadow: 0 0 #BFBFBF;
+	top: .5em;
+}
+
+
+/* Contact Button & Submit Button */
+
+.button_contact {
+    background: #95074D;
+	color: #F9F9F9;
+    border: .2em solid #8C0750;
+    width: 100%;
+    margin-top: 5%;
+    padding: 1em;
+    border-radius: 1.5em;
+    box-shadow: 0 .3em #55042C;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+.button_submit {
+	background: #95074D;
+	color: #F9F9F9;
+    border: .2em solid #8C0750;
+    border-radius: 1.5em;
+    font-size: .5em;
+	box-shadow: 0 .3em #55042C;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+.button_contact:active, .button_submit:active {
+	box-shadow: 0 0 #5F0530;
+	top: .5em;
+}
+
+.button_contact:hover, .button_submit:hover {
+	box-shadow: 0 .2em #5F0530;
+	top: .1em;
+}
+
+/* Main Divs */
+
+#left_button, #middle_button, #right_button {
+    max-width: 32.5%;
+    display: inline-block;
+}
+
+#left_button {
+    margin-left: .5em;
+}
+
+#right_button {
+    margin-right: .5em;
+}
+
+.more {
+    display: block;
+    text-align: right;
+    padding-right: 5%;
+}
+
+#contact_button {
+    max-width: 100%;
+    width: 32%;
+    margin: 0 34%;
+    font-size: 1.8em;
+}
+
+
+/* Contact Popup */
+
+/* Popup Events */
+.popup_content {
+	pointer-events: none;
+}
+
+.popup_button.open .popup_content {
+	pointer-events: auto;
+}
+
+/* Popup Button and Modal Styles */
+
+.popup_button_fixed .popup_content {
+	width: 11.2em;
+	height: 3.5em;
+}
+.close {
+    font-size: .5em;
+    float: right;
+    padding: 3% 8% 0 0;
+    cursor: pointer;
+}
+
+.popup_title {
+    padding-top: 10%;
+    text-align: center;
+}
+
+.popup_content label {
+    font-size: .75em;
+    line-height: 1.5em;
+    width: 90%;
+    margin: 3% 5% 0 5%;
+    display: block;
+}
+
+.popup_content input {
+    width: 89%;
+    margin: 0 5%;
+    line-height: 2em;
+}
+
+.popup_content input.button_submit {
+    width: 30%;
+    margin: 2% 35%;
+    padding: 3% 0;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number], textarea {
+    font-family: 'Raleway', sans-serif;
+    font-size: .5em;
+    border-style: solid;
+    border-width: .1em;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    outline: none !important;
+    border: .15em solid #8C0750;
+    box-shadow: none;
+}
+
+.popup_content textarea {
+    width: 89%;
+    margin: -9% 5% 0 5%;
+    min-height: 13em;  
+}
+
+/* Popup Send Messages */
+
+#success, #fail, .error {
+    float: right;
+    clear: both;
+    padding-right: 5%;
+    font-size: 1.5em;
+    color: #95074D;
+}
+
+/* Popup Modal Styles */
+
+.popup_button_modal::before {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 800;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	pointer-events: none;
+}
+
+.popup_button_modal.open::before {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.popup_button_modal.active::before {
+	z-index: 1800;
+}
+
+.popup_button_modal .popup_content {
+	overflow: hidden;
+	-webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+	transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+.popup_button_modal.open .popup_content {
+	top: 50% !important;
+	left: 50% !important;
+	margin: -9em 0 0 -7em;
+	width: 15em;
+	height: auto;
+	-webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+	transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+.popup_button_modal3 .popup_content {
+    background-color: #fff;
+    color: #000;
+    border-radius: 1em;
+}
+
+.popup_button_modal3.open .popup_content {
+	margin: -11em 0 0 -7.5em;
+    padding: 1% 0;
+	width: 15em;
+	height: auto;
+}
+
+.popup_button_modal3.open .popup_content > div {
+	height: auto;
+}
+
+.popup_button_modal_3.open .popup_content > div {
+ 	-webkit-transition: opacity 0.3s 0.3s;
+	transition: opacity 0.3s 0.3s;
+}
+
+/* Hides button during Popup */
+.popup_button_fixed.open > button {
+    visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.1s;
+	transition: opacity 0.1s;
+}
+
+/* Position of Popup */
+.popup_button_fixed .popup_content {
+	position: fixed;
+	z-index: 900;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+	transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+/* Shows popup on open */
+.popup_button_fixed.open .popup_content {
+	opacity: 1;
+}
+
+/* Hides content on close */
+.popup_button_fixed .popup_content > div {
+	visibility: hidden;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
+	transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
+}
+
+/* Shows content on popup */
+.popup_button_fixed.open .popup_content > div {
+	visibility: visible;
+	height: auto;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s 0.5s;
+	transition: opacity 0.3s 0.5s;
+}
+
+.popup_button_fixed.active > button {
+	z-index: 2000;
+}
+
+.popup_button_fixed.active .popup_content {
+	z-index: 1900;
+}
+
+/* Let's add some nice easing for all cases */
+.popup_button .popup_content,
+.popup_button.open .popup_content {
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+/* Helper classes */
+.noscroll {
+	overflow: hidden;
+}
+
+/* No JS fallback: let's hide the button and show the content */
+.no-js .popup_button > button, .no-js .popup_button .popup_content .icon_close {
+	display: none;
+}
+
+.no-js .popup_content p label {
+    margin-top: 5%;
+    display: block;
+}
+
+.no-js .popup_content input, .no-js .popup_content textarea {
+    width: 100%;
+    line-height: 1.5em;
+}
+
+.no-js .popup_content textarea {
+    margin-top: -10%;
+}
+
+.no-js .popup_button {
+	margin: 0;
+	float: none;
+}
+
+.no-js .popup_button,
+.no-js .popup_button .popup_content,
+.no-js .popup_button .popup_content > div {
+	position: relative;
+	width: auto;
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+	top: auto;
+	left: auto;
+	-webkit-transform: none;
+	transform: none;
+	pointer-events: auto;
+}
+
+.no-transition {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+
+/* Footer */ 
+
+#push {
+    max-width: 105em;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1;
+}
+    
+#footer{
+    max-width: 105em;
+    width: 80%;
+    height: auto;
+    margin: 0 10%;
+    padding: 0 0 2% 0;
+    background: linear-gradient(0deg, rgba(23, 133, 77, .6), white 100%);
+    overflow: hidden;
+}
+
+ul.social, ul.credits, ul.copyright {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.social {
+    width: 100%;
+    margin: 0 0 1% 0;
+    padding: 3% 0 1% 0;
+}
+
+ul.social img {
+    max-width: 100%;
+    width: 6%;
+}
+
+ul.credits, ul.copyright {
+    max-width: 100%;
+    width: 50%;
+    padding-top: 1%;
+    float: left;
+}
+
+ul.social li, ul.credits li, ul.copyright li {
+    font-size: 1em;
+    display: inline;
+    padding: 0 5%;
+    width: 25%;
+}

@@ -1,0 +1,394 @@
+/**** Mobile First Media Queries ****/
+
+
+/*** Up to 5200px 25% ***/
+@media only screen and (max-width: 325em) {
+  
+body {
+    font-size: 400%;
+} 
+}
+
+/*** Up to 3904px 33% ***/
+@media only screen and (max-width: 244em) {
+    
+body {
+     font-size: 300.5%;
+}         
+}
+
+/*** Up to 2640px 50% ***/
+@media only screen and (max-width: 165em) {
+    
+body {
+     font-size: 200%;
+}   
+}
+
+/*** Up to 2000px 67% ***/
+@media only screen and (max-width: 125em) {
+    
+body {
+     font-size: 150.2%;
+}     
+}
+
+/*** Up to 1840px 75% ***/
+@media only screen and (max-width: 115em) {
+ 
+body {
+     font-size: 133.3%;
+}        
+}
+
+/*** Up to 1520px 90% ***/
+@media only screen and (max-width: 95em) {
+ 
+body {
+     font-size: 111.1%;
+}        
+}
+
+/*** Up to 1360px 100% ***/
+@media only screen and (max-width: 85em) {
+   
+body {
+    font-size: 95%;
+} 
+}
+    
+/*** Up to 1280px 100% ***/    
+@media only screen and (max-width: 80em) {
+    
+body {
+    font-size: 95%;
+} 
+}
+
+/*** Up to 1200px 110% ***/
+@media only screen and (max-width: 75em) {
+  
+body {
+    font-size: 90%;
+}   
+}
+
+/*** Up to 1120px ***/
+@media only screen and (max-width: 70em) {
+  
+body {
+    font-size: 80%;  
+}         
+}
+
+/*** Up to 1040px 125% ***/
+@media only screen and (max-width: 65em) {
+    
+body {
+     font-size: 78%;
+}    
+}
+
+/*** Up to 976px ***/
+@media only screen and (max-width: 61em) {
+  
+body {
+    font-size: 70%;
+}  
+    
+#push {
+    height: 7em;
+}    
+}
+
+/*** Up to 880px 150% ***/
+@media only screen and (max-width: 55em) {
+  
+body {
+   font-size: 62%;
+}  
+    
+#push {
+    height: 10em;
+}
+}
+
+
+/************ Change Format ************/
+
+
+/*** Up to 800px 175% ***/
+@media only screen and (max-width: 50em) {
+ 
+body {
+    font-size: 100%;
+}    
+    
+#left, #right {
+    display: none;
+}
+    
+.menu_link {
+    display: none;
+}
+    
+.menu_link_mobile {
+    display: block;
+    font-size: 1.5em;
+    color: #F9F9F9;
+    position: absolute;
+    top: 3%;
+    left: 85%;
+    z-index: 100;
+    text-decoration: none;
+}
+    
+#menu {
+    margin-right: 0%;
+} 
+    
+    
+.tree {
+    width: 100%;
+    margin: 0 auto;
+}
+    
+#title_div, #tagline_div {
+    display: none;
+}       
+    
+#mobile_header_text {
+    position: relative;
+    display: block;
+    background: linear-gradient(0deg, rgba(85, 4, 44, 1), #95074D 100%);
+}
+    
+h1.title {
+    font-size: 3.5em;
+}
+    
+h1.description {
+    font-size: 1.65em;
+}
+    
+#mobile_header_two h1 {
+    text-align: center;
+}    
+    
+.description {
+    margin-top: -.5em;
+    padding-bottom: .8em;
+}
+    
+#mobile_header_two {
+    display: block;
+    text-align: left;
+    position: relative;
+}
+    
+.tagline {
+    position: absolute;
+    left: 25%;
+    z-index: 10;
+    margin-top: 5%;
+    padding: 2% 0;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0em 0em 3em #000000;
+    -webkit-box-shadow: 0em 0em 3em #000000;
+    box-shadow: 0em 0em 1em #000000;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em; 
+}
+
+#profile_image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+#profile_image img {
+    width: 49.5%;
+}
+ 
+#page_header_text {
+    width: 90%;
+    margin: 1% 5% 0 5%;
+}     
+    
+#main, #content {
+    width: 100%;
+    margin: 0 auto;
+}  
+    
+
+/* Main Divs */
+
+#left_button, #middle_button {
+    max-width: 49%;
+    margin: 2% .5% 0 .5%;
+    display: block;
+    float: left;
+}   
+    
+#right_button {
+    max-width: 50%;
+    margin: 0 25% 2% 25%;
+} 
+    
+#contact_popup_index {
+    width: 40%;
+    margin: 0 30%; 
+}  
+    
+/* Main */
+       
+#contact_popup {
+    display: none;
+}    
+    
+#download {  
+    display: none;
+}
+    
+/* Footer */
+    
+#push {
+    height: 2em;
+}    
+    
+#footer{
+    width: 100%;
+    margin: 0 auto;    
+}  
+    
+ul.social img {
+    width: 10%;
+}   
+    
+ul.credits, ul.copyright {
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+}
+
+/*** Up to 720px ***/
+@media only screen and (max-width: 45em) {
+ 
+body {
+    font-size: 90%;
+} 
+  
+ul.social img {
+    width: 12%;
+}     
+}
+
+/*** Up to 640px ***/
+@media only screen and (max-width: 40em) {
+    
+body {
+    font-size: 90%;
+}  
+    
+/* Main */
+    
+.content_image {
+    width: 90%;
+    float: none;
+    margin: 3% 5% 0 5%;
+}     
+   
+}
+
+/*** Up to 560px ***/
+@media only screen and (max-width: 35em) {
+  
+body {
+    font-size: 90%;
+}  
+    
+#mobile_header_text h1 {
+    text-align: left;
+    padding: 0 5%;
+}    
+    
+.tagline {
+    font-size: 1.75em;
+}     
+    
+/* Main Divs */
+
+#left_button, #middle_button, #right_button {
+    max-width: 80%;
+    margin: 0 10%;
+}   
+    
+#contact_popup_index {
+    width: 50%;
+    margin: 2% 25%; 
+}  
+    
+}
+
+/*** Up to 480px ***/
+@media only screen and (max-width: 30em) {
+    
+body {
+    font-size: 85%;
+} 
+    
+.tagline {
+    font-size: 1.45em;
+} 
+    
+#contact_popup_index {
+    width: 70%;
+    margin: 2% 15%; 
+}     
+    
+}
+
+/*** Up to 400px ***/
+@media only screen and (max-width: 25em) {
+
+body {
+    font-size: 80%;
+}   
+      
+}
+
+/*** Up to 336px ***/
+@media only screen and (max-width: 21em) {
+   
+body {
+    font-size: 72%;
+}  
+    
+.tagline {
+    font-size: 1.4em;
+}
+    
+.first_line, .second_line  {
+    font-size: 1.4em;
+}       
+}
+
+/*** Up to 256px ***/
+@media only screen and (max-width: 16em) {
+   
+body {
+    font-size: 65%;
+}   
+}
+
+/*** Up to 224px ***/
+@media only screen and (max-width: 14em) {
+
+body {
+    font-size: 55%;
+}    
+  
+}
