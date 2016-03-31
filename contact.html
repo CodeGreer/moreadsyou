@@ -2,15 +2,27 @@
 <html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Business | Mo Reads You</title>
+    <title>Contact | Mo Reads You</title>
+
+    <link rel="canonical" href="http://www.moreadsyou.com/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="keyword, keyword, keyword, keyword, keyword, keyword" >
+    <meta name="description" content="Sentence for Google to index with your link.">
+
+<!-- Facebook -->
+    
+
+<!-- Twitter -->
+    
+
+<!-- Favicon -->
     
     
 <!-- CSS -->
-	<link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/mo_style.css" />
-    <link rel="stylesheet" href="css/mo_responsive.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/mo_style.css" />
+    <link rel="stylesheet" type="text/css" href="css/mo_responsive.css" />
 
 <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>
@@ -25,13 +37,13 @@
     
 <!-- start my code -->
     
-<!-- Borders -->     
+<!-- Borders -->   
 <div id="left"></div>
-<div id="right"></div>
+<div id="right"></div> 
     
-<!-- Container -->     
+<!-- Container -->      
 <div id="container">
-        
+    
 <!-- Mobile Header -->
     <div id="mobile_header_text" class="push">
         <h1 class="title">Mo Reads You</h1>
@@ -42,10 +54,9 @@
     <div id="mobile_header_two" class="push">
         <h1 class="tagline">Helping You Be a Better Writer</h1>  
     </div>
-<!-- End Mobile Header -->        
+<!-- End Mobile Header -->      
         
-<!-- Header -->   
-    <!-- Header -->  
+<!-- Header -->  
     <div id="header" class="push">  
         
 <!-- Menu -->  
@@ -53,10 +64,10 @@
 
         <nav id="menu" class="panel">
             <ul class="menu_links">
-                <li><a href="mo_index.php">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="authors.php">Authors</a></li>
                 <li><a href="bloggers.php">Bloggers</a></li>
-                <li><a href="#">Business</a></li>
+                <li><a href="business.php">Business</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
@@ -78,20 +89,34 @@
         </div>
         
         <div id="page_header_text">
-            <p class="first_line purple_italic ">You need to express yourself in writing.</p>
-            <p class="second_line purple_italic">Here’s what I can do for you.</p>
-        </div>            
+            <p class="first_line purple_italic">So, what have you got to say for yourself?</p>
+            <p class="second_line purple_italic">I can help you say it better.</p>
+        </div>
      </div>     
-<!-- End Header -->   
+<!-- End Header -->      
                     
 <!-- Main -->     
-    <div id="content">
-        <img alt="A table with a cup of coffee, blank paper, and a pen." class="content_image" src="images/coffee.jpg">
-        <p>You have to communicate in writing. <span class="purple_italic">We all have to communicate in writing.</span> Even if you thrive on face-to-face interactions, you still have to convey your message in writing or risk losing your audience’s fleeting attention.</p>
- 
+    <div id="main">
         
-<!-- Contact Button Form PHP -->
+        <div id="left_button">
+            <form method="get" action="authors.php">
+                <button class="button button_index">You’re writing the next Great American Novel and need someone to help massage it into shape. And to check your grammar.<span class="more">More...</span></button>
+            </form>
+        </div>
         
+        <div id="middle_button">
+            <form method="get" action="bloggers.php">
+                <button class="button button_index">You have Brilliant Ideas that will Change the Internet and need to be sure typos don’t make you look like an amateur. Before you hit the publish button.<span class="more">More...</span></button>
+            </form>    
+        </div>
+        
+        <div id="right_button">
+            <form method="get" action="business.php">
+                <button class="button button_index">You’ve got something to say and need help using your words. Without being lectured to by your 5th grade English teacher.<span class="more">More...</span></button>
+            </form>    
+        </div>
+        
+<!-- Contact Button Form PHP -->       
 <?php
 // OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
 
@@ -171,7 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		$error_msg[] = "Invalid website url.\r\n";
 	
 	if ($error_msg == NULL && $points <= $maxPoints) {
-		$subject = "MRY Contact Button - Business";
+		$subject = "MRY Contact Button Email";
 		
 		$message = "You received this e-mail message through your website: \n\n";
 		foreach ($_POST as $key => $val) {
@@ -243,23 +268,21 @@ if ($result != NULL) {
 	echo '<p class="success">'. $result . "</p>";
 }
 ?>
-<!-- End PHP -->   
-            
+<!-- End PHP -->  
+        
 <!-- Contact Button -->        
-        <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
-            <button type="button" class="button button_contact">Let's Get Started!</button> 
+        <div id="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
+            <button type="button" class="button button_contact">Get in touch!</button> 
             <div class="popup_content">
 				<div>
 				    <div>
 				        <h3 class="close icon_close">Close</h3>
-				        <!-- <h2 class="popup_title">Do you want a title?</h2> -->
+				        <h2 class="popup_title">Do you want a title?</h2>
 				        <form action="<?php echo basename(__FILE__); ?>" method="post">
                             <label for="name">Your name:</label> 
 		                    <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" required/>
 				            <label for="email">Your email:</label> 
 		                    <input type="text" name="email" id="email" value="<?php get_data("email"); ?>" required />
-                            <label for="phone">Your phone number (optional):</label> 
-		                    <input type="text" name="phone" id="phone" value="<?php get_data("phone"); ?>" />
 	                        <label for="comments">What can I do for you?</label><br>
 		                    <textarea name="comments" id="comments"><?php get_data("comments"); ?></textarea>  
                             <input type="submit" name="submit" id="submit" class="button button_submit" value="Send" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?> />   
@@ -268,34 +291,15 @@ if ($result != NULL) {
 				</div>
             </div>
         </div>
-<!-- End Contact Button -->         
+<!-- End Contact Button -->   
         
-        <p>You know your product/service like the back of your hand. Your elevator speech is a thing of beauty. In your perfectly crafted presentations, prospect swoon and pull out their Gold Cards. FTF, you’ve got your business covered. In writing . . . not so much. You know what to say, because you say it every day. Now you just need to <span class="purple_italic">get that message into writing.</span></p>
-        
-        <p>Not everyone is great at it. <span class="purple_italic">Not everyone has the knack</span> for carefully crafting for meaning, clarity, and connection with readers. Not everyone has the time to drudge through writing copy, much less carefully rereading, and redrafting, and looking up every word that might be misspelled. And, correct grammar and punctuation… forget about it. Who knows where to even look that stuff up?</p>
-        
-        <!-- <div id="download">
-            <button type="button" class="button button_download">Downloadable</button> 
-            <button type="button" class="button button_download">Downloadable</button> 
-        </div> -->
-        
-        <p>Brochures. Flyers. Newsletters. Your website or blog. <span class="purple_italic">Everything that tells your customers, potential customers, and community what you are all about.</span> All in the written word. You need to focus on your message, not your spelling.</p>
-        
-        <p>You don’t have the time. You don’t have the inclination. And you don’t even particularly like the fine-tuning of writing. You know what you want to say. You’ve got it drafted out. But polishing it up and <span class="purple_italic">making it shiny?</span></p>
-
-        <p><span class="purple_italic">You need to outsource this one small task.</span> To me.</p> 
-
-        <p>Chat soon – Mo</p>
-
-        <p>P.S. You can reach me the old-fashioned way by filling out my <a class="contact" href="contact.php">contact form</a>, or email your sample to <a class="contact" href="mailto:MoReadsYou@Outlook.com" target="_top">MoReadsYou@Outlook.com</a>.</p>
     </div>   
-<!-- End Main --> 
+<!-- End Main -->     
 </div>
 <!-- End Container -->    
     
 <div id="push"></div>
- 
-        
+     
 <!-- Footer -->      
 <div id="footer">
      <ul class="social">
@@ -377,20 +381,20 @@ if ($result != NULL) {
                 } );
             } );
 
-            // for demo purposes only
-            [].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
+            // causing issues with linkable buttons so used div selector
+            [].slice.call( document.querySelectorAll( '#contact_button_index' ) ).forEach( function( bttn ) { 
 				bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
             } );
         })();
     </script>
-        
+    
 <!-- Big Slide -->
     <script>
         $(document).ready(function() {
         $('.menu_link, .menu_link_mobile').bigSlide();
         });
-    </script>    
-<!-- End Javascript -->        
+    </script>  
+<!-- End Javascript -->                   
     
 </body> 
 </html>

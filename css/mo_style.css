@@ -428,10 +428,12 @@ a.contact:active {color: #000; }
 	width: 11.2em;
 	height: 3.5em;
 }
-.close {
+
+h3.close {
     font-size: .5em;
     float: right;
-    padding: 3% 8% 0 0;
+    margin-top: -5%;
+    padding: 0 8% 0 0;
     cursor: pointer;
 }
 
@@ -444,7 +446,7 @@ a.contact:active {color: #000; }
     font-size: .75em;
     line-height: 1.5em;
     width: 90%;
-    margin: 3% 5% 0 5%;
+    margin: 5% 5% 0 5%;
     display: block;
 }
 
@@ -476,7 +478,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 .popup_content textarea {
     width: 89%;
     margin: -9% 5% 0 5%;
-    min-height: 13em;  
+    min-height: 10em;  
 }
 
 /* Popup Send Messages */
@@ -484,7 +486,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 #success, #fail, .error {
     float: right;
     clear: both;
-    padding-right: 5%;
+    padding: 0 5% 0 2%;
     font-size: 1.5em;
     color: #95074D;
 }

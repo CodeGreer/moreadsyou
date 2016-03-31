@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Blogger Page</title>
+    <title>Bloggers | Mo Reads You</title>
     
     
 <!-- CSS -->
@@ -173,7 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		$error_msg[] = "Invalid website url.\r\n";
 	
 	if ($error_msg == NULL && $points <= $maxPoints) {
-		$subject = "MRY Contact Button Email";
+		$subject = "MRY Contact Button - Bloggers";
 		
 		$message = "You received this e-mail message through your website: \n\n";
 		foreach ($_POST as $key => $val) {
@@ -247,19 +247,21 @@ if ($result != NULL) {
 ?>
 <!-- End PHP -->   
             
-<!-- Contact Button -->
+<!-- Contact Button -->        
         <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
-            <button type="button" class="button button_contact">Let's get started!</button> 
+            <button type="button" class="button button_contact">Let's Get Started!</button> 
             <div class="popup_content">
 				<div>
 				    <div>
 				        <h3 class="close icon_close">Close</h3>
-				        <h2 class="popup_title">Do you want a title?</h2>
+				        <!-- <h2 class="popup_title">Do you want a title?</h2> -->
 				        <form action="<?php echo basename(__FILE__); ?>" method="post">
                             <label for="name">Your name:</label> 
 		                    <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" required/>
 				            <label for="email">Your email:</label> 
 		                    <input type="text" name="email" id="email" value="<?php get_data("email"); ?>" required />
+                            <label for="phone">Your phone number (optional):</label> 
+		                    <input type="text" name="phone" id="phone" value="<?php get_data("phone"); ?>" />
 	                        <label for="comments">What can I do for you?</label><br>
 		                    <textarea name="comments" id="comments"><?php get_data("comments"); ?></textarea>  
                             <input type="submit" name="submit" id="submit" class="button button_submit" value="Send" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?> />   
@@ -268,7 +270,7 @@ if ($result != NULL) {
 				</div>
             </div>
         </div>
-<!-- End Contact Button -->        
+<!-- End Contact Button -->                   
         
         <p><span class="purple_italic">Errors kill your credibility.</span> They make your reader want to stop reading. Opt out of your newsletter. Or even (gasp) stop visiting your blog.</p>
         
