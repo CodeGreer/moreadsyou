@@ -261,6 +261,69 @@ a.contact:active {color: #000; }
     color: #8C0750;
 }
 
+
+/* Contact Page*/
+
+.contact_flex {
+    display: flex;
+}
+
+#contact_left, #contact_right, #contact_left2, #contact_right2 {
+    max-width: 100%;
+    width: 50%;
+    float: left;
+    flex: 1;
+}
+
+#contact_right2 {
+    padding-top: 5em;
+}
+
+#contact_left p, #contact_right p {
+    width: 90%;
+    margin: 0 5%;
+}
+
+#contact_right a:link {color: #FFFFFF;}
+#contact_right a:visited {color: #FFFFFF;}
+#contact_right a:hover {color: #FFFFFF;}
+#contact_right a:active {color: #FFFFFF;}
+
+#green_box, #contactpage_form {
+    margin: 2% 5%;
+    padding: 4% 0;
+    color: #FFFFFF;
+    background: linear-gradient(0deg, rgba(19, 107, 62, 1), #17854D 100%);
+    overflow: hidden;
+    box-shadow: .2em .2em .4em .1em rgba(50,50,50,.6);
+}
+
+#green_box, #green_box p {
+    font-size: 1em;
+}
+
+#contactpage_form p.small_font {
+    font-size: .75em;
+}
+
+#green_box_top {
+    padding-bottom: 1%;
+    border-bottom: .2em solid #ffffff;
+}
+
+#green_box ul {
+    font-size: .9em;
+    list-style-type: none;
+    width: 100%;
+    float: left;
+}
+
+#green_box li {
+    width: 42%;
+    float: left;
+    padding: 2% 2% 2% 6%;
+}
+
 /* Button Styles */
 
 .button {
@@ -442,7 +505,7 @@ h3.close {
     text-align: center;
 }
 
-.popup_content label {
+.popup_content label, #contactpage_form label {
     font-size: .75em;
     line-height: 1.5em;
     width: 90%;
@@ -450,9 +513,18 @@ h3.close {
     display: block;
 }
 
-.popup_content input {
-    width: 89%;
+#contactpage_form label {
+    font-size: 1em;
     margin: 0 5%;
+}
+
+.popup_content input, #contactpage_form input {
+    width: 89%;
+    margin: 0 5% 4% 5%;
+    line-height: 2em;
+}
+
+#contactpage_form input {
     line-height: 2em;
 }
 
@@ -469,16 +541,24 @@ input[type=text], input[type=password], input[type=email], input[type=number], t
     border-width: .1em;
 }
 
+#contactpage_form input[type=text], #contactpage_form textarea {
+    font-size: .9em;
+}
+
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
     outline: none !important;
     border: .15em solid #8C0750;
     box-shadow: none;
 }
 
-.popup_content textarea {
+.popup_content textarea, #contactpage_form textarea {
     width: 89%;
     margin: -9% 5% 0 5%;
     min-height: 10em;  
+}
+
+#contactpage_form textarea {
+    margin: -4% 5% 0 5%; 
 }
 
 /* Popup Send Messages */
@@ -489,6 +569,10 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     padding: 0 5% 0 2%;
     font-size: 1.5em;
     color: #95074D;
+}
+
+#contactpage_form .error {
+    padding-left: 5%;
 }
 
 /* Popup Modal Styles */

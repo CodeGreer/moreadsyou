@@ -204,7 +204,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				$disable = true;
 			}
 		} else {
-			$error_msg[] = '<div id="fail">Your message could not be sent this time.</div>';
+			$error_msg[] = '<div id="fail">Your message could not be sent at this time.</div>';
 		}
 	} else {
 		if (empty($error_msg))
