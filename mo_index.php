@@ -313,6 +313,7 @@ if ($result != NULL) {
     <ul class="credits">
         <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
         <li><a class="contact" href="contact.php">Full Site Credits</a></li>
+        <li><a class="contact" href="mailto:moreadsyou@outlook.com">Email me</a></li>
     </ul>
     <ul class="copyright">
         <li>&#169; Monique Huenergardt</li>

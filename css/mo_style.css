@@ -276,8 +276,19 @@ a.contact:active {color: #000; }
 }
 
 #contact_right2 {
-    padding-top: 5em;
+    padding-top: 3em;
 }
+
+#contact_right2 ul {
+    width: 90%;
+    margin: 0 5%;
+    list-style-type: none;
+}
+
+#contact_right2 a:link {color: #000000;}
+#contact_right2 a:visited {color: #000000;}
+#contact_right2 a:hover {color: #000000;}
+#contact_right2 a:active {color: #000000;}
 
 #contact_left p, #contact_right p {
     width: 90%;
@@ -300,10 +311,6 @@ a.contact:active {color: #000; }
 
 #green_box, #green_box p {
     font-size: 1em;
-}
-
-#contactpage_form p.small_font {
-    font-size: .75em;
 }
 
 #green_box_top {
@@ -532,6 +539,13 @@ h3.close {
     width: 30%;
     margin: 2% 35%;
     padding: 3% 0;
+}
+
+#contactpage_form input.button_submit {
+    font-size: 1em;
+    width: 26%;
+    margin: 2% 36%;
+    padding: 1% 0;
 }
 
 input[type=text], input[type=password], input[type=email], input[type=number], textarea {
@@ -782,14 +796,19 @@ ul.social img {
 
 ul.credits, ul.copyright {
     max-width: 100%;
-    width: 50%;
+    width: 70%;
+    margin-bottom: 2%;
     padding-top: 1%;
     float: left;
+}
+
+ul.copyright {
+    width: 30%;
 }
 
 ul.social li, ul.credits li, ul.copyright li {
     font-size: 1em;
     display: inline;
     padding: 0 5%;
-    width: 25%;
+    width: 20%;
 }

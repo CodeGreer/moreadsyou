@@ -331,6 +331,12 @@ body {
     margin: 2% 25%; 
 }  
     
+/* Footer */
+    
+ul.credits li {
+    padding: 0 2%;
+}    
+    
 }
 
 /*** Up to 480px ***/

@@ -64,7 +64,7 @@
 
         <nav id="menu" class="panel">
             <ul class="menu_links">
-                <li><a href="#">Home</a></li>
+                <li><a href="mo_index.php">Home</a></li>
                 <li><a href="authors.php">Authors</a></li>
                 <li><a href="bloggers.php">Bloggers</a></li>
                 <li><a href="business.php">Business</a></li>
@@ -90,7 +90,7 @@
         
         <div id="page_header_text">
             <p class="first_line purple_italic">We need to talk!</p>
-            <p class="second_line purple_italic">Do you have another sentence?</p>
+            <p class="second_line purple_italic">Don't be shy, tell me who you are.</p>
         </div>
      </div>     
 <!-- End Header -->      
@@ -273,9 +273,7 @@
                         <textarea name="comments" id="comments"><?php get_data("comments"); ?></textarea>  
 
                         <input type="submit" name="submit" id="submit" class="button button_submit" value="Send" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?> />   
-                    </form>
-
-                    <p class="small_font">Powered by <a href="http://jemsmailform.com/">Jem's PHP Mail Form</a></p>            
+                    </form>        
                 </div>
             </div>
             
@@ -323,7 +321,30 @@
             </div>
             
             <div id="contact_right2">
-                 <p>Want an instant estimate? Sorry, but I don’t do robo-quotes. You and your document are important to me. So let’s talk. M’kay?</p>
+                <p>Want an instant estimate? Sorry, but I don’t do robo-quotes. You and your document are important to me. So let’s talk. M’kay?</p>
+                
+                <br>
+                
+                <p>Site Credits:</p>
+                <ul>
+                    <li>Coding by <a href="http://codegreer.com/"target="_blank">Code Greer</a></li>
+
+                    <li>Design by Monique Huenergardt and <a href="http://codegreer.com/"target="_blank">Code Greer</a></li>
+
+                    <li>Written content by Monique Huenergardt</li>
+
+                    <li>Banner photo by Monique Huenergardt</li>
+
+                    <li>Profile photo by Thomas Huenergardt</li>
+
+                    <li>Other Photos by Do you remember?</li>
+                    
+                    <li>Contact form by <a href="http://jemsmailform.com/" target="_blank">Jem's PHP Mail Form</a></li>
+                    
+                    <li>Social media icons by <a href="http://www.graphicsfuel.com/2013/06/simple-flat-social-media-icons-psd-png/" target="_blank">GraphicsFuel</a></li>
+                    
+                    <li>Javascript and buttons by <a href="http://tympanus.net/codrops/" target="_blank">Codrops</a> and <a href="http://ascott1.github.io/bigSlide.js/" target="_blank">Big Slide</a></li>
+                </ul>
             </div>
         </div>
     </div>   
@@ -344,6 +365,7 @@
     <ul class="credits">
         <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
         <li><a class="contact" href="contact.php">Full Site Credits</a></li>
+        <li><a class="contact" href="mailto:moreadsyou@outlook.com">Email me</a></li>
     </ul>
     <ul class="copyright">
         <li>&#169; Monique Huenergardt</li>

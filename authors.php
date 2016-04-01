@@ -205,7 +205,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				$disable = true;
 			}
 		} else {
-			$error_msg[] = '<div id="fail">Your message could not be sent at this time.</div>';
+			$error_msg[] = '<div id="fail">Your message could not be sent this time.</div>';
 		}
 	} else {
 		if (empty($error_msg))
@@ -302,7 +302,7 @@ if ($result != NULL) {
         
         <p>So reading your book is a pleasure for your reader. Because that’s what you want, right? For your book to be <span class="purple_italic">Your Reader’s Bliss.</span></p>
 
-        <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s talk about it.</p>
+        <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
 
         <p>Chat soon – Mo</p>
 
@@ -326,6 +326,7 @@ if ($result != NULL) {
     <ul class="credits">
         <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
         <li><a class="contact" href="contact.php">Full Site Credits</a></li>
+        <li><a class="contact" href="mailto:moreadsyou@outlook.com">Email me</a></li>
     </ul>
     <ul class="copyright">
         <li>&#169; Monique Huenergardt</li>

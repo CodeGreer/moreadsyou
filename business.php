@@ -204,7 +204,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				$disable = true;
 			}
 		} else {
-			$error_msg[] = '<div id="fail">Your message could not be sent at this time.</div>';
+			$error_msg[] = '<div id="fail">Your message could not be sent this time.</div>';
 		}
 	} else {
 		if (empty($error_msg))
@@ -285,9 +285,11 @@ if ($result != NULL) {
 
         <p><span class="purple_italic">You need to outsource this one small task.</span> To me.</p> 
 
+        <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
+
         <p>Chat soon – Mo</p>
 
-        <p>P.S. You can reach me the old-fashioned way by filling out my <a class="contact" href="contact.php">contact form</a>, or email your sample to <a class="contact" href="mailto:MoReadsYou@Outlook.com" target="_top">MoReadsYou@Outlook.com</a>.</p>
+        <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php">Contact page</a>.</p>
     </div>   
 <!-- End Main --> 
 </div>
@@ -307,6 +309,7 @@ if ($result != NULL) {
     <ul class="credits">
         <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
         <li><a class="contact" href="contact.php">Full Site Credits</a></li>
+        <li><a class="contact" href="mailto:moreadsyou@outlook.com">Email me</a></li>
     </ul>
     <ul class="copyright">
         <li>&#169; Monique Huenergardt</li>
