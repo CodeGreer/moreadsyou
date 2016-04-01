@@ -337,7 +337,7 @@
 
                     <li>Profile photo by Thomas Huenergardt</li>
 
-                    <li>Other Photos by Do you remember?</li>
+                    <li>Other Photos by <a href="https://www.pexels.com/">Pexels</a></li>
                     
                     <li>Contact form by <a href="http://jemsmailform.com/" target="_blank">Jem's PHP Mail Form</a></li>
                     

@@ -1,23 +1,53 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     
     <title>Mo Reads You</title>
 
     <link rel="canonical" href="http://www.moreadsyou.com/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="keyword, keyword, keyword, keyword, keyword, keyword" >
-    <meta name="description" content="Sentence for Google to index with your link.">
+    <meta name="keywords" content="editing, proofreading,writing, author, blogger, content" >
+    <meta name="description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else.">
 
-<!-- Facebook -->
-    
+<!--Facebook-->
+    <meta property="og:title" content="add later" >
+    <meta property="og:site_name" content="Mo Reads You">
+    <meta property="og:url" content="add later" >
+    <meta property="og:description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else." >
+    <meta property="og:image" content="add later" >
 
-<!-- Twitter -->
-    
+    <meta property="og:type" content="website" >
+    <meta property="og:locale" content="en_US" >
+
+<!--Twitter-->
+    <meta property="twitter:card" content="summary" >
+    <meta property="twitter:title" content="What have you got to say for yourself? I can help you say it better." >
+    <meta property="twitter:description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else." >
+    <meta property="twitter:creator" content="@moreadsyou" >
+    <meta property="twitter:url" content="add later" >
+    <meta property="twitter:image" content="add later" >
     
 <!-- Favicon -->
-    
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b10909">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     
 <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />

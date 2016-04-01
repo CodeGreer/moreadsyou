@@ -252,6 +252,19 @@ h1.description {
     display: none;
 }
     
+.contact_flex {
+    display: block;
+}    
+    
+#contact_left, #contact_right, #contact_left2, #contact_right2 {
+    width: 100%;
+    float: none;
+} 
+    
+#contact_right2 .mobile_center {
+    text-align: center;
+}
+    
 /* Footer */
     
 #push {
