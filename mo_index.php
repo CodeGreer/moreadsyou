@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     
-    <title>Mo Reads You</title>
+    <title>Editing and Proofreading Nerd</title>
 
     <link rel="canonical" href="http://www.moreadsyou.com/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
     <meta name="description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else.">
 
 <!--Facebook-->
-    <meta property="og:title" content="add later" >
+    <meta property="og:title" content="Editing and Proofreading Nerd | Mo Reads You" >
     <meta property="og:site_name" content="Mo Reads You">
     <meta property="og:url" content="add later" >
     <meta property="og:description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else." >
