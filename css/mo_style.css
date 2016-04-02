@@ -86,6 +86,11 @@ body {
     text-align: center;
 }
 
+.title a:link {color: #FFFFFF; text-decoration: none;}
+.title a:visited {color: #FFFFFF;}
+.title a:hover {color: #FFFFFF;}
+.tital a:active {color: #FFFFFF;}
+
 .description {
     font-family: 'Judson', serif;
     font-size: 1.85em;
@@ -507,35 +512,32 @@ h3.close {
     font-size: .5em;
     float: right;
     margin-top: -5%;
-    padding: 0 8% 0 0;
+    padding: 0 10% 0 0;
     cursor: pointer;
-}
-
-.popup_title {
-    padding-top: 10%;
-    text-align: center;
 }
 
 .popup_content label, #contactpage_form label {
     font-size: .75em;
-    line-height: 1.5em;
     width: 90%;
     margin: 5% 5% 0 5%;
     display: block;
+    line-height: 1.2em;
 }
 
 #contactpage_form label {
-    font-size: 1em;
-    margin: 0 5%;
+    font-size: 1.2em;
+    margin: 3% 5% 0 5%;
 }
 
-.popup_content input, #contactpage_form input {
-    width: 89%;
-    margin: 0 5% 4% 5%;
-    line-height: 2em;
+.popup_content input {
+    width: 88%;
+    margin: 0 5%;
+    line-height: 1.5em;
 }
 
 #contactpage_form input {
+    width: 89%;
+    margin: 0 5%;
     line-height: 2em;
 }
 
@@ -548,13 +550,13 @@ h3.close {
 #contactpage_form input.button_submit {
     font-size: 1em;
     width: 26%;
-    margin: 2% 36%;
-    padding: 1% 0;
+    margin: 5% 36% 1% 36%;
+    padding: 2% 0;
 }
 
 input[type=text], input[type=password], input[type=email], input[type=number], textarea {
     font-family: 'Raleway', sans-serif;
-    font-size: .5em;
+    font-size: .6em;
     border-style: solid;
     border-width: .1em;
 }

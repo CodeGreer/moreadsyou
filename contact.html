@@ -46,7 +46,7 @@
     
 <!-- Mobile Header -->
     <div id="mobile_header_text" class="push">
-        <h1 class="title">Mo Reads You</h1>
+        <h1 class="title"><a href="mo_index.php">Mo Reads You</a></h1>
             <h1 class="description">Editing &#38; Proofreading Services</h1>
         <h3 class="menu_link_mobile"><a href="#menu" class="hamburger"> &#9776;</a></h3>
     </div> 
@@ -76,7 +76,7 @@
         <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
         
         <div id="title_div">
-            <h1 class="title">Mo Reads You</h1>
+            <h1 class="title"><a href="mo_index.php">Mo Reads You</a></h1>
             <h1 class="description">Editing &#38; Proofreading Services</h1>
         </div> 
         
@@ -319,7 +319,7 @@
 
                     <ul>
                         <li>TERMS:</li>
-                        <li>50% to start, balance due<br>withing 10 days of delivery</li>
+                        <li>50% to start, balance due within 10 days of delivery</li>
                     </ul>
                 </div>
             </div>
