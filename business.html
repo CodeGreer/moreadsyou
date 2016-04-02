@@ -306,14 +306,16 @@ if ($result != NULL) {
         <li><a href="https://www.linkedin.com/in/moniquehuenergardt"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
      </ul>
     
-    <ul class="credits">
-        <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
-        <li><a class="contact" href="contact.php">Full Site Credits</a></li>
-        <li><a class="contact" href="mailto:moreadsyou@outlook.com">Email me</a></li>
-    </ul>
     <ul class="copyright">
         <li>&#169; Monique Huenergardt</li>
+        <li><a class="contact" href="mailto:moreadsyou@outlook.com">moreadsyou@outlook.com</a></li>
+        <li>Lawrenceville, GA, USA</li>
     </ul>   
+    
+    <ul class="credits">
+        <li><a class="contact" href="contact.php">Full Site Credits</a></li>
+        <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
+    </ul> 
 </div>  
 <!-- End Footer -->  
     

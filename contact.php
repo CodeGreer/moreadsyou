@@ -99,7 +99,11 @@
     <div id="content">
         <div class="contact_flex">
             <div id="contact_left">
-                <p>You may not be sure exactly what kind of help you need with your document, and that’s fine. The best way to figure that out is for me to take a look so we can talk about it. You can email your document as a Word or Adobe file to MoReadsYou@Outlook.com and let me know what services you’d like. I won’t share your document or your contact information with anyone. Promise. You don’t even have to give me your phone number, but a name would be helpful. Or a nickname. Even an alias would do.</p>
+                <p>You may not be sure exactly what kind of help you need with your document, and that’s fine. The best way to figure that out is for me to take a look so we can talk about it. You can email your document as a Word or Adobe file to <a class="contact" href="mailto:moreadsyou@outlook.com">MoReadsYou@Outlook.com</a> and let me know what services you’d like. I won’t share your document or your contact information with anyone. Promise. You don’t even have to give me your phone number, but a name would be helpful. Or a nickname. Even an alias would do.</p>
+                
+                <br><br>
+                <p>Want an instant estimate? Sorry, but I don’t do robo-quotes. You and your document are important to me. So let’s talk. M’kay?</p>
+                <br><br>
             </div>
             
             <div id="contact_right">
@@ -320,13 +324,11 @@
                 </div>
             </div>
             
+            
             <div id="contact_right2">
-                <p>Want an instant estimate? Sorry, but I don’t do robo-quotes. You and your document are important to me. So let’s talk. M’kay?</p>
-                
                 <br>
-                
-                <p>Site Credits:</p>
-                <ul>
+                <p class="mobile_center">Site Credits:</p>
+                <ul class="mobile_center">
                     <li>Coding by <a href="http://codegreer.com/"target="_blank">Code Greer</a></li>
 
                     <li>Design by Monique Huenergardt and <a href="http://codegreer.com/"target="_blank">Code Greer</a></li>
@@ -337,14 +339,17 @@
 
                     <li>Profile photo by Thomas Huenergardt</li>
 
-                    <li>Other Photos by <a href="https://www.pexels.com/">Pexels</a></li>
+                    <li>Other Photos by Do you remember?</li>
                     
                     <li>Contact form by <a href="http://jemsmailform.com/" target="_blank">Jem's PHP Mail Form</a></li>
                     
                     <li>Social media icons by <a href="http://www.graphicsfuel.com/2013/06/simple-flat-social-media-icons-psd-png/" target="_blank">GraphicsFuel</a></li>
                     
+                    <li>Clip art image by <a href="http://cliparts.co">Cliparts.co</a></li>
+                    
                     <li>Javascript and buttons by <a href="http://tympanus.net/codrops/" target="_blank">Codrops</a> and <a href="http://ascott1.github.io/bigSlide.js/" target="_blank">Big Slide</a></li>
                 </ul>
+                <br><br>
             </div>
         </div>
     </div>   
@@ -362,14 +367,16 @@
         <li><a href="https://www.linkedin.com/in/moniquehuenergardt"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
      </ul>
     
-    <ul class="credits">
-        <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
-        <li><a class="contact" href="contact.php">Full Site Credits</a></li>
-        <li><a class="contact" href="mailto:moreadsyou@outlook.com">Email me</a></li>
-    </ul>
     <ul class="copyright">
         <li>&#169; Monique Huenergardt</li>
+        <li><a class="contact" href="mailto:moreadsyou@outlook.com">moreadsyou@outlook.com</a></li>
+        <li>Lawrenceville, GA, USA</li>
     </ul>   
+    
+    <ul class="credits">
+        <li><a class="contact" href="contact.php">Full Site Credits</a></li>
+        <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
+    </ul>
 </div>  
 <!-- End Footer -->  
     

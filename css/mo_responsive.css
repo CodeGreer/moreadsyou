@@ -261,10 +261,6 @@ h1.description {
     float: none;
 } 
     
-#contact_right2 .mobile_center {
-    text-align: center;
-}
-    
 /* Footer */
     
 #push {
@@ -281,10 +277,8 @@ ul.social img {
 }   
     
 ul.credits, ul.copyright {
-    width: 100%;
     padding-bottom: 2%;
 }
-
 }
 
 /*** Up to 720px ***/
@@ -367,7 +361,16 @@ body {
     width: 70%;
     margin: 2% 15%; 
 }     
+   
+/* Footer */
     
+ul.credits, ul.copyright {
+    width: 100%;
+} 
+    
+ul.copyright {
+    padding-top: 4%;
+}
 }
 
 /*** Up to 400px ***/
