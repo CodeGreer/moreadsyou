@@ -319,7 +319,7 @@ if ($result != NULL) {
 <div id="footer">
      <ul class="social">
         <li><a href="https://twitter.com/MoReadsYou"><img alt="Twitter" src="images/twitter.jpg"></a></li>
-        <li><a href=""><img alt="Facebook" src="images/facebook.jpg"></a></li>
+        <li><a href="https://www.facebook.com/monique.huenergardt"><img alt="Facebook" src="images/facebook.jpg"></a></li>
         <li><a href="https://www.linkedin.com/in/moniquehuenergardt"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
      </ul>
     

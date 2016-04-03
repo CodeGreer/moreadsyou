@@ -345,7 +345,7 @@
                     
                     <li>Social media icons by <a href="http://www.graphicsfuel.com/2013/06/simple-flat-social-media-icons-psd-png/" target="_blank">GraphicsFuel</a></li>
                     
-                    <li>Clip art image by <a href="http://cliparts.co">Cliparts.co</a></li>
+                    <li>Clip art image by <a href="http://cliparts.co" target="_blank">Cliparts.co</a></li>
                     
                     <li>Javascript and buttons by <a href="http://tympanus.net/codrops/" target="_blank">Codrops</a> and <a href="http://ascott1.github.io/bigSlide.js/" target="_blank">Big Slide</a></li>
                 </ul>
@@ -363,7 +363,7 @@
 <div id="footer">
      <ul class="social">
         <li><a href="https://twitter.com/MoReadsYou"><img alt="Twitter" src="images/twitter.jpg"></a></li>
-        <li><a href=""><img alt="Facebook" src="images/facebook.jpg"></a></li>
+        <li><a href="https://www.facebook.com/monique.huenergardt"><img alt="Facebook" src="images/facebook.jpg"></a></li>
         <li><a href="https://www.linkedin.com/in/moniquehuenergardt"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
      </ul>
     
