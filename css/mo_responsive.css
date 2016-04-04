@@ -261,6 +261,14 @@ h1.description {
     float: none;
 } 
     
+.hide {
+    display: none;
+}    
+    
+.show {
+    display: block;
+}
+    
     
 /* Contact Popup */
     
@@ -286,8 +294,8 @@ h3.close {
 }    
 
 .popup_content input {
-    width: 84%;
-    margin: 0 8%;
+    width: 85%;
+    margin: 0 5%;
 }
 
 #contactpage_form input {

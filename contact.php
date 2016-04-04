@@ -85,7 +85,7 @@
         </div> 
         
         <div id="profile_image">
-            <img alt="Picture of Monique" src="images/mo.jpg">
+            <a href="mo_index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
         </div>
         
         <div id="page_header_text">
@@ -99,11 +99,10 @@
     <div id="content">
         <div class="contact_flex">
             <div id="contact_left">
-                <p>You may not be sure exactly what kind of help you need with your document, and that’s fine. The best way to figure that out is for me to take a look so we can talk about it. You can email your document as a Word or Adobe file to <a class="contact" href="mailto:moreadsyou@outlook.com">MoReadsYou@Outlook.com</a> and let me know what services you’d like. I won’t share your document or your contact information with anyone. Promise. You don’t even have to give me your phone number, but a name would be helpful. Or a nickname. Even an alias would do.</p>
+                <p>You may not be sure exactly what kind of help you need with your document, and that’s fine. The best way to figure it out is for me to take a look so we can talk about it. You can email your document as a Word or Adobe file to <a class="contact" href="mailto:moreadsyou@outlook.com">MoReadsYou@outlook.com</a> and let me know what services you’d like. I won’t share your document or your contact information with anyone. Promise. You don’t even have to give me your phone number, but a name would be helpful. Or a nickname. Even an alias would do.</p>
                 
                 <br><br>
-                <p>Want an instant estimate? Sorry, but I don’t do robo-quotes. You and your document are important to me. So let’s talk. M’kay?</p>
-                <br><br>
+                <p class="hide">Want an instant estimate? Sorry, but I don’t do robo-quotes. You and your document are important to me. So let’s talk. M’kay?</p>
             </div>
             
             <div id="contact_right">
@@ -280,13 +279,15 @@
                     </form>        
                 </div>
             </div>
-            
         </div>
         
         <div class="contact_flex">
             <div id="contact_left2">
                 <br><br>
 
+                <p class="show">Want an instant estimate? Sorry, but I don’t do robo-quotes. You and your document are important to me. So let’s talk. M’kay?</p>
+                <br><br>
+                
                 <div id="green_box">
                     <div id="green_box_top">
                         <p>You might not be sure what services you need, but here are some numbers if you want to go shopping.</p>
@@ -299,12 +300,12 @@
 
                     <ul>
                         <li>Copy Editing</li>
-                        <li>1.5 pennies per word</li>
+                        <li>1&#189; pennies per word</li>
                     </ul>
 
                     <ul>
                         <li>Developmental Editing</li>
-                        <li>1.5 pennies per word</li>
+                        <li>1&#189; pennies per word</li>
                     </ul>
 
                     <ul>
@@ -339,7 +340,7 @@
 
                     <li>Profile photo by Thomas Huenergardt</li>
 
-                    <li>Other Photos by Do you remember?</li>
+                    <li>Other photos by <a href="https://www.pexels.com/search/laptop%20woman%20bed/" target="_blank">Pexels</a></li>
                     
                     <li>Contact form by <a href="http://jemsmailform.com/" target="_blank">Jem's PHP Mail Form</a></li>
                     
@@ -362,14 +363,14 @@
 <!-- Footer -->      
 <div id="footer">
      <ul class="social">
-        <li><a href="https://twitter.com/MoReadsYou"><img alt="Twitter" src="images/twitter.jpg"></a></li>
-        <li><a href="https://www.facebook.com/monique.huenergardt"><img alt="Facebook" src="images/facebook.jpg"></a></li>
-        <li><a href="https://www.linkedin.com/in/moniquehuenergardt"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
+        <li><a href="https://twitter.com/MoReadsYou" target="_blank"><img alt="Twitter" src="images/twitter.jpg"></a></li>
+        <li><a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a></li>
+        <li><a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
      </ul>
     
     <ul class="copyright">
         <li>&#169; Monique Huenergardt</li>
-        <li><a class="contact" href="mailto:moreadsyou@outlook.com">moreadsyou@outlook.com</a></li>
+        <li><a class="contact" href="mailto:moreadsyou@outlook.com">MoReadsYou@outlook.com</a></li>
         <li>Lawrenceville, GA, USA</li>
     </ul>   
     

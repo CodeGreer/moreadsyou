@@ -98,7 +98,7 @@
                 <li><a href="authors.php">Authors</a></li>
                 <li><a href="bloggers.php">Bloggers</a></li>
                 <li><a href="business.php">Business</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="contact.php">Contact / Rates / About</a></li>
             </ul>
         </nav>
 <!-- End Menu -->             
@@ -301,7 +301,7 @@ if ($result != NULL) {
 <!-- End PHP -->  
         
 <!-- Contact Button -->        
-        <div id="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
+        <div id="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
             <button type="button" class="button button_contact">Get in touch!</button> 
             <div class="popup_content">
 				<div>
@@ -325,6 +325,14 @@ if ($result != NULL) {
         </div>
 <!-- End Contact Button -->   
         
+<!-- Contact Button Mobile -->        
+        <div id="contact_popup_index" class="show">
+            <form method="get" action="contact.php#contact_right">
+                <button class="button button_contact">Get in touch!</button>
+            </form>    
+        </div>
+<!-- End Contact Button Mobile -->       
+        
     </div>   
 <!-- End Main -->     
 </div>
@@ -335,19 +343,19 @@ if ($result != NULL) {
 <!-- Footer -->      
 <div id="footer">
      <ul class="social">
-        <li><a href="https://twitter.com/MoReadsYou"><img alt="Twitter" src="images/twitter.jpg"></a></li>
-        <li><a href="https://www.facebook.com/monique.huenergardt"><img alt="Facebook" src="images/facebook.jpg"></a></li>
-        <li><a href="https://www.linkedin.com/in/moniquehuenergardt"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
+        <li><a href="https://twitter.com/MoReadsYou" target="_blank"><img alt="Twitter" src="images/twitter.jpg"></a></li>
+        <li><a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a></li>
+        <li><a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
      </ul>
     
     <ul class="copyright">
         <li>&#169; Monique Huenergardt</li>
-        <li><a class="contact" href="mailto:moreadsyou@outlook.com">moreadsyou@outlook.com</a></li>
+        <li><a class="contact" href="mailto:moreadsyou@outlook.com">MoReadsYou@outlook.com</a></li>
         <li>Lawrenceville, GA, USA</li>
     </ul>   
     
     <ul class="credits">
-        <li><a class="contact" href="contact.php">Full Site Credits</a></li>
+        <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
         <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
     </ul>
 </div>  
