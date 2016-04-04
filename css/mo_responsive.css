@@ -194,12 +194,12 @@ h1.description {
     padding: 2% 0;
     width: 75%;
     background-color: rgba(0, 0, 0, 0.45);
-    -moz-box-shadow: 0em 0em 3em #000000;
-    -webkit-box-shadow: 0em 0em 3em #000000;
-    box-shadow: 0em 0em 1em #000000;
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    border-radius: 1em; 
+    -moz-box-shadow: -1em 0em 1em #000000;
+    -webkit-box-shadow: -1em 0em 1em #000000;
+    box-shadow: -1em 0em 1em #000000;
+    -webkit-border-radius: 0em;
+    -moz-border-radius: 0em;
+    border-radius: 0em; 
 }
 
 #profile_image {
@@ -464,18 +464,21 @@ ul.copyright {
 body {
     font-size: 80%;
 }   
-      
+    
+h1.title {
+      font-size: 3em;  
+}
 }
 
 /*** Up to 336px ***/
 @media only screen and (max-width: 21em) {
    
 body {
-    font-size: 72%;
+    font-size: 70%;
 }  
-    
+
 .tagline {
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
     
 .first_line, .second_line  {

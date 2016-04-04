@@ -167,8 +167,8 @@ body {
     top: 43%;
     left: 50%;
     background-color: rgba(0, 0, 0, 0.45);
-    -moz-box-shadow: 0em 0em 1em #000000;
-    -webkit-box-shadow: 0em 0em 1em #000000;
+    -moz-box-shadow: 0em 0em 3em #000000;
+    -webkit-box-shadow: 0em 0em 3em #000000;
     box-shadow: 0em 0em 3em #000000;
     -webkit-border-radius: 5em;
     -moz-border-radius: 5em;
@@ -229,6 +229,13 @@ body {
     position: relative;
     background-color: #FFFFFF;
     z-index: 5;
+}
+
+#main p {
+    font-size: 1.35em;
+    width: 90%;
+    margin: 5% 5% 0 5%;
+    text-align: justify;
 }
 
 #content p {

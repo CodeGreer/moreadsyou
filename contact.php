@@ -64,11 +64,11 @@
 
         <nav id="menu" class="panel">
             <ul class="menu_links">
-                <li><a href="mo_index.php">Home</a></li>
+                <li><a href="#">Home | About</a></li>
                 <li><a href="authors.php">Authors</a></li>
                 <li><a href="bloggers.php">Bloggers</a></li>
                 <li><a href="business.php">Business</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="contact.php">Contact | Rates</a></li>
             </ul>
         </nav>
 <!-- End Menu -->             
@@ -283,9 +283,9 @@
         
         <div class="contact_flex">
             <div id="contact_left2">
-                <br><br>
+                
 
-                <p class="show">Want an instant estimate? Sorry, but I don’t do robo-quotes. You and your document are important to me. So let’s talk. M’kay?</p>
+                <p class="show"><br><br>Want an instant estimate? Sorry, but I don’t do robo-quotes. You and your document are important to me. So let’s talk. M’kay?</p>
                 <br><br>
                 
                 <div id="green_box">

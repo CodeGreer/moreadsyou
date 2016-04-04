@@ -94,11 +94,11 @@
 
         <nav id="menu" class="panel">
             <ul class="menu_links">
-                <li><a href="#">Home</a></li>
+                <li><a href="#">Home | About</a></li>
                 <li><a href="authors.php">Authors</a></li>
                 <li><a href="bloggers.php">Bloggers</a></li>
                 <li><a href="business.php">Business</a></li>
-                <li><a href="contact.php">Contact / Rates / About</a></li>
+                <li><a href="contact.php">Contact | Rates</a></li>
             </ul>
         </nav>
 <!-- End Menu -->             
@@ -331,8 +331,9 @@ if ($result != NULL) {
                 <button class="button button_contact">Get in touch!</button>
             </form>    
         </div>
-<!-- End Contact Button Mobile -->       
+<!-- End Contact Button Mobile -->  
         
+        <p>Hey, I'm Monique. I'm that annoying person who notices the one tiny error in just about anything, and points it out. I've always been an avid reader, and will generally take a shot at reading just about anything a friend recommends. I love being pulled into someone else's mind, their ideas, their world. I love a lovely turn of phrase, a delightful word, a perfectly expressed sentiment. I hate garden path sentences, confusing punctuation, and anything else that interrupts absolute immersion in the reading experience. I channel that passion into helping other people express themselves in writing as clearly and seamlessly as possible. I help them be better writers. I'd like to help you, too.</p>
     </div>   
 <!-- End Main -->     
 </div>
