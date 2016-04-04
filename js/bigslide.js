@@ -54,7 +54,7 @@
       'speed': '300',
       'state': 'closed',
       'activeBtn': 'active',
-      'easyClose': false,
+      'easyClose': true,
       'beforeOpen': function () {},
       'afterOpen': function() {},
       'beforeClose': function() {},

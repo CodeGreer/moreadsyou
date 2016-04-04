@@ -75,7 +75,7 @@
         </div> 
         
         <div id="profile_image">
-            <img alt="Picture of Monique" src="images/mo.jpg">
+            <a href="mo_index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
         </div>
         
         <div id="page_header_text">
@@ -279,13 +279,13 @@ if ($result != NULL) {
         
         <p>Now you send it to me. <span class="purple_italic">I’ll help you make it even better.</span></p>
 
-        <p>Because, let’s face it, you’ve been staring at this thing for a really long time. Reading it over and over and over. You’ve memorized entire passages, and rewritten others so many times you’re not sure which version you kept. You’re pretty sure moving those four scenes around didn’t mess with your timeline. And your cat ran it through spellcheck at least three times.</p> 
+        <p>Because, let’s face it, you’ve been staring at this thing for a really long time. You've read it over and over and over. You’ve memorized entire passages, and rewritten others so many times you’re not sure which version you kept. You’re pretty sure moving those four scenes around didn’t mess with your timeline. And your cat ran it through Spellcheck at least three times.</p> 
         
         <p>But . . .</p>
 
         <p>You need another set of eyes. You need someone to read your masterpiece <span class="purple_italic">like your reader will.</span></p>
 
-        <p>And, that’s what I do. I read your manuscript with <span class="purple_italic">the eyes of your reader</span>, and I tell you what your reader thinks of it. Before your reader gets ahold of it. Before you get that first bad review on Amazon.</p>
+        <p>And, that’s what I do. I read your manuscript <span class="purple_italic">with the eyes of your reader</span>, and I tell you what your reader thinks of it. Before your reader gets a hold of it. Before you get that first bad review on Amazon.</p>
 
         <p>And, I do all the other stuff you expect an editor to do. Like checking grammar and spelling. And making sure your main character’s hair doesn’t inexplicably turn from red to blonde in chapter three, and that it didn’t take four days to drive ten miles.</p>
 
@@ -298,15 +298,15 @@ if ($result != NULL) {
             <button type="button" class="button button_download">Downloadable</button> 
         </div> -->
 
-        <p>Don’t worry. I won’t do that. I don’t even own a red Sharpie. I’ll make suggestions. I’ll point out possible improvements. I’ll highlight the things that are great. And, yes, I’ll fix spelling and grammar and do all of that other stuff that makes writing more readable, while keeping it distinctly “you.”</p>
+        <p>Don’t worry. I won’t do that. I don’t even own a red Sharpie. I’ll make suggestions. I’ll point out possible improvements. I’ll highlight the things that are great. And, yes, I’ll fix spelling and grammar and do all of that other stuff that makes writing more readable, <span class="purple_italic">while keeping it distinctly “you.”</span></p>
         
         <p>So reading your book is a pleasure for your reader. Because that’s what you want, right? For your book to be <span class="purple_italic">Your Reader’s Bliss.</span></p>
 
         <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
 
-        <p>Chat soon – Mo</p>
+        <p>Chat soon ~ Mo</p>
 
-        <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php">Contact page</a>.</p>
+        <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
     </div>   
 <!-- End Main --> 
 </div>
@@ -318,19 +318,19 @@ if ($result != NULL) {
 <!-- Footer -->      
 <div id="footer">
      <ul class="social">
-        <li><a href="https://twitter.com/MoReadsYou"><img alt="Twitter" src="images/twitter.jpg"></a></li>
-        <li><a href="https://www.facebook.com/monique.huenergardt"><img alt="Facebook" src="images/facebook.jpg"></a></li>
-        <li><a href="https://www.linkedin.com/in/moniquehuenergardt"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
+        <li><a href="https://twitter.com/MoReadsYou" target="_blank"><img alt="Twitter" src="images/twitter.jpg"></a></li>
+        <li><a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a></li>
+        <li><a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
      </ul>
     
     <ul class="copyright">
         <li>&#169; Monique Huenergardt</li>
-        <li><a class="contact" href="mailto:moreadsyou@outlook.com">moreadsyou@outlook.com</a></li>
+        <li><a class="contact" href="mailto:moreadsyou@outlook.com">MoReadsYou@outlook.com</a></li>
         <li>Lawrenceville, GA, USA</li>
     </ul>   
     
     <ul class="credits">
-        <li><a class="contact" href="contact.php">Full Site Credits</a></li>
+        <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
         <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
     </ul>
 </div>  

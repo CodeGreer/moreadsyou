@@ -74,7 +74,7 @@
         </div> 
         
         <div id="profile_image">
-            <img alt="Picture of Monique" src="images/mo.jpg">
+            <a href="mo_index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
         </div>
         
         <div id="page_header_text">
@@ -274,11 +274,11 @@ if ($result != NULL) {
         
         <p><span class="purple_italic">Errors kill your credibility.</span> They make your reader want to stop reading. Opt out of your newsletter. Or even (gasp) stop visiting your blog.</p>
         
-        <p><span class="purple_italic">You know your stuff.</span> You know the importance of your message to your audience. And sometimes in the flush of creativity, in the rush of getting just the perfect combination of words onto the screen, <span class="purple_italic">mistakes creep in.</span> Even when you proofread your own work, they manage to illude you.</p>
+        <p><span class="purple_italic">You know your stuff.</span> You know the importance of your message to your audience. And sometimes in the flush of creativity, in the rush of getting just the perfect combination of words onto the screen, <span class="purple_italic">mistakes creep in.</span> Even when you proofread your own work, they manage to elude you.</p>
         
-        <p>You need another set of eyes. You need a <span class="purple_italic">blunder buster</span> to catch those pesky errors before they jump off the screen and confuse your audience. Or worse, turn them off entirely. Because once they’re gone, they don’t come back.</p>
+        <p>You need another set of eyes. You need a <span class="purple_italic">blunder buster</span> to catch those pesky errors before they jump off the screen and confuse your audience. Or worse, turn them off entirely. Because once they’re gone, <span class="purple_italic">they don’t come back</span>.</p>
 
-        <p>Don’t think you need another set of eyes? The proof is in the pudding, as they say, so put me to the test. Send me something you’ve written -- up to 500 words -- and I’ll give you <span class="purple_italic">a free sample edit.</span> I’ll point out places where you might not be quite as clear as you think you are. Spots where your reader may need to back up and take another run before they understand your meaning.</p> 
+        <p>Don’t think you need another set of eyes? The proof is in the pudding, as they say, so put me to the test. Send me something you’ve written &#8212; up to 500 words &#8212; and I’ll give you <span class="purple_italic">a free sample edit.</span> I’ll point out places where you might not be quite as clear as you think you are. Spots where your reader may need to back up and take another run before they understand your meaning.</p> 
         
         <!-- <div id="download">
             <button type="button" class="button button_download">Downloadable</button> 
@@ -293,9 +293,9 @@ if ($result != NULL) {
 
         <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
 
-        <p>Chat soon – Mo</p>
+        <p>Chat soon ~ Mo</p>
 
-        <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php">Contact page</a>.</p>
+        <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
     </div>   
 <!-- End Main --> 
 </div>
@@ -307,19 +307,19 @@ if ($result != NULL) {
 <!-- Footer -->      
 <div id="footer">
      <ul class="social">
-        <li><a href="https://twitter.com/MoReadsYou"><img alt="Twitter" src="images/twitter.jpg"></a></li>
-        <li><a href="https://www.facebook.com/monique.huenergardt"><img alt="Facebook" src="images/facebook.jpg"></a></li>
-        <li><a href="https://www.linkedin.com/in/moniquehuenergardt"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
+        <li><a href="https://twitter.com/MoReadsYou" target="_blank"><img alt="Twitter" src="images/twitter.jpg"></a></li>
+        <li><a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a></li>
+        <li><a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
      </ul>
     
     <ul class="copyright">
         <li>&#169; Monique Huenergardt</li>
-        <li><a class="contact" href="mailto:moreadsyou@outlook.com">moreadsyou@outlook.com</a></li>
+        <li><a class="contact" href="mailto:moreadsyou@outlook.com">MoReadsYou@outlook.com</a></li>
         <li>Lawrenceville, GA, USA</li>
     </ul>   
     
     <ul class="credits">
-        <li><a class="contact" href="contact.php">Full Site Credits</a></li>
+        <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
         <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
     </ul>
 </div>  

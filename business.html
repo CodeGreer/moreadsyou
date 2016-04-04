@@ -74,7 +74,7 @@
         </div> 
         
         <div id="profile_image">
-            <img alt="Picture of Monique" src="images/mo.jpg">
+            <a href="mo_index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
         </div>
         
         <div id="page_header_text">
@@ -270,16 +270,16 @@ if ($result != NULL) {
         </div>
 <!-- End Contact Button -->         
         
-        <p>You know your product/service like the back of your hand. Your elevator speech is a thing of beauty. In your perfectly crafted presentations, prospect swoon and pull out their Gold Cards. FTF, you’ve got your business covered. In writing . . . not so much. You know what to say, because you say it every day. Now you just need to <span class="purple_italic">get that message into writing.</span></p>
+        <p>You know your product/service like the back of your hand. Your elevator speech is a thing of beauty. In your perfectly crafted presentations, prospects swoon and pull out their Gold Cards. FTF, you’ve got your business covered. In writing . . . not so much. You know what to say, because you say it every day. Now you just need to <span class="purple_italic">get that message into writing.</span></p>
         
-        <p>Not everyone is great at it. <span class="purple_italic">Not everyone has the knack</span> for carefully crafting for meaning, clarity, and connection with readers. Not everyone has the time to drudge through writing copy, much less carefully rereading, and redrafting, and looking up every word that might be misspelled. And, correct grammar and punctuation… forget about it. Who knows where to even look that stuff up?</p>
+        <p>Not everyone is great at it. <span class="purple_italic">Not everyone has the knack</span> for carefully crafting for meaning, clarity, and connection with readers. Not everyone has the time to drudge through writing copy, much less carefully rereading, and redrafting, and looking up every word that might be misspelled. And, correct grammar and punctuation . . . forget about it. Who knows where to even look that stuff up? (Hint: I do.)</p>
         
         <!-- <div id="download">
             <button type="button" class="button button_download">Downloadable</button> 
             <button type="button" class="button button_download">Downloadable</button> 
         </div> -->
         
-        <p>Brochures. Flyers. Newsletters. Your website or blog. <span class="purple_italic">Everything that tells your customers, potential customers, and community what you are all about.</span> All in the written word. You need to focus on your message, not your spelling.</p>
+        <p>Brochures. Flyers. Newsletters. Your website or blog. <span class="purple_italic">Everything that tells your customers, potential customers, and community what you're all about.</span> All in the written word. You need to focus on your message, not your spelling.</p>
         
         <p>You don’t have the time. You don’t have the inclination. And you don’t even particularly like the fine-tuning of writing. You know what you want to say. You’ve got it drafted out. But polishing it up and <span class="purple_italic">making it shiny?</span></p>
 
@@ -287,9 +287,9 @@ if ($result != NULL) {
 
         <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
 
-        <p>Chat soon – Mo</p>
+        <p>Chat soon ~ Mo</p>
 
-        <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php">Contact page</a>.</p>
+        <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
     </div>   
 <!-- End Main --> 
 </div>
@@ -301,19 +301,19 @@ if ($result != NULL) {
 <!-- Footer -->      
 <div id="footer">
      <ul class="social">
-        <li><a href="https://twitter.com/MoReadsYou"><img alt="Twitter" src="images/twitter.jpg"></a></li>
-        <li><a href="https://www.facebook.com/monique.huenergardt"><img alt="Facebook" src="images/facebook.jpg"></a></li>
-        <li><a href="https://www.linkedin.com/in/moniquehuenergardt"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
+        <li><a href="https://twitter.com/MoReadsYou" target="_blank"><img alt="Twitter" src="images/twitter.jpg"></a></li>
+        <li><a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a></li>
+        <li><a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
      </ul>
     
     <ul class="copyright">
         <li>&#169; Monique Huenergardt</li>
-        <li><a class="contact" href="mailto:moreadsyou@outlook.com">moreadsyou@outlook.com</a></li>
+        <li><a class="contact" href="mailto:moreadsyou@outlook.com">MoReadsYou@outlook.com</a></li>
         <li>Lawrenceville, GA, USA</li>
     </ul>   
     
     <ul class="credits">
-        <li><a class="contact" href="contact.php">Full Site Credits</a></li>
+        <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
         <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
     </ul> 
 </div>  
