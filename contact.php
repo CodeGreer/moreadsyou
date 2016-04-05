@@ -219,11 +219,11 @@
 				$disable = true;
 			}
 		} else {
-			$error_msg[] = '<div id="fail">Your message could not be sent at this time.</div>';
+			$error_msg[] = '<div class="fail">Your message could not be sent at this time.</div>';
 		}
 	} else {
 		if (empty($error_msg))
-			$error_msg[] = '<div id="fail">Your message looks too<br> much like spam, and could<br> not be sent at this time.</div>';
+			$error_msg[] = '<div class="fail">Your message looks too<br> much like spam, and could<br> not be sent at this time.</div>';
         }
     }
     function get_data($var) {
@@ -330,9 +330,9 @@
                 <br>
                 <p class="mobile_center">Site Credits:</p>
                 <ul class="mobile_center">
-                    <li>Coding by <a href="http://codegreer.com/"target="_blank">Code Greer</a></li>
+                    <li>Coding by <a href="http://codegreer.com/" target="_blank">Code Greer</a></li>
 
-                    <li>Design by Monique Huenergardt and <a href="http://codegreer.com/"target="_blank">Code Greer</a></li>
+                    <li>Design by Monique Huenergardt and <a href="http://codegreer.com/" target="_blank">Code Greer</a></li>
 
                     <li>Written content by Monique Huenergardt</li>
 

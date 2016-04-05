@@ -265,7 +265,7 @@ a.contact:active {color: #000; }
     margin: 2% 5% 3% 5%;
 }
 
-#contact_popup_index {
+.contact_popup_index {
     clear: both;
     max-width: 100%;
     width: 30%;
@@ -606,7 +606,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
 /* Popup Send Messages */
 
-#success, #fail, .error {
+#success, .fail, .error {
     float: right;
     clear: both;
     padding: 0 5% 0 2%;

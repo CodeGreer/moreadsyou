@@ -205,11 +205,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				$disable = true;
 			}
 		} else {
-			$error_msg[] = '<div id="fail">Your message could not be sent this time.</div>';
+			$error_msg[] = '<div class="fail">Your message could not be sent this time.</div>';
 		}
 	} else {
 		if (empty($error_msg))
-			$error_msg[] = '<div id="fail">Your message looks too<br> much like spam, and could<br> not be sent at this time.</div>';
+			$error_msg[] = '<div class="fail">Your message looks too<br> much like spam, and could<br> not be sent at this time.</div>';
 	}
 }
 function get_data($var) {

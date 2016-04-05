@@ -259,11 +259,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				$disable = true;
 			}
 		} else {
-			$error_msg[] = '<div id="fail">Your message could not be sent this time.</div>';
+			$error_msg[] = '<div class="fail">Your message could not be sent this time.</div>';
 		}
 	} else {
 		if (empty($error_msg))
-			$error_msg[] = '<div id="fail">Your message looks too<br> much like spam, and could<br> not be sent at this time.</div>';
+			$error_msg[] = '<div class="fail">Your message looks too<br> much like spam, and could<br> not be sent at this time.</div>';
 	}
 }
 function get_data($var) {
@@ -301,7 +301,7 @@ if ($result != NULL) {
 <!-- End PHP -->  
         
 <!-- Contact Button -->        
-        <div id="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
+        <div class="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
             <button type="button" class="button button_contact">Get in touch!</button> 
             <div class="popup_content">
 				<div>
@@ -326,7 +326,7 @@ if ($result != NULL) {
 <!-- End Contact Button -->   
         
 <!-- Contact Button Mobile -->        
-        <div id="contact_popup_index" class="show">
+        <div class="contact_popup_index" class="show">
             <form method="get" action="contact.php#contact_right">
                 <button class="button button_contact">Get in touch!</button>
             </form>    
