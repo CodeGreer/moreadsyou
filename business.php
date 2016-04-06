@@ -53,10 +53,10 @@
 
         <nav id="menu" class="panel">
             <ul class="menu_links">
-                <li><a href="#">Home | About</a></li>
+                <li><a href="mo_index.php">Home | About</a></li>
                 <li><a href="authors.php">Authors</a></li>
                 <li><a href="bloggers.php">Bloggers</a></li>
-                <li><a href="business.php">Business</a></li>
+                <li><a href="#">Businesses</a></li>
                 <li><a href="contact.php">Contact | Rates</a></li>
             </ul>
         </nav>
