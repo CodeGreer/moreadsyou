@@ -265,7 +265,7 @@ a.contact:active {color: #000; }
     margin: 2% 5% 3% 5%;
 }
 
-.contact_popup_index {
+#contact_popup_index, .contact_popup_index2 {
     clear: both;
     max-width: 100%;
     width: 30%;

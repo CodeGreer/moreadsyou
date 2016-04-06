@@ -301,7 +301,7 @@ if ($result != NULL) {
 <!-- End PHP -->  
         
 <!-- Contact Button -->        
-        <div class="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
+        <div id="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
             <button type="button" class="button button_contact">Get in touch!</button> 
             <div class="popup_content">
 				<div>
@@ -323,10 +323,10 @@ if ($result != NULL) {
 				</div>
             </div>
         </div>
-<!-- End Contact Button -->   
+<!-- End Contact Button -->             
         
 <!-- Contact Button Mobile -->        
-        <div class="contact_popup_index" class="show">
+        <div class="contact_popup_index2 show">
             <form method="get" action="contact.php#contact_right">
                 <button class="button button_contact">Get in touch!</button>
             </form>    
