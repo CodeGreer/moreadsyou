@@ -272,7 +272,7 @@ if ($result != NULL) {
         
         <p>You know your product/service like the back of your hand. Your elevator speech is a thing of beauty. In your perfectly crafted presentations, prospects swoon and pull out their Gold Cards. FTF, you’ve got your business covered. In writing . . . not so much. You know what to say, because you say it every day. Now you just need to <span class="purple_italic">get that message into writing.</span></p>
         
-        <p>Not everyone is great at it. <span class="purple_italic">Not everyone has the knack</span> for carefully crafting for meaning, clarity, and connection with readers. Not everyone has the time to drudge through writing copy, much less carefully rereading, and redrafting, and looking up every word that might be misspelled. And, correct grammar and punctuation . . . forget about it. Who knows where to even look that stuff up? (Hint: I do.)</p>
+        <p>Not everyone is great at it. <span class="purple_italic">Not everyone has the knack</span> for carefully crafting a message for meaning, clarity, and connection with readers. Not everyone has the time to drudge through writing copy, much less carefully rereading, and redrafting, and looking up every word that might be misspelled. And, correct grammar and punctuation . . . forget about it. Who knows where to even look that stuff up? (Hint: I do.)</p>
         
         <!-- <div id="download">
             <button type="button" class="button button_download">Downloadable</button> 
