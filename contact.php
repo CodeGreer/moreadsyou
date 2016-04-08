@@ -20,9 +20,7 @@
     
     
 <!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/mo_style.css" />
-    <link rel="stylesheet" type="text/css" href="css/mo_responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
 
 <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>
@@ -46,7 +44,7 @@
     
 <!-- Mobile Header -->
     <div id="mobile_header_text" class="push">
-        <h1 class="title"><a href="mo_index.php">Mo Reads You</a></h1>
+        <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
             <h1 class="description">Editing &#38; Proofreading Services</h1>
         <h3 class="menu_link_mobile"><a href="#menu" class="hamburger"> &#9776;</a></h3>
     </div> 
@@ -64,7 +62,7 @@
 
         <nav id="menu" class="panel">
             <ul class="menu_links">
-                <li><a href="mo_index.php">Home | About</a></li>
+                <li><a href="index.php">Home | About</a></li>
                 <li><a href="authors.php">Authors</a></li>
                 <li><a href="bloggers.php">Bloggers</a></li>
                 <li><a href="business.php">Businesses</a></li>
@@ -76,7 +74,7 @@
         <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
         
         <div id="title_div">
-            <h1 class="title"><a href="mo_index.php">Mo Reads You</a></h1>
+            <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
             <h1 class="description">Editing &#38; Proofreading Services</h1>
         </div> 
         
@@ -85,7 +83,7 @@
         </div> 
         
         <div id="profile_image">
-            <a href="mo_index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
+            <a href="index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
         </div>
         
         <div id="page_header_text">
@@ -110,7 +108,7 @@
                     <?php
     // OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
 
-    $yourEmail = "tjed.greer@gmail.com"; // the email address you wish to receive these mails through
+    $yourEmail = "Moreadsyou@outlook.com"; // the email address you wish to receive these mails through
     $yourWebsite = "Mo Reads You"; // the name of your website
     $thanksPage = ''; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
     $maxPoints = 4; // max points a person can hit before it refuses to submit - recommend 4

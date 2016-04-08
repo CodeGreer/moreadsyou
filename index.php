@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="Mo Reads You">
     <meta property="og:url" content="http://www.moreadsyou.com/" >
     <meta property="og:description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else." >
-    <meta property="og:image" content="http://www.moreadsyou.com/images/kcMbynqgi.png" >
+    <meta property="og:image" content="http://www.moreadsyou.com/images/mo.jpg" >
     <meta property="og:type" content="website" >
     <meta property="og:locale" content="en_US" >
 
@@ -25,7 +25,7 @@
     <meta property="twitter:description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else." >
     <meta property="twitter:creator" content="@moreadsyou" >
     <meta property="twitter:url" content="http://www.moreadsyou.com/" >
-    <meta property="twitter:image" content="http://www.moreadsyou.com/images/kcMbynqgi.png" >
+    <meta property="twitter:image" content="http://www.moreadsyou.com/images/mo.jpg" >
 
     
 <!-- Favicon -->
@@ -50,9 +50,7 @@
     <meta name="theme-color" content="#ffffff">
     
 <!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/mo_style.css" />
-    <link rel="stylesheet" type="text/css" href="css/mo_responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
 
 <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>
@@ -150,7 +148,7 @@
 <?php
 // OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
 
-$yourEmail = "tjed.greer@gmail.com"; // the email address you wish to receive these mails through
+$yourEmail = "Moreadsyou@outlook.com"; // the email address you wish to receive these mails through
 $yourWebsite = "Mo Reads You"; // the name of your website
 $thanksPage = ''; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
 $maxPoints = 4; // max points a person can hit before it refuses to submit - recommend 4

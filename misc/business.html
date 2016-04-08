@@ -4,14 +4,13 @@
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Bloggers | Mo Reads You</title>
+    <title>Business | Mo Reads You</title>
     
     
 <!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/mo_style.css" />
-    <link rel="stylesheet" type="text/css" href="css/mo_responsive.css" />
-
+	<link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
 <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>
@@ -35,7 +34,7 @@
         
 <!-- Mobile Header -->
     <div id="mobile_header_text" class="push">
-        <h1 class="title"><a href="mo_index.php">Mo Reads You</a></h1>
+        <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
             <h1 class="description">Editing &#38; Proofreading Services</h1>
         <h3 class="menu_link_mobile"><a href="#menu" class="hamburger"> &#9776;</a></h3>
     </div> 
@@ -43,9 +42,10 @@
     <div id="mobile_header_two" class="push">
         <h1 class="tagline">Helping You Be a Better Writer</h1>  
     </div>
-<!-- End Mobile Header -->    
+<!-- End Mobile Header -->        
         
-<!-- Header -->  
+<!-- Header -->   
+    <!-- Header -->  
     <div id="header" class="push">  
         
 <!-- Menu -->  
@@ -53,10 +53,10 @@
 
         <nav id="menu" class="panel">
             <ul class="menu_links">
-                <li><a href="mo_index.php">Home | About</a></li>
+                <li><a href="index.php">Home | About</a></li>
                 <li><a href="authors.php">Authors</a></li>
-                <li><a href="#">Bloggers</a></li>
-                <li><a href="business.php">Businesses</a></li>
+                <li><a href="bloggers.php">Bloggers</a></li>
+                <li><a href="#">Businesses</a></li>
                 <li><a href="contact.php">Contact | Rates</a></li>
             </ul>
         </nav>
@@ -65,7 +65,7 @@
         <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
         
         <div id="title_div">
-            <h1 class="title"><a href="mo_index.php">Mo Reads You</a></h1>
+            <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
             <h1 class="description">Editing &#38; Proofreading Services</h1>
         </div> 
         
@@ -74,24 +74,22 @@
         </div> 
         
         <div id="profile_image">
-            <a href="mo_index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
+            <a href="index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
         </div>
         
         <div id="page_header_text">
-            <p class="first_line purple_italic">Web-based content producers.</p>
-            <p class="second_line purple_italic">You know who you are.</p>
+            <p class="first_line purple_italic ">You need to express yourself in writing.</p>
+            <p class="second_line purple_italic">Here’s what I can do for you.</p>
         </div>            
      </div>     
 <!-- End Header -->   
                     
 <!-- Main -->     
     <div id="content">
-        <img alt="A woman sitting at a table with a cup of tea and a book while working on her laptop" class="content_image" src="images/laptop.jpg">
-        <p>You’re an ideal person. An information lizard. A mustard of quality content production.</p>
+        <img alt="A table with a cup of coffee, blank paper, and a pen." class="content_image" src="images/coffee.jpg">
+        <p>You have to communicate in writing. <span class="purple_italic">We all have to communicate in writing.</span> Even if you thrive on face-to-face interactions, you still have to convey your message in writing or risk losing your audience’s fleeting attention.</p>
+ 
         
-        <p>See what I did there? Even just one wrong letter can skew your meaning.</p>
-        
-
 <!-- Contact Button Form PHP -->
         
 <?php
@@ -173,7 +171,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		$error_msg[] = "Invalid website url.\r\n";
 	
 	if ($error_msg == NULL && $points <= $maxPoints) {
-		$subject = "MRY Contact Button - Bloggers";
+		$subject = "MRY Contact Button - Business";
 		
 		$message = "You received this e-mail message through your website: \n\n";
 		foreach ($_POST as $key => $val) {
@@ -270,26 +268,22 @@ if ($result != NULL) {
 				</div>
             </div>
         </div>
-<!-- End Contact Button -->                   
+<!-- End Contact Button -->         
         
-        <p><span class="purple_italic">Errors kill your credibility.</span> They make your reader want to stop reading. Opt out of your newsletter. Or even (gasp) stop visiting your blog.</p>
+        <p>You know your product/service like the back of your hand. Your elevator speech is a thing of beauty. In your perfectly crafted presentations, prospects swoon and pull out their Gold Cards. FTF, you’ve got your business covered. In writing . . . not so much. You know what to say, because you say it every day. Now you just need to <span class="purple_italic">get that message into writing.</span></p>
         
-        <p><span class="purple_italic">You know your stuff.</span> You know the importance of your message to your audience. And sometimes in the flush of creativity, in the rush of getting just the perfect combination of words onto the screen, <span class="purple_italic">mistakes creep in.</span> Even when you proofread your own work, they manage to elude you.</p>
-        
-        <p>You need another set of eyes. You need a <span class="purple_italic">blunder buster</span> to catch those pesky errors before they jump off the screen and confuse your audience. Or worse, turn them off entirely. Because once they’re gone, <span class="purple_italic">they don’t come back</span>.</p>
-
-        <p>Don’t think you need another set of eyes? The proof is in the pudding, as they say, so put me to the test. Send me something you’ve written &#8212; up to 500 words &#8212; and I’ll give you <span class="purple_italic">a free sample edit.</span> I’ll point out places where you might not be quite as clear as you think you are. Spots where your reader may need to back up and take another run before they understand your meaning.</p> 
+        <p>Not everyone is great at it. <span class="purple_italic">Not everyone has the knack</span> for carefully crafting a message for meaning, clarity, and connection with readers. Not everyone has the time to drudge through writing copy, much less carefully rereading, and redrafting, and looking up every word that might be misspelled. And, correct grammar and punctuation . . . forget about it. Who knows where to even look that stuff up? (Hint: I do.)</p>
         
         <!-- <div id="download">
             <button type="button" class="button button_download">Downloadable</button> 
             <button type="button" class="button button_download">Downloadable</button> 
         </div> -->
+        
+        <p>Brochures. Flyers. Newsletters. Your website or blog. <span class="purple_italic">Everything that tells your customers, potential customers, and community what you're all about.</span> All in the written word. You need to focus on your message, not your spelling.</p>
+        
+        <p>You don’t have the time. You don’t have the inclination. And you don’t even particularly like the fine-tuning of writing. You know what you want to say. You’ve got it drafted out. But polishing it up and <span class="purple_italic">making it shiny?</span></p>
 
-        <p>I’ll even tell you what it would cost if you were paying me (not as much as you think). And if I can’t improve your writing by even one word, I’ll pour blessings upon your head and send you on your merry way with my best wishes for success.</p>
-
-        <p>But, if you agree that I made it better, even by just one “oh, yeah, I see what you did there,” then seriously think about bringing me on as <span class="purple_italic">your Private Consulting Word Guru.</span></p>
-
-        <p><span class="purple_italic">Because you’re a pro.</span> And you need to sound like it.</p>
+        <p><span class="purple_italic">You need to outsource this one small task.</span> To me.</p> 
 
         <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
 
@@ -321,7 +315,7 @@ if ($result != NULL) {
     <ul class="credits">
         <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
         <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
-    </ul>
+    </ul> 
 </div>  
 <!-- End Footer -->  
     
@@ -394,14 +388,14 @@ if ($result != NULL) {
             } );
         })();
     </script>
-    
+        
 <!-- Big Slide -->
     <script>
         $(document).ready(function() {
         $('.menu_link, .menu_link_mobile').bigSlide();
         });
     </script>    
-<!-- End Javascript -->                
+<!-- End Javascript -->        
     
 </body> 
 </html>

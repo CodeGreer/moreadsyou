@@ -4,13 +4,16 @@
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Business | Mo Reads You</title>
+    <title>Authors | Mo Reads You</title>
+    
+    
     
     
 <!-- CSS -->
-	<link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/mo_style.css" />
-    <link rel="stylesheet" href="css/mo_responsive.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
 
 <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>
@@ -34,7 +37,7 @@
         
 <!-- Mobile Header -->
     <div id="mobile_header_text" class="push">
-        <h1 class="title"><a href="mo_index.php">Mo Reads You</a></h1>
+        <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
             <h1 class="description">Editing &#38; Proofreading Services</h1>
         <h3 class="menu_link_mobile"><a href="#menu" class="hamburger"> &#9776;</a></h3>
     </div> 
@@ -42,30 +45,28 @@
     <div id="mobile_header_two" class="push">
         <h1 class="tagline">Helping You Be a Better Writer</h1>  
     </div>
-<!-- End Mobile Header -->        
+<!-- End Mobile Header -->     
         
 <!-- Header -->   
-    <!-- Header -->  
-    <div id="header" class="push">  
+    <div id="header" class="push" >  
         
 <!-- Menu -->  
         <h3 class="menu_link">Go To <a href="#menu" class="hamburger"> &#9776;</a></h3>
 
         <nav id="menu" class="panel">
             <ul class="menu_links">
-                <li><a href="mo_index.php">Home | About</a></li>
-                <li><a href="authors.php">Authors</a></li>
+                <li><a href="index.php">Home | About</a></li>
+                <li><a href="#">Authors</a></li>
                 <li><a href="bloggers.php">Bloggers</a></li>
-                <li><a href="#">Businesses</a></li>
+                <li><a href="business.php">Businesses</a></li>
                 <li><a href="contact.php">Contact | Rates</a></li>
             </ul>
         </nav>
-<!-- End Menu -->             
-        
+<!-- End Menu -->               
         <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
         
         <div id="title_div">
-            <h1 class="title"><a href="mo_index.php">Mo Reads You</a></h1>
+            <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
             <h1 class="description">Editing &#38; Proofreading Services</h1>
         </div> 
         
@@ -74,24 +75,24 @@
         </div> 
         
         <div id="profile_image">
-            <a href="mo_index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
+            <a href="index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
         </div>
         
         <div id="page_header_text">
-            <p class="first_line purple_italic ">You need to express yourself in writing.</p>
-            <p class="second_line purple_italic">Here’s what I can do for you.</p>
-        </div>            
+            <p class="first_line purple_italic">It’s not just your Manuscript.</p>
+            <p class="second_line purple_italic">It’s your Reader’s Bliss.</p>
+        </div>
      </div>     
 <!-- End Header -->   
                     
 <!-- Main -->     
     <div id="content">
-        <img alt="A table with a cup of coffee, blank paper, and a pen." class="content_image" src="images/coffee.jpg">
-        <p>You have to communicate in writing. <span class="purple_italic">We all have to communicate in writing.</span> Even if you thrive on face-to-face interactions, you still have to convey your message in writing or risk losing your audience’s fleeting attention.</p>
- 
+        <img alt="A woman sitting on a bed in a hotel room using her laptop" class="content_image" src="images/hotel.jpg">
         
-<!-- Contact Button Form PHP -->
+        <p>You’ve mastered your story. You’ve developed deep, rich, compelling characters. Created the perfect setting. Crafted your plot to perfection.</p>
+  
         
+<!-- Contact Button Form PHP -->       
 <?php
 // OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
 
@@ -171,7 +172,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		$error_msg[] = "Invalid website url.\r\n";
 	
 	if ($error_msg == NULL && $points <= $maxPoints) {
-		$subject = "MRY Contact Button - Business";
+		$subject = "MRY Contact Button - Authors";
 		
 		$message = "You received this e-mail message through your website: \n\n";
 		foreach ($_POST as $key => $val) {
@@ -243,8 +244,8 @@ if ($result != NULL) {
 	echo '<p class="success">'. $result . "</p>";
 }
 ?>
-<!-- End PHP -->   
-            
+<!-- End PHP -->  
+        
 <!-- Contact Button -->        
         <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
             <button type="button" class="button button_contact">Let's Get Started!</button> 
@@ -268,22 +269,38 @@ if ($result != NULL) {
 				</div>
             </div>
         </div>
-<!-- End Contact Button -->         
+<!-- End Contact Button -->   
         
-        <p>You know your product/service like the back of your hand. Your elevator speech is a thing of beauty. In your perfectly crafted presentations, prospects swoon and pull out their Gold Cards. FTF, you’ve got your business covered. In writing . . . not so much. You know what to say, because you say it every day. Now you just need to <span class="purple_italic">get that message into writing.</span></p>
+        <p>You’ve written. And rewritten. And edited. And proofread. And rewritten. And re-edited. And re-proofread. And had your mom, your best friend, and your cat read it.</p>
         
-        <p>Not everyone is great at it. <span class="purple_italic">Not everyone has the knack</span> for carefully crafting a message for meaning, clarity, and connection with readers. Not everyone has the time to drudge through writing copy, much less carefully rereading, and redrafting, and looking up every word that might be misspelled. And, correct grammar and punctuation . . . forget about it. Who knows where to even look that stuff up? (Hint: I do.)</p>
+        <p>It’s perfect!</p>
+        
+        <p>Now what?</p>
+        
+        <p>Now you send it to me. <span class="purple_italic">I’ll help you make it even better.</span></p>
+
+        <p>Because, let’s face it, you’ve been staring at this thing for a really long time. You've read it over and over and over. You’ve memorized entire passages, and rewritten others so many times you’re not sure which version you kept. You’re pretty sure moving those four scenes around didn’t mess with your timeline. And your cat ran it through Spellcheck at least three times.</p> 
+        
+        <p>But . . .</p>
+
+        <p>You need another set of eyes. You need someone to read your masterpiece <span class="purple_italic">like your reader will.</span></p>
+
+        <p>And, that’s what I do. I read your manuscript <span class="purple_italic">with the eyes of your reader</span>, and I tell you what your reader thinks of it. Before your reader gets a hold of it. Before you get that first bad review on Amazon.</p>
+
+        <p>And, I do all the other stuff you expect an editor to do. Like checking grammar and spelling. And making sure your main character’s hair doesn’t inexplicably turn from red to blonde in chapter three, and that it didn’t take four days to drive ten miles.</p>
+
+        <p>Because readers notice these things. And it bugs them. <span class="purple_italic">And you don’t want to bug your readers, do you?</span></p>
+
+        <p>But, you’re nervous. You’ve slaved over this book, and you’ve agonized over how to tell your story in your own voice. And you don’t want some <span class="maroon_italic">Evil Editor</span> with a <span class="maroon_italic">Big Fat Red Sharpie</span> slashing away at your manuscript.</p>
         
         <!-- <div id="download">
             <button type="button" class="button button_download">Downloadable</button> 
             <button type="button" class="button button_download">Downloadable</button> 
         </div> -->
-        
-        <p>Brochures. Flyers. Newsletters. Your website or blog. <span class="purple_italic">Everything that tells your customers, potential customers, and community what you're all about.</span> All in the written word. You need to focus on your message, not your spelling.</p>
-        
-        <p>You don’t have the time. You don’t have the inclination. And you don’t even particularly like the fine-tuning of writing. You know what you want to say. You’ve got it drafted out. But polishing it up and <span class="purple_italic">making it shiny?</span></p>
 
-        <p><span class="purple_italic">You need to outsource this one small task.</span> To me.</p> 
+        <p>Don’t worry. I won’t do that. I don’t even own a red Sharpie. I’ll make suggestions. I’ll point out possible improvements. I’ll highlight the things that are great. And, yes, I’ll fix spelling and grammar and do all of that other stuff that makes writing more readable, <span class="purple_italic">while keeping it distinctly “you.”</span></p>
+        
+        <p>So reading your book is a pleasure for your reader. Because that’s what you want, right? For your book to be <span class="purple_italic">Your Reader’s Bliss.</span></p>
 
         <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
 
@@ -315,11 +332,11 @@ if ($result != NULL) {
     <ul class="credits">
         <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
         <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
-    </ul> 
+    </ul>
 </div>  
 <!-- End Footer -->  
     
-<!-- Javascript -->  
+<!-- Javascript --> 
     <script src="js/bigslide.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/uiMorphingButton_fixed.js"></script>
@@ -382,20 +399,20 @@ if ($result != NULL) {
                 } );
             } );
 
-            // for demo purposes only
+            // the selector is generic when no linkable button present
             [].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
 				bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
             } );
         })();
     </script>
-        
+    
 <!-- Big Slide -->
     <script>
         $(document).ready(function() {
         $('.menu_link, .menu_link_mobile').bigSlide();
         });
-    </script>    
-<!-- End Javascript -->        
+    </script>           
+<!-- End Javascript -->          
     
 </body> 
 </html>
