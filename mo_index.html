@@ -10,13 +10,12 @@
     <meta name="keywords" content="editing, proofreading,writing, author, blogger, content" >
     <meta name="description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else.">
 
-<!--Facebook-->
-    <meta property="og:title" content="Editing and Proofreading Nerd | Mo Reads You" >
+<!-- Facebook -->
+    <meta property="og:title" content="Editing and Proofreading Nerd" >
     <meta property="og:site_name" content="Mo Reads You">
-    <meta property="og:url" content="add later" >
+    <meta property="og:url" content="http://www.moreadsyou.com/" >
     <meta property="og:description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else." >
-    <meta property="og:image" content="add later" >
-
+    <meta property="og:image" content="http://www.moreadsyou.com/images/kcMbynqgi.png" >
     <meta property="og:type" content="website" >
     <meta property="og:locale" content="en_US" >
 
@@ -25,8 +24,9 @@
     <meta property="twitter:title" content="What have you got to say for yourself? I can help you say it better." >
     <meta property="twitter:description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else." >
     <meta property="twitter:creator" content="@moreadsyou" >
-    <meta property="twitter:url" content="add later" >
-    <meta property="twitter:image" content="add later" >
+    <meta property="twitter:url" content="http://www.moreadsyou.com/" >
+    <meta property="twitter:image" content="http://www.moreadsyou.com/images/kcMbynqgi.png" >
+
     
 <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
