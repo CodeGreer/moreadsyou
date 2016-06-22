@@ -3,11 +3,11 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     
-    <title>Editing and Proofreading Nerd</title>
+    <title>Mo Reads You | Editing and Proofreading Nerd</title>
 
     <link rel="canonical" href="http://www.moreadsyou.com/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="editing, proofreading,writing, author, blogger, content" >
+    <meta name="keywords" content="editing, copy editor, proofreading, service, writing, author, blogger, content, atlanta" >
     <meta name="description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else.">
 
 <!-- Facebook -->
@@ -148,13 +148,15 @@
 <?php
 // OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
 
-$yourEmail = "Moreadsyou@outlook.com"; // the email address you wish to receive these mails through
+$yourEmail = "moreadsyou@gmail.com"; // the email address you wish to receive these mails through
+$fromEmail = "monique@moreadsyou.com";        
 $yourWebsite = "Mo Reads You"; // the name of your website
 $thanksPage = ''; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
 $maxPoints = 4; // max points a person can hit before it refuses to submit - recommend 4
 $requiredFields = "name,email,comments"; // names of the fields you'd like to be required as a minimum, separate each field with a comma
 
-
+// ini_set("SMTP", "relay-hosting.secureserver.net");
+        
 // DO NOT EDIT BELOW HERE
 $error_msg = array();
 $result = null;
@@ -242,9 +244,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		$message .= 'Points: '.$points;
 
 		if (strstr($_SERVER['SERVER_SOFTWARE'], "Win")) {
-			$headers   = "From: $yourEmail\r\n";
+			$headers   = "From: $fromEmail\r\n";
 		} else {
-			$headers   = "From: $yourWebsite <$yourEmail>\r\n";	
+			$headers   = "From: $yourWebsite <$fromEmail>\r\n";	
 		}
 		$headers  .= "Reply-To: {$_POST['email']}\r\n";
 
