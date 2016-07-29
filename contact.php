@@ -19,8 +19,13 @@
 <!-- Favicon -->
     
     
-<!-- CSS -->
+<!-- CSS 
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+
+<!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
 <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>

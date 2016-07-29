@@ -3,7 +3,7 @@
 
 $yourEmail = "moreadsyou@gmail.com"; // the email address you wish to receive these mails through
 $yourWebsite = "Mo Reads You"; // the name of your website
-$thanksPage = ''; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
+$thanksPage = 'thanks.html'; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
 $maxPoints = 4; // max points a person can hit before it refuses to submit - recommend 4
 $requiredFields = "name,email,comments"; // names of the fields you'd like to be required as a minimum, separate each field with a comma
 
@@ -173,6 +173,7 @@ if ($result != NULL) {
     
 <!-- Javascript -->  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/simple-expand.js"></script>
     <script src="js/modernizr.custom.js"></script>
     
 </head>
@@ -184,9 +185,6 @@ if ($result != NULL) {
 <!-- Borders -->     
 <div id="left"></div>
 <div id="right"></div>
-    
-<!-- Container -->     
-<div id="container">
         
 <!-- Mobile Header -->
     <div id="mobile_header_text" class="push">
@@ -238,85 +236,96 @@ if ($result != NULL) {
      </div>     
 <!-- End Header -->   
                     
-<!-- Main -->     
-    <main id="content">
+<!-- Main --> 
+    <main>
+        <section id="content">
 
-        <p>You’ve mastered your story. You’ve developed deep, rich, compelling characters. Created the perfect setting. Crafted your plot to perfection.</p>   
-  
-        <p>You’ve written. And rewritten. And edited. And proofread. And rewritten. And re-edited. And re-proofread. And had your mom, your best friend, and your cat read it.</p>
-        
-        <p>It’s perfect!</p>   
-        
-        <p>Now what?</p>
+            <p>You’ve mastered your story. You’ve developed deep, rich, compelling characters. Created the perfect setting. Crafted your plot to perfection.</p>   
 
-        <p>Now you send it to me. <span class="purple_italic">I’ll help you make it even better.</span></p>
+            <p>You’ve written. And rewritten. And edited. And proofread. And rewritten. And re-edited. And re-proofread. And had your mom, your best friend, and your cat read it.</p>
 
-        
-        <p>Because, let’s face it, you’ve been staring at this thing for a really long time. You've read it over and over and over. You’ve memorized entire passages, and rewritten others so many times you’re not sure which version you kept. You’re pretty sure moving those four scenes around didn’t mess with your timeline. And your cat ran it through Spellcheck at least three times.</p>    
-        
-        <p>But . . .</p>
+            <p>It’s perfect!</p>   
 
-        <p>You need another set of eyes. You need someone to read your masterpiece <span class="purple_italic">like your reader will.</span></p>
+            <p>Now what?</p>
 
-        <p>And, that’s what I do. I read your manuscript <span class="purple_italic">with the eyes of your reader</span>, and I tell you what your reader thinks of it. Before your reader gets a hold of it. Before you get that first bad review on Amazon.</p>
+            <p>Now you send it to me. <span class="purple_italic">I’ll help you make it even better.</span></p>
 
-        <p>And, I do all the other stuff you expect an editor to do. Like checking grammar and spelling. And making sure your main character’s hair doesn’t inexplicably turn from red to blonde in chapter three, and that it didn’t take four days to drive ten miles.</p>
 
-        <p>Because readers notice these things. And it bugs them. <span class="purple_italic">And you don’t want to bug your readers, do you?</span></p>
+            <p>Because, let’s face it, you’ve been staring at this thing for a really long time. You've read it over and over and over. You’ve memorized entire passages, and rewritten others so many times you’re not sure which version you kept. You’re pretty sure moving those four scenes around didn’t mess with your timeline. And your cat ran it through Spellcheck at least three times.</p>    
 
-        <p>But, you’re nervous. You’ve slaved over this book, and you’ve agonized over how to tell your story in your own voice. And you don’t want some <span class="maroon_italic">Evil Editor</span> with a <span class="maroon_italic">Big Fat Red Sharpie</span> slashing away at your manuscript.</p>
+            <p>But . . .</p>
 
-        <p>Don’t worry. I won’t do that. I don’t even own a red Sharpie. I’ll make suggestions. I’ll point out possible improvements. I’ll highlight the things that are great. And, yes, I’ll fix spelling and grammar and do all of that other stuff that makes writing more readable, <span class="purple_italic">while keeping it distinctly “you.”</span></p>
-        
-        <p>So reading your book is a pleasure for your reader. Because that’s what you want, right? For your book to be <span class="purple_italic">Your Reader’s Bliss.</span></p>
+            <p>You need another set of eyes. You need someone to read your masterpiece <span class="purple_italic">like your reader will.</span></p>
 
-        <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
+            <p>And, that’s what I do. I read your manuscript <span class="purple_italic">with the eyes of your reader</span>, and I tell you what your reader thinks of it. Before your reader gets a hold of it. Before you get that first bad review on Amazon.</p>
 
-        <p>Chat soon ~ Mo</p>
+            <p>And, I do all the other stuff you expect an editor to do. Like checking grammar and spelling. And making sure your main character’s hair doesn’t inexplicably turn from red to blonde in chapter three, and that it didn’t take four days to drive ten miles.</p>
 
-        <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
-    </main>  
+            <p>Because readers notice these things. And it bugs them. <span class="purple_italic">And you don’t want to bug your readers, do you?</span></p>
+
+            <p>But, you’re nervous. You’ve slaved over this book, and you’ve agonized over how to tell your story in your own voice. And you don’t want some <span class="maroon_italic">Evil Editor</span> with a <span class="maroon_italic">Big Fat Red Sharpie</span> slashing away at your manuscript.</p>
+
+            <p>Don’t worry. I won’t do that. I don’t even own a red Sharpie. I’ll make suggestions. I’ll point out possible improvements. I’ll highlight the things that are great. And, yes, I’ll fix spelling and grammar and do all of that other stuff that makes writing more readable, <span class="purple_italic">while keeping it distinctly “you.”</span></p>
+
+            <p>So reading your book is a pleasure for your reader. Because that’s what you want, right? For your book to be <span class="purple_italic">Your Reader’s Bliss.</span></p>
+
+            <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
+
+            <p>Chat soon ~ Mo</p>
+
+            <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
+        </section>  
     
-    <section id="sidebar">
-        <img alt="An author writing her book while sitting on a bed." src="images/hotel.jpg">
-        
+        <section id="sidebar">
+            <img alt="An author writing her book while sitting on a bed." class="image" src="images/hotel.jpg">
+
 <!-- Contact Button -->        
-        <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
-            <button type="button" class="button button_contact">Let's Get Started!</button> 
-            <div class="popup_content">
-				<div>
-				    <div>
-				        <h3 class="close icon_close">Close</h3>
-				        <!-- <h2 class="popup_title">Do you want a title?</h2> -->
-				        <form action="<?php echo basename(__FILE__); ?>" method="post">
-                            <label for="name">Your name:</label> 
-		                    <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" required/>
-				            <label for="email">Your email:</label> 
-		                    <input type="text" name="email" id="email" value="<?php get_data("email"); ?>" required />
-                            <label for="phone">Your phone number (optional):</label> 
-		                    <input type="text" name="phone" id="phone" value="<?php get_data("phone"); ?>" />
-	                        <label for="comments">What can I do for you?</label><br>
-		                    <textarea name="comments" id="comments"><?php get_data("comments"); ?></textarea>  
-                            <input type="submit" name="submit" id="submit" class="button button_submit" value="Send" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?> />   
-				        </form>
-				    </div>
-				</div>
+            <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
+                <button type="button" class="button button_contact">Let's Get Started!</button> 
+                <div class="popup_content">
+                    <div>
+                        <div>
+                            <h3 class="close icon_close">Close</h3>
+                            <!-- <h2 class="popup_title">Do you want a title?</h2> -->
+                            <form action="<?php echo basename(__FILE__); ?>" method="post">
+                                <label for="name">Your name:</label> 
+                                <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" required/>
+                                <label for="email">Your email:</label> 
+                                <input type="text" name="email" id="email" value="<?php get_data("email"); ?>" required />
+                                <label for="phone">Your phone number (optional):</label> 
+                                <input type="text" name="phone" id="phone" value="<?php get_data("phone"); ?>" />
+                                <label for="comments">What can I do for you?</label><br>
+                                <textarea name="comments" id="comments"><?php get_data("comments"); ?></textarea>  
+                                <input type="submit" name="submit" id="submit" class="button button_submit" value="Send" <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?> />   
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 <!-- End Contact Button -->  
-        
-         <img alt="An author testimonial." src="images/Anna.png">
-        
-        
-        <div id="download">
-            <button type="button" class="button button_download">Downloadable</button> 
-            <button type="button" class="button button_download">Downloadable</button> 
-        </div> 
-    
-    </section>
-<!-- End Main --> 
-</div>
-<!-- End Container -->    
+            
+            <img alt="An author testimonial." class="heart expander" data-expander-target="#testimonial" src="images/Anna.png">
+
+            <div id="testimonial">
+                <p>I can’t recommend Monique Huenergardt highly enough. I’m a writer, and I’m pretty darned good at it. But I’m not a proofreader, and I’m not an editor, so I hired Mo. She’s really good at those things. That would be enough to earn her kudos from 90% of the writers out there.</p>
+
+                <p>But Mo has an incredible ability to read a story and offer easy-to-implement suggestions that improve it. She’s extremely professional in everything she does, and when offering suggestions to improve pace, heighten suspense, reveal backstory, you name it, she hits the nail on the head.</p>
+
+                <p>When I approached Mo about working with me, I’d taken my story as far as I could alone. Now that it’s complete, I shudder to think what would have happened if I’d gone with someone who didn’t take me under their wing and bring me along gently. With Mo’s help, I was able to come away with a much better book.</p>
+
+                <p>I’m grateful she’s found time to work with me on my next book, and I’ve already recommended her to people who’ve asked me who my editor is. She’s so much more than that!</p>
+                
+                <p class="right">- <a class="contact" href="#">Anna Bendewald</a>, author of Stealing Venice and Meet Me At Pere Lachaise, CEO of Hudson-Ivy Press</p>
+            </div>
+
+            <div id="download">
+                <button type="button" class="button button_download">Downloadable</button> 
+                <button type="button" class="button button_download">Downloadable</button> 
+            </div>
+
+        </section>
+    </main>
+<!-- End Main -->    
     
 <div id="push"></div>
  
@@ -417,8 +426,17 @@ if ($result != NULL) {
         $(document).ready(function() {
         $('.menu_link, .menu_link_mobile').bigSlide();
         });
-    </script>           
-<!-- End Javascript -->          
+    </script>   
+    
+    
+<!-- Simple Expand Script -->   
+    
+    <script>
+         $(function () {
+            $('.expander').simpleexpand();
+        });
+    </script>  
+<!-- End Javascript -->             
     
 </body> 
 </html>

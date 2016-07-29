@@ -17,13 +17,6 @@ body {
     flex-direction: column;
 }
 
-#container {
-    max-width: 105em;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-}
-
 #left, #right {
     background: linear-gradient(0deg, rgba(85, 4, 44, 1), #95074D 100%);
 	position: fixed;
@@ -216,19 +209,22 @@ body {
 
 /* Main */
 
-/* #wrapper {
+main {
     position: relative;
-    z-index: 5;
-    background-color: #FFFFFF;
-}*/
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+}
 
 #main, #content {
     max-width: 105em;
-    width: 80%;
-    margin: 1% 10% 1% 10%;
+    width: 50%;
+    margin: 1% 0 1% 10%;
+    float: left;
     position: relative;
     background-color: #FFFFFF;
     z-index: 5;
+    overflow: hidden;
 }
 
 #main p {
@@ -249,36 +245,74 @@ a.contact:visited {color: #000; }
 a.contact:hover {color: #000; }  
 a.contact:active {color: #000; }  
 
-.content_image {
+
+/* Sidebar */
+
+#sidebar {
     max-width: 100%;
     width: 30%;
+    margin: 2% 10% 0 0;
     float: right;
-    margin: 1% 5% 0 5%;
+    position: relative;
+}
+
+.image {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 5% 0 0;
 }
 
 #contact_popup, #download {
-    clear: both;
     max-width: 100%;
-    width: 30%;
-    float: right;
+    width: 90%;
     font-size: 1.8em;
-    margin: 2% 5% 3% 5%;
+    margin: 0 5%;
 }
 
 #contact_popup_index, .contact_popup_index2 {
     clear: both;
     max-width: 100%;
     width: 30%;
-    margin: 3% 35% 0 35%;
+    margin: 35% 0 35%;
     font-size: 1.8em;
-}
-
-#download {
-    margin: -1% 5% 1% 5%;
 }
 
 .maroon_italic {
     color: #8C0750;
+}
+
+.heart {
+    max-width: 100%;
+    width: 60%;
+    margin: 10% 20% 0 20%;
+}
+
+.heart:hover {
+	top: .1em;
+}
+
+.heart:active {
+	top: .5em;
+}
+
+#testimonial {
+    display: none;
+}
+
+#testimonial p {
+    font-size: 1.15em;
+    text-align: justify;
+    margin: 1% 5% 2% 5%;
+}
+
+#testimonial .right {
+    text-align: right;
+}
+
+#download {
+    margin: 5%;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -365,7 +399,7 @@ a.contact:active {color: #000; }
 
 /* Button Styles */
 
-.button {
+.button, .heart {
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
@@ -380,7 +414,7 @@ a.contact:active {color: #000; }
 	transition: all 0.3s;
 }
 
-.button:after {
+.button:after, .heart:after {
 	content: '';
 	position: absolute;
 	z-index: -1;
@@ -440,7 +474,7 @@ a.contact:active {color: #000; }
 	top: .1em;
 }
 
-.button_index:active {
+.button_index:active, .heart:active {
 	box-shadow: 0 0 #BFBFBF;
 	top: .5em;
 }
@@ -609,7 +643,8 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 #success, .fail, .error {
     float: right;
     clear: both;
-    padding: 0 5% 0 2%;
+    width: 80%;
+    padding: 0 5% 0 15%;
     font-size: 1.5em;
     color: #95074D;
 }
