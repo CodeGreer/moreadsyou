@@ -44,7 +44,7 @@ body {
     display: none;
 }
 
-#header {
+header {
     max-width: 105em;
     width: 100%;
     margin: 0 auto;
@@ -126,27 +126,35 @@ body {
     width: 20%;
     margin-right: 10%;
     float: right;
+    z-index: ;
 } 
 
 #menu ul{
     max-width: 105em;
     width: 100%;
-    text-align: center;
     margin: 0 auto;
     color: #000;
 }
 
 #menu ul li {
     font-size: 1.25em;
-    width: 100%;
-    padding: 2.75% 0;
+    width: 95%;
+    margin-left: 5%;
+    padding: 1% 0 2.5% 0;
     list-style-type: none; 
 }
 
 .menu_links a:link {color: #000; text-decoration: none;} 
 .menu_links a:visited {color: #000;}  
-.menu_links a:hover {color: #59297F; text-decoration: underline;}  
-.menu_links a:active {color: #59297F; text-decoration: underline;}  
+.menu_links a:hover {color: #59297F; }  
+.menu_links a:active {color: #59297F; }  
+
+.bold_purple {
+    font-family: 'Judson', serif;
+    font-size: 1.35em;
+    font-weight: bold;
+    color: #59297F;
+}
 
 .panel {
     position: fixed;
@@ -214,17 +222,17 @@ main {
     overflow: hidden;
     display: flex;
     flex-flow: row wrap;
+    position: relative;
+    z-index: 5;
+    background-color: #FFFFFF;
 }
 
 #main, #content {
     max-width: 105em;
-    width: 50%;
+    width: 52%;
     margin: 1% 0 1% 10%;
     float: left;
-    position: relative;
     background-color: #FFFFFF;
-    z-index: 5;
-    overflow: hidden;
 }
 
 #main p {
@@ -245,12 +253,15 @@ a.contact:visited {color: #000; }
 a.contact:hover {color: #000; }  
 a.contact:active {color: #000; }  
 
+.maroon_italic {
+    color: #8C0750;
+}
 
 /* Sidebar */
 
 #sidebar {
     max-width: 100%;
-    width: 30%;
+    width: 28%;
     margin: 2% 10% 0 0;
     float: right;
     position: relative;
@@ -266,7 +277,16 @@ a.contact:active {color: #000; }
     max-width: 100%;
     width: 90%;
     font-size: 1.8em;
-    margin: 0 5%;
+    margin: 0 10% 0 0;
+}
+
+#download {
+    font-size: 1.8em;
+}
+
+#sidebar p {
+    width: 90%;
+    margin: 10% 0;
 }
 
 #contact_popup_index, .contact_popup_index2 {
@@ -277,14 +297,11 @@ a.contact:active {color: #000; }
     font-size: 1.8em;
 }
 
-.maroon_italic {
-    color: #8C0750;
-}
 
 .heart {
     max-width: 100%;
     width: 60%;
-    margin: 10% 20% 0 20%;
+    margin: 0 0 0 16%;
 }
 
 .heart:hover {
@@ -300,21 +317,14 @@ a.contact:active {color: #000; }
 }
 
 #testimonial p {
-    font-size: 1.15em;
+    font-size: 1.05em;
     text-align: justify;
-    margin: 1% 5% 2% 5%;
+    margin: 1% 10% 2% 0;
 }
 
-#testimonial .right {
-    text-align: right;
+.italic {
+    font-style: italic;
 }
-
-#download {
-    margin: 5%;
-    position: absolute;
-    bottom: 0;
-}
-
 
 /* Contact Page*/
 
@@ -831,7 +841,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     flex: 1;
 }
     
-#footer{
+footer{
     max-width: 105em;
     width: 80%;
     height: auto;

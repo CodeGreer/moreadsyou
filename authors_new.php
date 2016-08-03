@@ -305,9 +305,9 @@ if ($result != NULL) {
 <!-- End Contact Button --> 
             
 <!-- Downloadable -->            
-            <div id="download">
-                <form method="get" action="download/Ideal_Reader_Profile.docx">
-                    <button type="button" class="button button_download">Ideal Reader Profile</button>
+            <div id="download"> 
+                <form method="get" action="Ideal_Reader_Profile.docx">
+                    <button class="button button_download">Ideal Reader Profile</button>
                 </form>
             </div>
             <p>Literally tilde bespoke, art party ugh small batch sartorial kickstarter swag tousled. Whatever church-key fingerstache, kitsch portland beard neutra skateboard photo booth cardigan direct trade umami. <span class="maroon_italic">Click the green button to download my free Ideal Reader Profile worksheet.</span></p>
@@ -420,8 +420,8 @@ if ($result != NULL) {
                 } );
             } );
 
-            // the selector is generic when no linkable button present
-            [].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
+             // causing issues with linkable buttons so used div selector
+            [].slice.call( document.querySelectorAll( '#contact_popup' ) ).forEach( function( bttn ) { 
 				bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
             } );
         })();

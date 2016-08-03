@@ -431,7 +431,7 @@ if ($result != NULL) {
             } );
 
             // causing issues with linkable buttons so used div selector
-            [].slice.call( document.querySelectorAll( '#contact_button_index' ) ).forEach( function( bttn ) { 
+            [].slice.call( document.querySelectorAll( '#contact_popup_index' ) ).forEach( function( bttn ) { 
 				bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
             } );
         })();
