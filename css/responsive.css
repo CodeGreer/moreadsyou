@@ -205,8 +205,8 @@ h1.description {
 }
  
 #page_header_text {
-    width: 90%;
-    margin: 1% 5% 0 5%;
+    width: 80%;
+    margin: 1% 10% 0 10%;
 }     
     
 main, #content, #sidebar {
@@ -214,9 +214,9 @@ main, #content, #sidebar {
     margin: 0 auto;
 } 
    
-#content p, #sidebar p, #sidebar > p {
-    width: 90%;
-    margin: 2% 5%;
+#content p, #sidebar p, #sidebar > p, #contact_left p, .show {
+    width: 80%;
+    margin: 2% 10% 4% 10%;
     font-size: 1.35em;
 }
     
@@ -247,8 +247,8 @@ main, #content, #sidebar {
 }  
     
 #testimonial_mobile p {
-    width: 100%;
-    margin: 2% 2.5% 0 0;
+    width: 90%;
+    margin: 2% 0 0 5%;
     font-size: 1.35em;  
 }    
     
@@ -320,7 +320,7 @@ h3.close {
 }  
     
 #contactpage_form label {
-    font-size: 1.5em;
+    font-size: 1.35em;
 }    
 
 .popup_content input {
@@ -364,7 +364,7 @@ input[type=text], input[type=password], input[type=email], input[type=number], t
 /* Footer */
     
 #push {
-    height: 2em;
+    height: 4em;
 }    
     
 footer{

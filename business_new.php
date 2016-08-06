@@ -297,14 +297,24 @@ if ($result != NULL) {
             <br><br>
             
 <!-- Testimonial -->            
-            <img alt="Clickable heart with the words 'Anna says...'" class="heart expander" data-expander-target="#testimonial" src="images/Anna.png">
+            <img alt="Clickable heart with the words 'Jason says...'" class="heart expander" data-expander-target="#testimonial" src="images/Jason.png">
 
             <div id="testimonial">
                 <p>I always encourage members of the Georgia Manufacturing Alliance to play to their strengths and avoid wasting time on parts of their business they're not suited for. Surround yourself with professionals that can fill in your weak spots. I wish I wouldn't have waited so long to hire someone to help us refine our written marketing materials. I'm so glad that Monique is helping us look so much better.</p>
                 
                 <p>- <a class="contact" href="#">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
             </div>
-<!-- End Testimonial -->                
+<!-- End Testimonial --> 
+            
+<!-- Mobile Testimonial -->            
+            <img alt="Clickable heart with the words 'Jason says...'" class="heart_mobile" src="images/Jason.png">
+
+            <div id="testimonial_mobile">
+                <p>I always encourage members of the Georgia Manufacturing Alliance to play to their strengths and avoid wasting time on parts of their business they're not suited for. Surround yourself with professionals that can fill in your weak spots. I wish I wouldn't have waited so long to hire someone to help us refine our written marketing materials. I'm so glad that Monique is helping us look so much better.</p>
+                
+                <p>- <a class="contact" href="#">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
+            </div>
+<!-- End Mobile Testimonial -->                      
             
         </section>
     </main>
