@@ -94,11 +94,7 @@ body {
   
 body {
     font-size: 70%;
-}  
-    
-#push {
-    height: 7em;
-}    
+}      
 }
 
 /*** Up to 880px 150% ***/
@@ -107,10 +103,6 @@ body {
 body {
    font-size: 62%;
 }  
-    
-#push {
-    height: 10em;
-}
 }
 
 
@@ -217,10 +209,48 @@ h1.description {
     margin: 1% 5% 0 5%;
 }     
     
-main, #content {
+main, #content, #sidebar {
     width: 100%;
     margin: 0 auto;
+} 
+   
+#content p, #sidebar p, #sidebar > p {
+    width: 90%;
+    margin: 2% 5%;
+    font-size: 1.35em;
+}
+    
+/* Sidebar */
+
+#sidebar img {
+    max-width: 100%;
+    width: 60%;
+    margin: 10% 20% 2% 20%;
+}
+
+#sidebar > .heart {
+    display: none;
+}
+
+.heart_mobile, #testimonial_mobile {
+    display: block;
 }  
+    
+#testimonial_mobile {
+    margin: 5%;  
+}    
+    
+#sidebar .heart_mobile {
+    max-width: 100%;
+    width: 20%;
+    margin: 0 40% 1% 40%;
+}  
+    
+#testimonial_mobile p {
+    width: 100%;
+    margin: 2% 2.5% 0 0;
+    font-size: 1.35em;  
+}    
     
 
 /* Main Divs */
@@ -337,7 +367,7 @@ input[type=text], input[type=password], input[type=email], input[type=number], t
     height: 2em;
 }    
     
-#footer{
+footer{
     width: 100%;
     margin: 0 auto;    
 }  
@@ -401,7 +431,22 @@ body {
     
 .tagline {
     font-size: 1.75em;
-}     
+}  
+  
+    
+/* Sidebar */
+    
+#sidebar img {
+    width: 90%;
+    margin: 10% 5% 2% 5%;
+}    
+    
+#sidebar .heart_mobile {
+    max-width: 100%;
+    width: 40%;
+    margin: 0 30% 1% 30%;
+}  
+    
     
 /* Main Divs */
 

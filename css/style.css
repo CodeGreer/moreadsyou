@@ -329,6 +329,10 @@ a.contact:active {color: #000; }
 	top: .5em;
 }
 
+.heart_mobile, #testimonial_mobile {
+    display: none;
+}
+
 #testimonial {
     display: none;
 }
@@ -372,7 +376,7 @@ a.contact:active {color: #000; }
 
 #contact_left p, #contact_right p {
     width: 90%;
-    margin: 0 5%;
+    margin: 0 10%;
 }
 
 #contact_right a:link {color: #FFFFFF;}
@@ -381,7 +385,7 @@ a.contact:active {color: #000; }
 #contact_right a:active {color: #FFFFFF;}
 
 #green_box, #contactpage_form {
-    margin: 2% 5%;
+    margin: 2% 10%;
     padding: 4% 0;
     color: #FFFFFF;
     background: linear-gradient(0deg, rgba(19, 107, 62, 1), #17854D 100%);
@@ -853,7 +857,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     max-width: 105em;
     width: 100%;
     margin: 0 auto;
-    flex: 1;
+    height: 0;
 }
     
 footer{

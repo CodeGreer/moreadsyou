@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		$error_msg[] = "Invalid website url.\r\n";
 	
 	if ($error_msg == NULL && $points <= $maxPoints) {
-		$subject = "MRY Contact Button - Authors";
+		$subject = "MRY Contact Button - Business";
 		
 		$message = "You received this e-mail message through your website: \n\n";
 		foreach ($_POST as $key => $val) {
@@ -149,7 +149,7 @@ if ($result != NULL) {
 	echo '<p class="success">'. $result . "</p>";
 }
 ?>
-<!-- End PHP -->  
+<!-- End PHP --> 
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -157,9 +157,8 @@ if ($result != NULL) {
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Authors | Mo Reads You</title>
-    
-    
+    <title>Business | Mo Reads You</title>
+
 <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -182,7 +181,7 @@ if ($result != NULL) {
 <!-- Borders -->     
 <div id="left"></div>
 <div id="right"></div>
-    
+        
 <!-- Mobile Header -->
     <header id="mobile_header_text" class="push">
         <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
@@ -193,10 +192,10 @@ if ($result != NULL) {
     <header id="mobile_header_two" class="push">
         <h1 class="tagline">Helping You Be a Better Writer</h1>  
     </header>
-<!-- End Mobile Header -->     
+<!-- End Mobile Header -->        
         
 <!-- Header -->   
-    <header id="header" class="push" >  
+    <header id="header" class="push">  
         
 <!-- Menu -->  
         <h3 class="menu_link">Go To <a href="#menu" class="hamburger"> &#9776;</a></h3>
@@ -204,12 +203,12 @@ if ($result != NULL) {
         <nav id="menu" class="panel">
             <ul class="menu_links">
                 <li><a href="index.php">Home | About</a></li>
-                <li><a href="#"><span class="bold_purple">A</span>uthors</a></li><li><a href="business.php"><span class="bold_purple">B</span>usinesses</a></li>
+                <li><a href="authors.php"><span class="bold_purple">A</span>uthors</a></li><li><a href="#"><span class="bold_purple">B</span>usinesses</a></li>
                 <li><a href="bloggers.php"><span class="bold_purple">C</span>ontent Producers</a></li>
                 <li><a href="contact.php">Contact | Rates</a></li>
             </ul>
         </nav>
-<!-- End Menu -->  
+<!-- End Menu -->           
         
         <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
         
@@ -227,52 +226,36 @@ if ($result != NULL) {
         </div>
         
         <div id="page_header_text">
-            <p class="first_line purple_italic">It’s not just your Manuscript.</p>
-            <p class="second_line purple_italic">It’s your Reader’s Bliss.</p>
-        </div>
+            <p class="first_line purple_italic ">You need to express yourself in writing.</p>
+            <p class="second_line purple_italic">Here’s what I can do for you.</p>
+        </div>            
     </header>     
 <!-- End Header -->   
                     
-<!-- Main -->     
+<!-- Main -->   
     <main>
         <section id="content">
-            <p>You’ve mastered your story. You’ve developed deep, rich, compelling characters. Created the perfect setting. Crafted your plot to perfection.</p>
+            <p>You have to communicate in writing. <span class="purple_italic">We all have to communicate in writing.</span> Even if you thrive on face-to-face interactions, you still have to convey your message in writing or risk losing your audience’s fleeting attention.</p>
 
-            <p>You’ve written. And rewritten. And edited. And proofread. And rewritten. And re-edited. And re-proofread. And had your mom, your best friend, and your cat read it.</p>
+            <p>You know your product/service like the back of your hand. Your elevator speech is a thing of beauty. In your perfectly crafted presentations, prospects swoon and pull out their Gold Cards. FTF, you’ve got your business covered. In writing . . . not so much. You know what to say, because you say it every day. Now you just need to <span class="purple_italic">get that message into writing.</span></p>
 
-            <p>It’s perfect!</p>
+            <p>Not everyone is great at it. <span class="purple_italic">Not everyone has the knack</span> for carefully crafting a message for meaning, clarity, and connection with readers. Not everyone has the time to drudge through writing copy, much less carefully rereading, and redrafting, and looking up every word that might be misspelled. And, correct grammar and punctuation . . . forget about it. Who knows where to even look that stuff up? (Hint: I do.)</p>
 
-            <p>Now what?</p>
+            <p>Brochures. Flyers. Newsletters. Your website or blog. <span class="purple_italic">Everything that tells your customers, potential customers, and community what you're all about.</span> All in the written word. You need to focus on your message, not your spelling.</p>
 
-            <p>Now you send it to me. <span class="purple_italic">I’ll help you make it even better.</span></p>
+            <p>You don’t have the time. You don’t have the inclination. And you don’t even particularly like the fine-tuning of writing. You know what you want to say. You’ve got it drafted out. But polishing it up and <span class="purple_italic">making it shiny?</span></p>
 
-            <p>Because, let’s face it, you’ve been staring at this thing for a really long time. You've read it over and over and over. You’ve memorized entire passages, and rewritten others so many times you’re not sure which version you kept. You’re pretty sure moving those four scenes around didn’t mess with your timeline. And your cat ran it through Spellcheck at least three times.</p> 
-
-            <p>But . . .</p>
-
-            <p>You need another set of eyes. You need someone to read your masterpiece <span class="purple_italic">like your reader will.</span></p>
-
-            <p>And, that’s what I do. I read your manuscript <span class="purple_italic">with the eyes of your reader</span>, and I tell you what your reader thinks of it. Before your reader gets a hold of it. Before you get that first bad review on Amazon.</p>
-
-            <p>And, I do all the other stuff you expect an editor to do. Like checking grammar and spelling. And making sure your main character’s hair doesn’t inexplicably turn from red to blonde in chapter three, and that it didn’t take four days to drive ten miles.</p>
-
-            <p>Because readers notice these things. And it bugs them. <span class="purple_italic">And you don’t want to bug your readers, do you?</span></p>
-
-            <p>But, you’re nervous. You’ve slaved over this book, and you’ve agonized over how to tell your story in your own voice. And you don’t want some <span class="maroon">Evil Editor</span> with a <span class="maroon">Big Fat Red Sharpie</span> slashing away at your manuscript.</p>
-
-            <p>Don’t worry. I won’t do that. I don’t even own a red Sharpie. I’ll make suggestions. I’ll point out possible improvements. I’ll highlight the things that are great. And, yes, I’ll fix spelling and grammar and do all of that other stuff that makes writing more readable, <span class="purple_italic">while keeping it distinctly “you.”</span></p>
-
-            <p>So reading your book is a pleasure for your reader. Because that’s what you want, right? For your book to be <span class="purple_italic">Your Reader’s Bliss.</span></p>
+            <p><span class="purple_italic">You need to outsource this one small task.</span> To me.</p> 
 
             <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
 
             <p>Chat soon ~ Mo</p>
 
             <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
-        </section>
+        </section> 
         
         <section id="sidebar">
-            <img alt="A woman sitting on a bed in a hotel room using her laptop" src="images/hotel.jpg">
+            <img alt="A table with a cup of coffee, blank paper, and a pen." class="content_image" src="images/coffee.jpg">
             
 <!-- Contact Button -->        
             <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
@@ -297,68 +280,35 @@ if ($result != NULL) {
                     </div>
                 </div>
             </div>
-<!-- End Contact Button -->   
+<!-- End Contact Button -->  
             <br>
             
-<!-- Download Text and Button -->    
+<!-- Download Text and Button -->
             <p class="bold center">Why You Need an Ideal Reader Profile</p>
 
             <p>You’ve got a story, but who are you telling it to? You might have an idea of who’s going to read your book, but the clearer you are about who they are, the more enjoyable the reading experience will be for them. Also, your Editor will want one. <span class="bold maroon">Click the green button to download my free Ideal Reader Profile template.</span></p>
             
             <div id="download">                
-                <form method="get" action="Ideal_Reader_Profile.docx">
+                <form method="get" action="Ideal_Reader_business.docx">
                     <button class="button button_download">Free Profile Template</button>
                 </form> 
             </div>
-            
-            <br>
-            
-            <p class="bold center">Why You Need a Style Sheet</p>
-
-            <p>You’ve put in agonizing hours deciding on every detail of your story. And your Editor is going to make a thousand tiny decisions as she works through your manuscript. How’s she going to keep track of all that? Take a look at my Style Sheet template to find out why Editors use them, and why you should be using one while you write. <span class="bold maroon">Click the green button to download my free Style Sheet template.</span></p>
-            
-            <div id="download">                
-                <form method="get" action="Style_Sheet.docx">
-                    <button class="button button_download">Free Style Template</button>
-                </form> 
-            </div>
-<!-- End Download Text and Button --> 
+<!-- End Download Text and Button -->
             <br><br>
             
 <!-- Testimonial -->            
             <img alt="Clickable heart with the words 'Anna says...'" class="heart expander" data-expander-target="#testimonial" src="images/Anna.png">
 
             <div id="testimonial">
-                <p>I can’t recommend Monique Huenergardt highly enough. I’m a writer, and I’m pretty darned good at it. But I’m not a proofreader, and I’m not an editor, so I hired Mo. She’s really good at those things. That would be enough to earn her kudos from 90% of the writers out there.</p>
-
-                <p>But Mo has an incredible ability to read a story and offer easy-to-implement suggestions that improve it. She’s extremely professional in everything she does, and when offering suggestions to improve pace, heighten suspense, reveal backstory, you name it, she hits the nail on the head.</p>
-
-                <p>When I approached Mo about working with me, I’d taken my story as far as I could alone. Now that it’s complete, I shudder to think what would have happened if I’d gone with someone who didn’t take me under their wing and bring me along gently. With Mo’s help, I was able to come away with a much better book.</p>
-
-                <p>I’m grateful she’s found time to work with me on my next book, and I’ve already recommended her to people who’ve asked me who my editor is. She’s so much more than that!</p>
+                <p>I always encourage members of the Georgia Manufacturing Alliance to play to their strengths and avoid wasting time on parts of their business they're not suited for. Surround yourself with professionals that can fill in your weak spots. I wish I wouldn't have waited so long to hire someone to help us refine our written marketing materials. I'm so glad that Monique is helping us look so much better.</p>
                 
-                <p>- <a class="contact" href="#">Anna Bendewald</a>, author of <span class="italic">Stealing Venice</span> and <span class="italic">Meet Me At Pere Lachaise</span>, CEO of Hudson-Ivy Press</p>
+                <p>- <a class="contact" href="#">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
             </div>
-<!-- End Testimonial -->  
+<!-- End Testimonial -->                
             
-<!-- Mobile Testimonial -->            
-            <img alt="Clickable heart with the words 'Anna says...'" class="heart_mobile" src="images/Anna.png">
-
-            <div id="testimonial_mobile">
-                <p>I can’t recommend Monique Huenergardt highly enough. I’m a writer, and I’m pretty darned good at it. But I’m not a proofreader, and I’m not an editor, so I hired Mo. She’s really good at those things. That would be enough to earn her kudos from 90% of the writers out there.</p>
-
-                <p>But Mo has an incredible ability to read a story and offer easy-to-implement suggestions that improve it. She’s extremely professional in everything she does, and when offering suggestions to improve pace, heighten suspense, reveal backstory, you name it, she hits the nail on the head.</p>
-
-                <p>When I approached Mo about working with me, I’d taken my story as far as I could alone. Now that it’s complete, I shudder to think what would have happened if I’d gone with someone who didn’t take me under their wing and bring me along gently. With Mo’s help, I was able to come away with a much better book.</p>
-
-                <p>I’m grateful she’s found time to work with me on my next book, and I’ve already recommended her to people who’ve asked me who my editor is. She’s so much more than that!</p>
-                
-                <p>- <a class="contact" href="#">Anna Bendewald</a>, author of <span class="italic">Stealing Venice</span> and <span class="italic">Meet Me At Pere Lachaise</span>, CEO of Hudson-Ivy Press</p>
-            </div>
-<!-- End Mobile Testimonial -->                   
         </section>
-    </main>   
-<!-- End Main -->   
+    </main>
+<!-- End Main -->    
     
     <div id="push"></div>
  
@@ -380,11 +330,11 @@ if ($result != NULL) {
         <ul class="credits">
             <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
             <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
-        </ul>
+        </ul> 
     </footer>  
 <!-- End Footer -->  
     
-<!-- Javascript --> 
+<!-- Javascript -->  
     <script src="js/bigslide.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/uiMorphingButton_fixed.js"></script>
@@ -447,19 +397,19 @@ if ($result != NULL) {
                 } );
             } );
 
-            // the selector is generic when no linkable button present
+            // for demo purposes only
             [].slice.call( document.querySelectorAll( '#contact_button' ) ).forEach( function( bttn ) { 
 				bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
             } );
         })();
     </script>
-    
+        
 <!-- Big Slide -->
     <script>
         $(document).ready(function() {
         $('.menu_link, .menu_link_mobile').bigSlide();
         });
-    </script>     
+    </script>  
     
 <!-- Simple Expand Script -->   
     
@@ -467,8 +417,8 @@ if ($result != NULL) {
          $(function () {
             $('.expander').simpleexpand();
         });
-    </script>      
-<!-- End Javascript -->          
+    </script>          
+<!-- End Javascript -->        
     
 </body> 
 </html>
