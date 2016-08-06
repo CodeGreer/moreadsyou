@@ -160,9 +160,6 @@ if ($result != NULL) {
     <title>Authors | Mo Reads You</title>
     
     
-<!-- CSS
-    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
-    
 <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -178,14 +175,14 @@ if ($result != NULL) {
     
 </head>
   
-<body> 
+<body class="site"> 
     
 <!-- start my code -->
     
 <!-- Borders -->     
 <div id="left"></div>
 <div id="right"></div>
-        
+    
 <!-- Mobile Header -->
     <header id="mobile_header_text" class="push">
         <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
@@ -199,7 +196,7 @@ if ($result != NULL) {
 <!-- End Mobile Header -->     
         
 <!-- Header -->   
-    <header class="push" >  
+    <header id="header" class="push" >  
         
 <!-- Menu -->  
         <h3 class="menu_link">Go To <a href="#menu" class="hamburger"> &#9776;</a></h3>
@@ -207,13 +204,13 @@ if ($result != NULL) {
         <nav id="menu" class="panel">
             <ul class="menu_links">
                 <li><a href="index.php">Home | About</a></li>
-                <li><a href="#"><span class="bold_purple">A</span>uthors</a></li>
-                <li><a href="business.php"><span class="bold_purple">B</span>usinesses</a></li>
+                <li><a href="#"><span class="bold_purple">A</span>uthors</a></li><li><a href="business.php"><span class="bold_purple">B</span>usinesses</a></li>
                 <li><a href="bloggers.php"><span class="bold_purple">C</span>ontent Producers</a></li>
                 <li><a href="contact.php">Contact | Rates</a></li>
             </ul>
         </nav>
-<!-- End Menu -->               
+<!-- End Menu -->  
+        
         <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
         
         <div id="title_div">
@@ -226,7 +223,7 @@ if ($result != NULL) {
         </div> 
         
         <div id="profile_image">
-            <a href="index.php"><img alt="Monique of Mo Reads You" src="images/mo.jpg"></a>
+            <a href="index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
         </div>
         
         <div id="page_header_text">
@@ -236,22 +233,20 @@ if ($result != NULL) {
     </header>     
 <!-- End Header -->   
                     
-<!-- Main --> 
+<!-- Main -->     
     <main>
         <section id="content">
-
-            <p>You’ve mastered your story. You’ve developed deep, rich, compelling characters. Created the perfect setting. Crafted your plot to perfection.</p>   
+            <p>You’ve mastered your story. You’ve developed deep, rich, compelling characters. Created the perfect setting. Crafted your plot to perfection.</p>
 
             <p>You’ve written. And rewritten. And edited. And proofread. And rewritten. And re-edited. And re-proofread. And had your mom, your best friend, and your cat read it.</p>
 
-            <p>It’s perfect!</p>   
+            <p>It’s perfect!</p>
 
             <p>Now what?</p>
 
             <p>Now you send it to me. <span class="purple_italic">I’ll help you make it even better.</span></p>
 
-
-            <p>Because, let’s face it, you’ve been staring at this thing for a really long time. You've read it over and over and over. You’ve memorized entire passages, and rewritten others so many times you’re not sure which version you kept. You’re pretty sure moving those four scenes around didn’t mess with your timeline. And your cat ran it through Spellcheck at least three times.</p>    
+            <p>Because, let’s face it, you’ve been staring at this thing for a really long time. You've read it over and over and over. You’ve memorized entire passages, and rewritten others so many times you’re not sure which version you kept. You’re pretty sure moving those four scenes around didn’t mess with your timeline. And your cat ran it through Spellcheck at least three times.</p> 
 
             <p>But . . .</p>
 
@@ -263,7 +258,7 @@ if ($result != NULL) {
 
             <p>Because readers notice these things. And it bugs them. <span class="purple_italic">And you don’t want to bug your readers, do you?</span></p>
 
-            <p>But, you’re nervous. You’ve slaved over this book, and you’ve agonized over how to tell your story in your own voice. And you don’t want some <span class="maroon_italic">Evil Editor</span> with a <span class="maroon_italic">Big Fat Red Sharpie</span> slashing away at your manuscript.</p>
+            <p>But, you’re nervous. You’ve slaved over this book, and you’ve agonized over how to tell your story in your own voice. And you don’t want some <span class="maroon">Evil Editor</span> with a <span class="maroon">Big Fat Red Sharpie</span> slashing away at your manuscript.</p>
 
             <p>Don’t worry. I won’t do that. I don’t even own a red Sharpie. I’ll make suggestions. I’ll point out possible improvements. I’ll highlight the things that are great. And, yes, I’ll fix spelling and grammar and do all of that other stuff that makes writing more readable, <span class="purple_italic">while keeping it distinctly “you.”</span></p>
 
@@ -274,11 +269,11 @@ if ($result != NULL) {
             <p>Chat soon ~ Mo</p>
 
             <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
-        </section>  
-    
+        </section>
+        
         <section id="sidebar">
-            <img alt="An author writing her book while sitting on a bed." class="image" src="images/hotel.jpg">
-
+            <img alt="A woman sitting on a bed in a hotel room using her laptop" src="images/hotel.jpg">
+            
 <!-- Contact Button -->        
             <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
                 <button type="button" class="button button_contact">Let's Get Started!</button> 
@@ -302,19 +297,36 @@ if ($result != NULL) {
                     </div>
                 </div>
             </div>
-<!-- End Contact Button --> 
+<!-- End Contact Button -->   
+            <br>
             
-<!-- Downloadable -->            
-            <div id="download">
-                <form method="get" action="download/Ideal_Reader_Profile.docx">
-                    <button type="button" class="button button_download">Ideal Reader Profile</button>
-                </form>
+<!-- Download Text and Button -->    
+            <p class="bold center">Why You Need an Ideal Reader Profile</p>
+
+            <p>You’ve got a story, but who are you telling it to? You might have an idea of who’s going to read your book, but the clearer you are about who they are, the more enjoyable the reading experience will be for them. Also, your Editor will want one. <span class="bold maroon">Click the green button to download my free Ideal Reader Profile template.</span></p>
+            
+            <div id="download">                
+                <form method="get" action="Ideal_Reader_Profile.docx">
+                    <button class="button button_download">Free Profile Template</button>
+                </form> 
             </div>
-            <p>Literally tilde bespoke, art party ugh small batch sartorial kickstarter swag tousled. Whatever church-key fingerstache, kitsch portland beard neutra skateboard photo booth cardigan direct trade umami. <span class="maroon_italic">Click the green button to download my free Ideal Reader Profile worksheet.</span></p>
-<!-- End Downloadable -->            
+            
+            <br>
+            
+            <p class="bold center">Why You Need a Style Sheet</p>
+
+            <p>You’ve put in agonizing hours deciding on every detail of your story. And your Editor is going to make a thousand tiny decisions as she works through your manuscript. How’s she going to keep track of all that? Take a look at my Style Sheet template to find out why Editors use them, and why you should be using one while you write. <span class="bold maroon">Click the green button to download my free Style Sheet template.</span></p>
+            
+            <div id="download">                
+                <form method="get" action="Style_Sheet.docx">
+                    <button class="button button_download">Free Style Template</button>
+                </form> 
+            </div>
+<!-- End Download Text and Button --> 
+            <br><br>
             
 <!-- Testimonial -->            
-            <img alt="An author testimonial." class="heart expander" data-expander-target="#testimonial" src="images/Anna.png">
+            <img alt="Clickable heart with the words 'Anna says...'" class="heart expander" data-expander-target="#testimonial" src="images/Anna.png">
 
             <div id="testimonial">
                 <p>I can’t recommend Monique Huenergardt highly enough. I’m a writer, and I’m pretty darned good at it. But I’m not a proofreader, and I’m not an editor, so I hired Mo. She’s really good at those things. That would be enough to earn her kudos from 90% of the writers out there.</p>
@@ -327,11 +339,10 @@ if ($result != NULL) {
                 
                 <p>- <a class="contact" href="#">Anna Bendewald</a>, author of <span class="italic">Stealing Venice</span> and <span class="italic">Meet Me At Pere Lachaise</span>, CEO of Hudson-Ivy Press</p>
             </div>
-<!-- End Testimonial -->            
-
+<!-- End Testimonial -->                         
         </section>
-    </main>
-<!-- End Main -->    
+    </main>   
+<!-- End Main -->   
     
     <div id="push"></div>
  
@@ -339,9 +350,9 @@ if ($result != NULL) {
 <!-- Footer -->      
     <footer>
          <ul class="social">
-            <li><a href="https://twitter.com/MoReadsYou" target="_blank"><img alt="Mo Reads You Twitter link" src="images/twitter.jpg"></a></li>
-            <li><a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Mo Reads You Facebook link" src="images/facebook.jpg"></a></li>
-            <li><a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="Mo Reads You LinkedIn link" src="images/linkedin.jpg"></a></li>
+            <li><a href="https://twitter.com/MoReadsYou" target="_blank"><img alt="Twitter" src="images/twitter.jpg"></a></li>
+            <li><a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a></li>
+            <li><a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
          </ul>
 
         <ul class="copyright">
@@ -421,7 +432,7 @@ if ($result != NULL) {
             } );
 
             // the selector is generic when no linkable button present
-            [].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
+            [].slice.call( document.querySelectorAll( '#contact_button' ) ).forEach( function( bttn ) { 
 				bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
             } );
         })();
@@ -432,8 +443,7 @@ if ($result != NULL) {
         $(document).ready(function() {
         $('.menu_link, .menu_link_mobile').bigSlide();
         });
-    </script>   
-    
+    </script>     
     
 <!-- Simple Expand Script -->   
     
@@ -441,8 +451,8 @@ if ($result != NULL) {
          $(function () {
             $('.expander').simpleexpand();
         });
-    </script>  
-<!-- End Javascript -->             
+    </script>      
+<!-- End Javascript -->          
     
 </body> 
 </html>

@@ -1,157 +1,9 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    
-    <title>Mo Reads You | Editing and Proofreading Nerd</title>
-
-    <link rel="canonical" href="http://www.moreadsyou.com/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="editing, copy editor, proofreading, service, writing, author, blogger, content, atlanta" >
-    <meta name="description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else.">
-
-<!-- Facebook -->
-    <meta property="og:title" content="Editing and Proofreading Nerd" >
-    <meta property="og:site_name" content="Mo Reads You">
-    <meta property="og:url" content="http://www.moreadsyou.com/" >
-    <meta property="og:description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else." >
-    <meta property="og:image" content="http://www.moreadsyou.com/images/mo.jpg" >
-    <meta property="og:type" content="website" >
-    <meta property="og:locale" content="en_US" >
-
-<!--Twitter-->
-    <meta property="twitter:card" content="summary" >
-    <meta property="twitter:title" content="What have you got to say for yourself? I can help you say it better." >
-    <meta property="twitter:description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else." >
-    <meta property="twitter:creator" content="@moreadsyou" >
-    <meta property="twitter:url" content="http://www.moreadsyou.com/" >
-    <meta property="twitter:image" content="http://www.moreadsyou.com/images/mo.jpg" >
-
-    
-<!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b10909">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    
-<!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
-
-<!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>
-    
-<!-- Javascript -->  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    
-</head>
-  
-<body class="site"> 
-    
-<!-- start my code -->
-    
-<!-- Borders -->   
-<div id="left"></div>
-<div id="right"></div> 
-    
-<!-- Container -->      
-<div id="container">
-    
-<!-- Mobile Header -->
-    <div id="mobile_header_text" class="push">
-        <h1 class="title"><a href="#">Mo Reads You</a></h1>
-            <h1 class="description">Editing &#38; Proofreading Services</h1>
-        <h3 class="menu_link_mobile"><a href="#menu" class="hamburger"> &#9776;</a></h3>
-    </div> 
-    
-    <div id="mobile_header_two" class="push">
-        <h1 class="tagline">Helping You Be a Better Writer</h1>  
-    </div>
-<!-- End Mobile Header -->      
-        
-<!-- Header -->  
-    <div id="header" class="push">  
-        
-<!-- Menu -->  
-        <h3 class="menu_link">Go To <a href="#menu" class="hamburger"> &#9776;</a></h3>
-
-        <nav id="menu" class="panel">
-            <ul class="menu_links">
-                <li><a href="#">Home | About</a></li>
-                <li><a href="authors.php">Authors</a></li>
-                <li><a href="bloggers.php">Bloggers</a></li>
-                <li><a href="business.php">Businesses</a></li>
-                <li><a href="contact.php">Contact | Rates</a></li>
-            </ul>
-        </nav>
-<!-- End Menu -->             
-        
-        <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
-        
-        <div id="title_div">
-            <h1 class="title"><a href="#">Mo Reads You</a></h1>
-            <h1 class="description">Editing &#38; Proofreading Services</h1>
-        </div> 
-        
-        <div id="tagline_div">
-            <h1 class="tagline">Helping You Be a Better Writer</h1>   
-        </div> 
-        
-        <div id="profile_image">
-            <img alt="Picture of Monique" src="images/mo.jpg">
-        </div>
-        
-        <div id="page_header_text">
-            <p class="first_line purple_italic">So, what have you got to say for yourself?</p>
-            <p class="second_line purple_italic">I can help you say it better.</p>
-        </div>
-     </div>     
-<!-- End Header -->      
-                    
-<!-- Main -->     
-    <div id="main">
-        
-        <div id="left_button">
-            <form method="get" action="authors.php">
-                <button class="button button_index">You’re writing the next Great American Novel and need someone to help massage it into shape. And to check your grammar.<span class="more">More...</span></button>
-            </form>
-        </div>
-        
-        <div id="middle_button">
-            <form method="get" action="bloggers.php">
-                <button class="button button_index">You have Brilliant Ideas that will Change the Internet and need to be sure typos don’t make you look like an amateur. Before you hit the publish button.<span class="more">More...</span></button>
-            </form>    
-        </div>
-        
-        <div id="right_button">
-            <form method="get" action="business.php">
-                <button class="button button_index">You’ve got something to say and need help using your words. Without being lectured to by your 5th grade English teacher.<span class="more">More...</span></button>
-            </form>    
-        </div>
-        
-<!-- Contact Button Form PHP -->       
 <?php
 // OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
 
-$yourEmail = "moreadsyou@gmail.com"; // the email address you wish to receive these mails through
-$fromEmail = "monique@moreadsyou.com";        
+$yourEmail = "moreadsyou@gmail.com"; // the email address you wish to receive these mails through        
 $yourWebsite = "Mo Reads You"; // the name of your website
-$thanksPage = ''; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
+$thanksPage = 'thanks.html'; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
 $maxPoints = 4; // max points a person can hit before it refuses to submit - recommend 4
 $requiredFields = "name,email,comments"; // names of the fields you'd like to be required as a minimum, separate each field with a comma
 
@@ -299,6 +151,151 @@ if ($result != NULL) {
 }
 ?>
 <!-- End PHP -->  
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    
+    <title>Mo Reads You | Editing and Proofreading Nerd</title>
+
+    <link rel="canonical" href="http://www.moreadsyou.com/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="editing, copy editor, proofreading, service, writing, author, blogger, content, atlanta" >
+    <meta name="description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else.">
+
+<!-- Facebook -->
+    <meta property="og:title" content="Editing and Proofreading Nerd" >
+    <meta property="og:site_name" content="Mo Reads You">
+    <meta property="og:url" content="http://www.moreadsyou.com/" >
+    <meta property="og:description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else." >
+    <meta property="og:image" content="http://www.moreadsyou.com/images/mo.jpg" >
+    <meta property="og:type" content="website" >
+    <meta property="og:locale" content="en_US" >
+
+<!--Twitter-->
+    <meta property="twitter:card" content="summary" >
+    <meta property="twitter:title" content="What have you got to say for yourself? I can help you say it better." >
+    <meta property="twitter:description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else." >
+    <meta property="twitter:creator" content="@moreadsyou" >
+    <meta property="twitter:url" content="http://www.moreadsyou.com/" >
+    <meta property="twitter:image" content="http://www.moreadsyou.com/images/mo.jpg" >
+
+    
+<!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b10909">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+<!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    
+
+<!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>
+    
+<!-- Javascript -->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    
+</head>
+  
+<body class="site"> 
+    
+<!-- start my code -->
+    
+<!-- Borders -->   
+<div id="left"></div>
+<div id="right"></div> 
+    
+<!-- Mobile Header -->
+    <header id="mobile_header_text" class="push">
+        <h1 class="title"><a href="#">Mo Reads You</a></h1>
+            <h1 class="description">Editing &#38; Proofreading Services</h1>
+        <h3 class="menu_link_mobile"><a href="#menu" class="hamburger"> &#9776;</a></h3>
+    </header> 
+    
+    <header id="mobile_header_two" class="push">
+        <h1 class="tagline">Helping You Be a Better Writer</h1>  
+    </header>
+<!-- End Mobile Header -->      
+        
+<!-- Header -->  
+    <header id="header" class="push">  
+        
+<!-- Menu -->  
+        <h3 class="menu_link">Go To <a href="#menu" class="hamburger"> &#9776;</a></h3>
+
+        <nav id="menu" class="panel">
+            <ul class="menu_links">
+                <li><a href="#">Home | About</a></li>
+                <li><a href="authors.php"><span class="bold_purple">A</span>uthors</a></li><li><a href="business.php"><span class="bold_purple">B</span>usinesses</a></li>
+                <li><a href="bloggers.php"><span class="bold_purple">C</span>ontent Producers</a></li>
+                <li><a href="contact.php">Contact | Rates</a></li>
+            </ul>
+        </nav>
+<!-- End Menu -->             
+        
+        <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
+        
+        <div id="title_div">
+            <h1 class="title"><a href="#">Mo Reads You</a></h1>
+            <h1 class="description">Editing &#38; Proofreading Services</h1>
+        </div> 
+        
+        <div id="tagline_div">
+            <h1 class="tagline">Helping You Be a Better Writer</h1>   
+        </div> 
+        
+        <div id="profile_image">
+            <img alt="Picture of Monique" src="images/mo.jpg">
+        </div>
+        
+        <div id="page_header_text">
+            <p class="first_line purple_italic">So, what have you got to say for yourself?</p>
+            <p class="second_line purple_italic">I can help you say it better.</p>
+        </div>
+    </header>     
+<!-- End Header -->      
+                    
+<!-- Main -->     
+    <main>
+        
+        <div id="left_button">
+            <form method="get" action="authors.php">
+                <button class="button button_index">You’re writing the next Great American Novel and need someone to help massage it into shape. And to check your grammar.<span class="more">More...</span></button>
+            </form>
+        </div>
+        
+        <div id="middle_button">
+            <form method="get" action="bloggers.php">
+                <button class="button button_index">You have Brilliant Ideas that will Change the Internet and need to be sure typos don’t make you look like an amateur. Before you hit the publish button.<span class="more">More...</span></button>
+            </form>    
+        </div>
+        
+        <div id="right_button">
+            <form method="get" action="business.php">
+                <button class="button button_index">You’ve got something to say and need help using your words. Without being lectured to by your 5th grade English teacher.<span class="more">More...</span></button>
+            </form>    
+        </div>
         
 <!-- Contact Button -->        
         <div id="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
@@ -334,32 +331,30 @@ if ($result != NULL) {
 <!-- End Contact Button Mobile -->  
         
         <p>Hey, I'm Monique. I'm that annoying person who notices the one tiny error in just about anything, and points it out. I've always been an avid reader, and will generally take a shot at reading just about anything a friend recommends. I love being pulled into someone else's mind, their ideas, their world. I love a lovely turn of phrase, a delightful word, a perfectly expressed sentiment. I hate garden path sentences, confusing punctuation, and anything else that interrupts absolute immersion in the reading experience. I channel that passion into helping other people express themselves in writing as clearly and seamlessly as possible. I help them be better writers. I'd like to help you, too.</p>
-    </div>   
-<!-- End Main -->     
-</div>
-<!-- End Container -->    
+    </main>   
+<!-- End Main -->      
     
-<div id="push"></div>
+    <div id="push"></div>
      
 <!-- Footer -->      
-<div id="footer">
-     <ul class="social">
-        <li><a href="https://twitter.com/MoReadsYou" target="_blank"><img alt="Twitter" src="images/twitter.jpg"></a></li>
-        <li><a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a></li>
-        <li><a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
-     </ul>
-    
-    <ul class="copyright">
-        <li>&#169; Monique Huenergardt</li>
-        <li><a class="contact" href="mailto:moreadsyou@outlook.com">MoReadsYou@outlook.com</a></li>
-        <li>Lawrenceville, GA, USA</li>
-    </ul>   
-    
-    <ul class="credits">
-        <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
-        <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
-    </ul>
-</div>  
+    <footer>
+         <ul class="social">
+            <li><a href="https://twitter.com/MoReadsYou" target="_blank"><img alt="Twitter" src="images/twitter.jpg"></a></li>
+            <li><a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a></li>
+            <li><a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
+         </ul>
+
+        <ul class="copyright">
+            <li>&#169; Monique Huenergardt</li>
+            <li><a class="contact" href="mailto:moreadsyou@outlook.com">MoReadsYou@outlook.com</a></li>
+            <li>Lawrenceville, GA, USA</li>
+        </ul>   
+
+        <ul class="credits">
+            <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
+            <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
+        </ul>
+    </footer>  
 <!-- End Footer -->  
     
 <!-- Javascript -->  

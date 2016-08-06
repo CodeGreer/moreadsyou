@@ -217,7 +217,7 @@ h1.description {
     margin: 1% 5% 0 5%;
 }     
     
-#main, #content {
+main, #content {
     width: 100%;
     margin: 0 auto;
 }  
@@ -337,7 +337,7 @@ input[type=text], input[type=password], input[type=email], input[type=number], t
     height: 2em;
 }    
     
-footer{
+#footer{
     width: 100%;
     margin: 0 auto;    
 }  

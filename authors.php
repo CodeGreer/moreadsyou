@@ -1,3 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Authors | Mo Reads You</title>
+    
+    
+    
+    
+<!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+
+<!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>
+    
+<!-- Javascript -->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    
+</head>
+  
+<body class="site"> 
+    
+<!-- start my code -->
+    
+<!-- Borders -->     
+<div id="left"></div>
+<div id="right"></div>
+    
+<!-- Container -->     
+<div id="container">
+        
+<!-- Mobile Header -->
+    <div id="mobile_header_text" class="push">
+        <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
+            <h1 class="description">Editing &#38; Proofreading Services</h1>
+        <h3 class="menu_link_mobile"><a href="#menu" class="hamburger"> &#9776;</a></h3>
+    </div> 
+    
+    <div id="mobile_header_two" class="push">
+        <h1 class="tagline">Helping You Be a Better Writer</h1>  
+    </div>
+<!-- End Mobile Header -->     
+        
+<!-- Header -->   
+    <div id="header" class="push" >  
+        
+<!-- Menu -->  
+        <h3 class="menu_link">Go To <a href="#menu" class="hamburger"> &#9776;</a></h3>
+
+        <nav id="menu" class="panel">
+            <ul class="menu_links">
+                <li><a href="index.php">Home | About</a></li>
+                <li><a href="#">Authors</a></li>
+                <li><a href="bloggers.php">Bloggers</a></li>
+                <li><a href="business.php">Businesses</a></li>
+                <li><a href="contact.php">Contact | Rates</a></li>
+            </ul>
+        </nav>
+<!-- End Menu -->               
+        <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
+        
+        <div id="title_div">
+            <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
+            <h1 class="description">Editing &#38; Proofreading Services</h1>
+        </div> 
+        
+        <div id="tagline_div">
+            <h1 class="tagline">Helping You Be a Better Writer</h1>   
+        </div> 
+        
+        <div id="profile_image">
+            <a href="index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
+        </div>
+        
+        <div id="page_header_text">
+            <p class="first_line purple_italic">It’s not just your Manuscript.</p>
+            <p class="second_line purple_italic">It’s your Reader’s Bliss.</p>
+        </div>
+     </div>     
+<!-- End Header -->   
+                    
+<!-- Main -->     
+    <div id="content">
+        <img alt="A woman sitting on a bed in a hotel room using her laptop" class="content_image" src="images/hotel.jpg">
+        
+        <p>You’ve mastered your story. You’ve developed deep, rich, compelling characters. Created the perfect setting. Crafted your plot to perfection.</p>
+  
+        
+<!-- Contact Button Form PHP -->       
 <?php
 // OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
 
@@ -150,135 +242,6 @@ if ($result != NULL) {
 }
 ?>
 <!-- End PHP -->  
-
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-	<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Authors | Mo Reads You</title>
-    
-    
-<!-- CSS
-    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
-    
-<!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-
-<!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>
-    
-<!-- Javascript -->  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    
-</head>
-  
-<body class="site"> 
-    
-<!-- start my code -->
-    
-<!-- Borders -->     
-<div id="left"></div>
-<div id="right"></div>
-    
-<!-- Container -->     
-<div id="container">
-        
-<!-- Mobile Header -->
-    <div id="mobile_header_text" class="push">
-        <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
-            <h1 class="description">Editing &#38; Proofreading Services</h1>
-        <h3 class="menu_link_mobile"><a href="#menu" class="hamburger"> &#9776;</a></h3>
-    </div> 
-    
-    <div id="mobile_header_two" class="push">
-        <h1 class="tagline">Helping You Be a Better Writer</h1>  
-    </div>
-<!-- End Mobile Header -->     
-        
-<!-- Header -->   
-    <div id="header" class="push" >  
-        
-<!-- Menu -->  
-        <h3 class="menu_link">Go To <a href="#menu" class="hamburger"> &#9776;</a></h3>
-
-        <nav id="menu" class="panel">
-            <ul class="menu_links">
-                <li><a href="index.php">Home | About</a></li>
-                <li><a href="#">Authors</a></li>
-                <li><a href="bloggers.php">Bloggers</a></li>
-                <li><a href="business.php">Businesses</a></li>
-                <li><a href="contact.php">Contact | Rates</a></li>
-            </ul>
-        </nav>
-<!-- End Menu -->               
-        <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
-        
-        <div id="title_div">
-            <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
-            <h1 class="description">Editing &#38; Proofreading Services</h1>
-        </div> 
-        
-        <div id="tagline_div">
-            <h1 class="tagline">Helping You Be a Better Writer</h1>   
-        </div> 
-        
-        <div id="profile_image">
-            <a href="index.php"><img alt="Monique of Mo Reads You" src="images/mo.jpg"></a>
-        </div>
-        
-        <div id="page_header_text">
-            <p class="first_line purple_italic">It’s not just your Manuscript.</p>
-            <p class="second_line purple_italic">It’s your Reader’s Bliss.</p>
-        </div>
-     </div>     
-<!-- End Header -->   
-                    
-<!-- Main -->     
-    <main id="content">
-
-        <p>You’ve mastered your story. You’ve developed deep, rich, compelling characters. Created the perfect setting. Crafted your plot to perfection.</p>   
-  
-        <p>You’ve written. And rewritten. And edited. And proofread. And rewritten. And re-edited. And re-proofread. And had your mom, your best friend, and your cat read it.</p>
-        
-        <p>It’s perfect!</p>   
-        
-        <p>Now what?</p>
-
-        <p>Now you send it to me. <span class="purple_italic">I’ll help you make it even better.</span></p>
-
-        
-        <p>Because, let’s face it, you’ve been staring at this thing for a really long time. You've read it over and over and over. You’ve memorized entire passages, and rewritten others so many times you’re not sure which version you kept. You’re pretty sure moving those four scenes around didn’t mess with your timeline. And your cat ran it through Spellcheck at least three times.</p>    
-        
-        <p>But . . .</p>
-
-        <p>You need another set of eyes. You need someone to read your masterpiece <span class="purple_italic">like your reader will.</span></p>
-
-        <p>And, that’s what I do. I read your manuscript <span class="purple_italic">with the eyes of your reader</span>, and I tell you what your reader thinks of it. Before your reader gets a hold of it. Before you get that first bad review on Amazon.</p>
-
-        <p>And, I do all the other stuff you expect an editor to do. Like checking grammar and spelling. And making sure your main character’s hair doesn’t inexplicably turn from red to blonde in chapter three, and that it didn’t take four days to drive ten miles.</p>
-
-        <p>Because readers notice these things. And it bugs them. <span class="purple_italic">And you don’t want to bug your readers, do you?</span></p>
-
-        <p>But, you’re nervous. You’ve slaved over this book, and you’ve agonized over how to tell your story in your own voice. And you don’t want some <span class="maroon_italic">Evil Editor</span> with a <span class="maroon_italic">Big Fat Red Sharpie</span> slashing away at your manuscript.</p>
-
-        <p>Don’t worry. I won’t do that. I don’t even own a red Sharpie. I’ll make suggestions. I’ll point out possible improvements. I’ll highlight the things that are great. And, yes, I’ll fix spelling and grammar and do all of that other stuff that makes writing more readable, <span class="purple_italic">while keeping it distinctly “you.”</span></p>
-        
-        <p>So reading your book is a pleasure for your reader. Because that’s what you want, right? For your book to be <span class="purple_italic">Your Reader’s Bliss.</span></p>
-
-        <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
-
-        <p>Chat soon ~ Mo</p>
-
-        <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
-    </main>  
-    
-    <section id="sidebar">
-        <img alt="An author writing her book while sitting on a bed." src="images/hotel.jpg">
         
 <!-- Contact Button -->        
         <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
@@ -303,17 +266,45 @@ if ($result != NULL) {
 				</div>
             </div>
         </div>
-<!-- End Contact Button -->  
+<!-- End Contact Button -->   
         
-         <img alt="An author testimonial." src="images/Anna.png">
+        <p>You’ve written. And rewritten. And edited. And proofread. And rewritten. And re-edited. And re-proofread. And had your mom, your best friend, and your cat read it.</p>
         
+        <p>It’s perfect!</p>
         
-        <div id="download">
+        <p>Now what?</p>
+        
+        <p>Now you send it to me. <span class="purple_italic">I’ll help you make it even better.</span></p>
+
+        <p>Because, let’s face it, you’ve been staring at this thing for a really long time. You've read it over and over and over. You’ve memorized entire passages, and rewritten others so many times you’re not sure which version you kept. You’re pretty sure moving those four scenes around didn’t mess with your timeline. And your cat ran it through Spellcheck at least three times.</p> 
+        
+        <p>But . . .</p>
+
+        <p>You need another set of eyes. You need someone to read your masterpiece <span class="purple_italic">like your reader will.</span></p>
+
+        <p>And, that’s what I do. I read your manuscript <span class="purple_italic">with the eyes of your reader</span>, and I tell you what your reader thinks of it. Before your reader gets a hold of it. Before you get that first bad review on Amazon.</p>
+
+        <p>And, I do all the other stuff you expect an editor to do. Like checking grammar and spelling. And making sure your main character’s hair doesn’t inexplicably turn from red to blonde in chapter three, and that it didn’t take four days to drive ten miles.</p>
+
+        <p>Because readers notice these things. And it bugs them. <span class="purple_italic">And you don’t want to bug your readers, do you?</span></p>
+
+        <p>But, you’re nervous. You’ve slaved over this book, and you’ve agonized over how to tell your story in your own voice. And you don’t want some <span class="maroon_italic">Evil Editor</span> with a <span class="maroon_italic">Big Fat Red Sharpie</span> slashing away at your manuscript.</p>
+        
+        <!-- <div id="download">
             <button type="button" class="button button_download">Downloadable</button> 
             <button type="button" class="button button_download">Downloadable</button> 
-        </div> 
-    
-    </section>
+        </div> -->
+
+        <p>Don’t worry. I won’t do that. I don’t even own a red Sharpie. I’ll make suggestions. I’ll point out possible improvements. I’ll highlight the things that are great. And, yes, I’ll fix spelling and grammar and do all of that other stuff that makes writing more readable, <span class="purple_italic">while keeping it distinctly “you.”</span></p>
+        
+        <p>So reading your book is a pleasure for your reader. Because that’s what you want, right? For your book to be <span class="purple_italic">Your Reader’s Bliss.</span></p>
+
+        <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
+
+        <p>Chat soon ~ Mo</p>
+
+        <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
+    </div>   
 <!-- End Main --> 
 </div>
 <!-- End Container -->    
@@ -324,9 +315,9 @@ if ($result != NULL) {
 <!-- Footer -->      
 <div id="footer">
      <ul class="social">
-        <li><a href="https://twitter.com/MoReadsYou" target="_blank"><img alt="Mo Reads You Twitter link" src="images/twitter.jpg"></a></li>
-        <li><a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Mo Reads You Facebook link" src="images/facebook.jpg"></a></li>
-        <li><a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="Mo Reads You LinkedIn link" src="images/linkedin.jpg"></a></li>
+        <li><a href="https://twitter.com/MoReadsYou" target="_blank"><img alt="Twitter" src="images/twitter.jpg"></a></li>
+        <li><a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a></li>
+        <li><a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></li>
      </ul>
     
     <ul class="copyright">

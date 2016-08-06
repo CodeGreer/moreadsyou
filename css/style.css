@@ -17,6 +17,13 @@ body {
     flex-direction: column;
 }
 
+#container {
+    max-width: 105em;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
 #left, #right {
     background: linear-gradient(0deg, rgba(85, 4, 44, 1), #95074D 100%);
 	position: fixed;
@@ -44,7 +51,7 @@ body {
     display: none;
 }
 
-header {
+#header {
     max-width: 105em;
     width: 100%;
     margin: 0 auto;
@@ -126,35 +133,33 @@ header {
     width: 20%;
     margin-right: 10%;
     float: right;
-    z-index: ;
 } 
 
 #menu ul{
     max-width: 105em;
-    width: 100%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 0 0 0 10%;
     color: #000;
 }
 
 #menu ul li {
-    font-size: 1.25em;
-    width: 95%;
-    margin-left: 5%;
-    padding: 1% 0 2.5% 0;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 2.25% 0;
     list-style-type: none; 
+}
+
+.bold_purple {
+    font-family: 'Judson', serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #59297F;
 }
 
 .menu_links a:link {color: #000; text-decoration: none;} 
 .menu_links a:visited {color: #000;}  
-.menu_links a:hover {color: #59297F; }  
-.menu_links a:active {color: #59297F; }  
-
-.bold_purple {
-    font-family: 'Judson', serif;
-    font-size: 1.35em;
-    font-weight: bold;
-    color: #59297F;
-}
+.menu_links a:hover {color: #59297F; font-weight: bold;}  
+.menu_links a:active {color: #59297F;}  
 
 .panel {
     position: fixed;
@@ -217,35 +222,39 @@ header {
 
 /* Main */
 
-main {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap;
+/* #wrapper {
     position: relative;
     z-index: 5;
     background-color: #FFFFFF;
-}
+}*/
 
-#main, #content {
+main {
     max-width: 105em;
-    width: 52%;
-    margin: 1% 0 1% 10%;
-    float: left;
+    width: 80%;
+    margin: 1% 10% 1% 10%;
+    position: relative;
     background-color: #FFFFFF;
+    z-index: 5;
 }
 
-#main p {
+main p {
     font-size: 1.35em;
     width: 90%;
     margin: 5% 5% 0 5%;
     text-align: justify;
 }
 
-#content p {
+#content {
+    max-width: 100%;
+    width: 60%;
+    margin: 1% 0;
+    float: left;
+}
+
+#content > p {
     font-size: 1.35em;
     text-align: justify;
-    margin: 2% 5% 2% 5%;
+    margin: 0 5% 2% 7.5%;
 }
 
 a.contact:link {color: #000; } 
@@ -253,55 +262,63 @@ a.contact:visited {color: #000; }
 a.contact:hover {color: #000; }  
 a.contact:active {color: #000; }  
 
-.maroon_italic {
-    color: #8C0750;
-}
 
 /* Sidebar */
 
 #sidebar {
     max-width: 100%;
-    width: 28%;
-    margin: 2% 10% 0 0;
-    float: right;
-    position: relative;
+    width: 35%;
+    margin: 1% 0;
+    float: left;
 }
 
-.image {
+#sidebar img {
     max-width: 100%;
     width: 90%;
-    margin: 0 5% 0 0;
+    margin: 1% 0 0 10%;
+}
+
+#sidebar > p {
+    font-size: 1.05em;
+    margin-left: 10%;   
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align:center;
+}
+
+.maroon {
+    color: #8C0750;
 }
 
 #contact_popup, #download {
+    clear: both;
     max-width: 100%;
     width: 90%;
-    font-size: 1.8em;
-    margin: 0 10% 0 0;
-}
-
-#download {
-    font-size: 1.8em;
-}
-
-#sidebar p {
-    width: 90%;
-    margin: 10% 0;
+    font-size: 1.6em;
+    margin: 0 0 3% 10%;
 }
 
 #contact_popup_index, .contact_popup_index2 {
     clear: both;
     max-width: 100%;
     width: 30%;
-    margin: 35% 0 35%;
+    margin: 3% 35% 0 35%;
     font-size: 1.8em;
 }
 
+#download {
+    
+}
 
-.heart {
+#sidebar > .heart {
     max-width: 100%;
     width: 60%;
-    margin: 0 0 0 16%;
+    margin: 0 15% 1% 25%;
 }
 
 .heart:hover {
@@ -316,10 +333,9 @@ a.contact:active {color: #000; }
     display: none;
 }
 
-#testimonial p {
+#testimonial > p {
     font-size: 1.05em;
-    text-align: justify;
-    margin: 1% 10% 2% 0;
+    margin-left: 10%
 }
 
 .italic {
@@ -653,8 +669,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 #success, .fail, .error {
     float: right;
     clear: both;
-    width: 80%;
-    padding: 0 5% 0 15%;
+    padding: 0 5% 0 2%;
     font-size: 1.5em;
     color: #95074D;
 }
