@@ -158,6 +158,9 @@ if ($result != NULL) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Business | Mo Reads You</title>
+    
+    <meta name="keywords" content="business website editing, business products and services, business content editor, atlanta" >
+    <meta name="description" content="You need to express yourself in writing. Here’s what I can do for you. Editing and proofreading services for authors, content producers, and everyone else.">
 
 <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -284,12 +287,12 @@ if ($result != NULL) {
             <br>
             
 <!-- Download Text and Button -->
-            <p class="bold center">Why You Need an Ideal Reader Profile</p>
+            <p class="bold center">Why You Need an Ideal Customer Profile</p>
 
-            <p>You’ve got a story, but who are you telling it to? You might have an idea of who’s going to read your book, but the clearer you are about who they are, the more enjoyable the reading experience will be for them. Also, your Editor will want one. <span class="bold maroon">Click the green button to download my free Ideal Reader Profile template.</span></p>
+            <p>You know your product, and you know your customers. The clearer you are about the particulars of your Ideal Customer, the better you’ll be able to communicate with them and with new prospects. <span class="bold maroon">Click the green button to download my free Ideal Customer Profile template.</span></p>
             
             <div id="download">                
-                <form method="get" action="Ideal_Reader_business.docx">
+                <form method="get" action="Ideal_Reader_business.pdf">
                     <button class="button button_download">Free Profile Template</button>
                 </form> 
             </div>
@@ -302,7 +305,16 @@ if ($result != NULL) {
             <div id="testimonial">
                 <p>I always encourage members of the Georgia Manufacturing Alliance to play to their strengths and avoid wasting time on parts of their business they're not suited for. Surround yourself with professionals that can fill in your weak spots. I wish I wouldn't have waited so long to hire someone to help us refine our written marketing materials. I'm so glad that Monique is helping us look so much better.</p>
                 
-                <p>- <a class="contact" href="#">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
+                <p>- <a class="contact" href="http://www.georgiamanufacturingalliance.com/">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
+                <br>
+            </div>
+            
+            <img alt="Clickable heart with the words 'Cal says...'" class="heart expander" data-expander-target=".cal" src="images/Cal.png">
+
+            <div class="cal">
+                <p>Mo is a hard working and detailed proofreader / editor. I am a private golf instructor and Mo assisted in proofreading and editing all my pictures, videos and submissions for my new website and blogs. Mo is not afraid to make suggestions or be critical about the content of the work she is proofreading or editing. All is done with a professional attitude. I would not have any other person do it other than Mo.</p>
+                
+                <p>- <a class="contact" href="http://teeitupforefun.com/">Cal Vollmer</a>, Tee It Up Fore Fun</p>
             </div>
 <!-- End Testimonial --> 
             
@@ -312,7 +324,16 @@ if ($result != NULL) {
             <div id="testimonial_mobile">
                 <p>I always encourage members of the Georgia Manufacturing Alliance to play to their strengths and avoid wasting time on parts of their business they're not suited for. Surround yourself with professionals that can fill in your weak spots. I wish I wouldn't have waited so long to hire someone to help us refine our written marketing materials. I'm so glad that Monique is helping us look so much better.</p>
                 
-                <p>- <a class="contact" href="#">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
+                <p>- <a class="contact" href="http://www.georgiamanufacturingalliance.com/">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
+                <br><br>
+            </div>
+            
+            <img alt="Clickable heart with the words 'Cal says...'" class="heart_mobile" src="images/Cal.png">
+
+            <div id="testimonial_mobile">
+                 <p>Mo is a hard working and detailed proofreader / editor. I am a private golf instructor and Mo assisted in proofreading and editing all my pictures, videos and submissions for my new website and blogs. Mo is not afraid to make suggestions or be critical about the content of the work she is proofreading or editing. All is done with a professional attitude. I would not have any other person do it other than Mo.</p>
+                
+                <p>- <a class="contact" href="http://teeitupforefun.com/">Cal Vollmer</a>, Tee It Up Fore Fun</p>
             </div>
 <!-- End Mobile Testimonial -->                      
             

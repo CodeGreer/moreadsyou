@@ -333,11 +333,11 @@ a.contact:active {color: #000; }
     display: none;
 }
 
-#testimonial {
+#testimonial, .donna, .cal {
     display: none;
 }
 
-#testimonial > p {
+#testimonial > p, .donna > p, .cal >p {
     font-size: 1.05em;
     margin-left: 10%
 }
@@ -350,6 +350,7 @@ a.contact:active {color: #000; }
 
 .contact_flex {
     display: flex;
+    margin: 1% 0;
 }
 
 #contact_left, #contact_right, #contact_left2, #contact_right2 {

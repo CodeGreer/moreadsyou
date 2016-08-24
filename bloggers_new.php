@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		$error_msg[] = "Invalid website url.\r\n";
 	
 	if ($error_msg == NULL && $points <= $maxPoints) {
-		$subject = "MRY Contact Button - Business";
+		$subject = "MRY Contact Button - Bloggers";
 		
 		$message = "You received this e-mail message through your website: \n\n";
 		foreach ($_POST as $key => $val) {
@@ -149,7 +149,7 @@ if ($result != NULL) {
 	echo '<p class="success">'. $result . "</p>";
 }
 ?>
-<!-- End PHP --> 
+<!-- End PHP -->
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -157,8 +157,8 @@ if ($result != NULL) {
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Business | Mo Reads You</title>
-
+    <title>Bloggers | Mo Reads You</title>
+    
 <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -181,7 +181,7 @@ if ($result != NULL) {
 <!-- Borders -->     
 <div id="left"></div>
 <div id="right"></div>
-        
+    
 <!-- Mobile Header -->
     <header id="mobile_header_text" class="push">
         <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
@@ -192,9 +192,9 @@ if ($result != NULL) {
     <header id="mobile_header_two" class="push">
         <h1 class="tagline">Helping You Be a Better Writer</h1>  
     </header>
-<!-- End Mobile Header -->        
+<!-- End Mobile Header -->    
         
-<!-- Header -->   
+<!-- Header -->  
     <header id="header" class="push">  
         
 <!-- Menu -->  
@@ -203,12 +203,12 @@ if ($result != NULL) {
         <nav id="menu" class="panel">
             <ul class="menu_links">
                 <li><a href="index.php">Home | About</a></li>
-                <li><a href="authors.php"><span class="bold_purple">A</span>uthors</a></li><li><a href="#"><span class="bold_purple">B</span>usinesses</a></li>
-                <li><a href="bloggers.php"><span class="bold_purple">C</span>ontent Producers</a></li>
+                <li><a href="authors.php"><span class="bold_purple">A</span>uthors</a></li><li><a href="business.php"><span class="bold_purple">B</span>usinesses</a></li>
+                <li><a href="#"><span class="bold_purple">C</span>ontent Producers</a></li>
                 <li><a href="contact.php">Contact | Rates</a></li>
             </ul>
         </nav>
-<!-- End Menu -->           
+<!-- End Menu -->              
         
         <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
         
@@ -226,36 +226,42 @@ if ($result != NULL) {
         </div>
         
         <div id="page_header_text">
-            <p class="first_line purple_italic ">You need to express yourself in writing.</p>
-            <p class="second_line purple_italic">Here’s what I can do for you.</p>
+            <p class="first_line purple_italic">Web-based content producers.</p>
+            <p class="second_line purple_italic">You know who you are.</p>
         </div>            
     </header>     
 <!-- End Header -->   
                     
-<!-- Main -->   
+<!-- Main -->  
     <main>
         <section id="content">
-            <p>You have to communicate in writing. <span class="purple_italic">We all have to communicate in writing.</span> Even if you thrive on face-to-face interactions, you still have to convey your message in writing or risk losing your audience’s fleeting attention.</p>
+            <p>You’re an ideal person. An information lizard. A mustard of quality content production.</p>
 
-            <p>You know your product/service like the back of your hand. Your elevator speech is a thing of beauty. In your perfectly crafted presentations, prospects swoon and pull out their Gold Cards. FTF, you’ve got your business covered. In writing . . . not so much. You know what to say, because you say it every day. Now you just need to <span class="purple_italic">get that message into writing.</span></p>
+            <p>See what I did there? Even just one wrong letter can skew your meaning.</p>                      
 
-            <p>Not everyone is great at it. <span class="purple_italic">Not everyone has the knack</span> for carefully crafting a message for meaning, clarity, and connection with readers. Not everyone has the time to drudge through writing copy, much less carefully rereading, and redrafting, and looking up every word that might be misspelled. And, correct grammar and punctuation . . . forget about it. Who knows where to even look that stuff up? (Hint: I do.)</p>
+            <p><span class="purple_italic">Errors kill your credibility.</span> They make your reader want to stop reading. Opt out of your newsletter. Or even (gasp) stop visiting your blog.</p>
 
-            <p>Brochures. Flyers. Newsletters. Your website or blog. <span class="purple_italic">Everything that tells your customers, potential customers, and community what you're all about.</span> All in the written word. You need to focus on your message, not your spelling.</p>
+            <p><span class="purple_italic">You know your stuff.</span> You know the importance of your message to your audience. And sometimes in the flush of creativity, in the rush of getting just the perfect combination of words onto the screen, <span class="purple_italic">mistakes creep in.</span> Even when you proofread your own work, they manage to elude you.</p>
 
-            <p>You don’t have the time. You don’t have the inclination. And you don’t even particularly like the fine-tuning of writing. You know what you want to say. You’ve got it drafted out. But polishing it up and <span class="purple_italic">making it shiny?</span></p>
+            <p>You need another set of eyes. You need a <span class="purple_italic">blunder buster</span> to catch those pesky errors before they jump off the screen and confuse your audience. Or worse, turn them off entirely. Because once they’re gone, <span class="purple_italic">they don’t come back</span>.</p>
 
-            <p><span class="purple_italic">You need to outsource this one small task.</span> To me.</p> 
+            <p>Don’t think you need another set of eyes? The proof is in the pudding, as they say, so put me to the test. Send me something you’ve written &#8212; up to 500 words &#8212; and I’ll give you <span class="purple_italic">a free sample edit.</span> I’ll point out places where you might not be quite as clear as you think you are. Spots where your reader may need to back up and take another run before they understand your meaning.</p> 
+
+            <p>I’ll even tell you what it would cost if you were paying me (not as much as you think). And if I can’t improve your writing by even one word, I’ll pour blessings upon your head and send you on your merry way with my best wishes for success.</p>
+
+            <p>But, if you agree that I made it better, even by just one “oh, yeah, I see what you did there,” then seriously think about bringing me on as <span class="purple_italic">your Private Consulting Word Guru.</span></p>
+
+            <p><span class="purple_italic">Because you’re a pro.</span> And you need to sound like it.</p>
 
             <p>So, <a class="contact" href="contact.php">get in touch with me</a>, tell me about your project, and let’s get started.</p>
 
             <p>Chat soon ~ Mo</p>
 
             <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
-        </section> 
+        </section>
         
         <section id="sidebar">
-            <img alt="A table with a cup of coffee, blank paper, and a pen." class="content_image" src="images/coffee.jpg">
+            <img alt="A woman sitting at a table with a cup of tea and a book while working on her laptop" class="content_image" src="images/laptop.jpg">
             
 <!-- Contact Button -->        
             <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
@@ -280,45 +286,57 @@ if ($result != NULL) {
                     </div>
                 </div>
             </div>
-<!-- End Contact Button -->  
+<!-- End Contact Button -->
             <br>
-            
-<!-- Download Text and Button -->
+
+<!-- Download Text and Button     
             <p class="bold center">Why You Need an Ideal Reader Profile</p>
 
             <p>You’ve got a story, but who are you telling it to? You might have an idea of who’s going to read your book, but the clearer you are about who they are, the more enjoyable the reading experience will be for them. Also, your Editor will want one. <span class="bold maroon">Click the green button to download my free Ideal Reader Profile template.</span></p>
             
             <div id="download">                
-                <form method="get" action="Ideal_Reader_business.docx">
+                <form method="get" action="Ideal_Reader_Profile.docx">
                     <button class="button button_download">Free Profile Template</button>
                 </form> 
             </div>
-<!-- End Download Text and Button -->
+            
+            <br>
+            
+            <p class="bold center">Why You Need a Style Sheet</p>
+
+            <p>You’ve put in agonizing hours deciding on every detail of your story. And your Editor is going to make a thousand tiny decisions as she works through your manuscript. How’s she going to keep track of all that? Take a look at my Style Sheet template to find out why Editors use them, and why you should be using one while you write. <span class="bold maroon">Click the green button to download my free Style Sheet template.</span></p>
+            
+            <div id="download">                
+                <form method="get" action="Style_Sheet.docx">
+                    <button class="button button_download">Free Style Template</button>
+                </form> 
+            </div>
+<!-- End Download Text and Button --> 
             <br><br>
             
 <!-- Testimonial -->            
-            <img alt="Clickable heart with the words 'Jason says...'" class="heart expander" data-expander-target="#testimonial" src="images/Jason.png">
+            <img alt="Clickable heart with the words 'Donna says...'" class="heart expander" data-expander-target=".donna" src="images/Donna.png">
 
-            <div id="testimonial">
-                <p>I always encourage members of the Georgia Manufacturing Alliance to play to their strengths and avoid wasting time on parts of their business they're not suited for. Surround yourself with professionals that can fill in your weak spots. I wish I wouldn't have waited so long to hire someone to help us refine our written marketing materials. I'm so glad that Monique is helping us look so much better.</p>
+            <div class="donna">
+                <p>I’m so happy I was able to find Monique to help me write my online estate sale courses. It has been a long time dream of mine to start a national organization of estate sale agents and offer ongoing training and education. Monique was able to take my years of experience in the business and my rough notes and turn them into exactly the quality of training course I’d hoped for. And her help developing content for my website was invaluable. No matter what your project is if it involves expressing yourself in words Mo can make it better.</p>
                 
-                <p>- <a class="contact" href="#">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
+                <p>- <a class="contact" href="https://naoel.com/about-us/">Donna Davis</a>, Founder and Lead Instructor, NAOEL</p>
             </div>
-<!-- End Testimonial --> 
+<!-- End Testimonial -->     
             
 <!-- Mobile Testimonial -->            
-            <img alt="Clickable heart with the words 'Jason says...'" class="heart_mobile" src="images/Jason.png">
+            <img alt="Clickable heart with the words 'Donna says...'" class="heart_mobile" src="images/Donna.png">
 
             <div id="testimonial_mobile">
-                <p>I always encourage members of the Georgia Manufacturing Alliance to play to their strengths and avoid wasting time on parts of their business they're not suited for. Surround yourself with professionals that can fill in your weak spots. I wish I wouldn't have waited so long to hire someone to help us refine our written marketing materials. I'm so glad that Monique is helping us look so much better.</p>
+               <p>I’m so happy I was able to find Monique to help me write my online estate sale courses. It has been a long time dream of mine to start a national organization of estate sale agents and offer ongoing training and education. Monique was able to take my years of experience in the business and my rough notes and turn them into exactly the quality of training course I’d hoped for. And her help developing content for my website was invaluable. No matter what your project is if it involves expressing yourself in words Mo can make it better.</p>
                 
-                <p>- <a class="contact" href="#">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
+                <p>- <a class="contact" href="https://naoel.com/about-us/">Donna Davis</a>, Founder and Lead Instructor, NAOEL</p>
             </div>
-<!-- End Mobile Testimonial -->                      
+<!-- End Mobile Testimonial -->                 
             
         </section>
     </main>
-<!-- End Main -->    
+<!-- End Main -->     
     
     <div id="push"></div>
  
@@ -340,7 +358,7 @@ if ($result != NULL) {
         <ul class="credits">
             <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
             <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
-        </ul> 
+        </ul>
     </footer>  
 <!-- End Footer -->  
     
@@ -408,12 +426,12 @@ if ($result != NULL) {
             } );
 
             // for demo purposes only
-            [].slice.call( document.querySelectorAll( '#contact_button' ) ).forEach( function( bttn ) { 
+            [].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
 				bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
             } );
         })();
     </script>
-        
+    
 <!-- Big Slide -->
     <script>
         $(document).ready(function() {
@@ -428,7 +446,7 @@ if ($result != NULL) {
             $('.expander').simpleexpand();
         });
     </script>          
-<!-- End Javascript -->        
+<!-- End Javascript -->                
     
 </body> 
 </html>
