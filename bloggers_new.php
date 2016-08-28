@@ -310,7 +310,7 @@ if ($result != NULL) {
                 <form method="get" action="Style_Sheet.docx">
                     <button class="button button_download">Free Style Template</button>
                 </form> 
-            </div>
+            </div> -->
 <!-- End Download Text and Button --> 
             <br><br>
             

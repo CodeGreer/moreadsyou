@@ -295,12 +295,16 @@ a.contact:active {color: #000; }
     color: #8C0750;
 }
 
-#contact_popup, #download {
+#contact_popup, #download, .download {
     clear: both;
     max-width: 100%;
     width: 90%;
     font-size: 1.6em;
     margin: 0 0 3% 10%;
+}
+
+.show_mobile {
+    display: none;
 }
 
 #contact_popup_index, .contact_popup_index2 {
@@ -309,10 +313,6 @@ a.contact:active {color: #000; }
     width: 30%;
     margin: 3% 35% 0 35%;
     font-size: 1.8em;
-}
-
-#download {
-    
 }
 
 #sidebar > .heart {
@@ -329,7 +329,7 @@ a.contact:active {color: #000; }
 	top: .5em;
 }
 
-.heart_mobile, #testimonial_mobile {
+.heart_mobile, #testimonial_mobile, .testimonial_mobile {
     display: none;
 }
 

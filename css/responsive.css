@@ -232,11 +232,11 @@ main, #content, #sidebar {
     display: none;
 }
 
-.heart_mobile, #testimonial_mobile {
+.heart_mobile, #testimonial_mobile, .testimonial_mobile {
     display: block;
 }  
     
-#testimonial_mobile {
+#testimonial_mobile, .testimonial_mobile {
     margin: 5%;  
 }    
     
@@ -246,7 +246,7 @@ main, #content, #sidebar {
     margin: 0 40% 1% 40%;
 }  
     
-#testimonial_mobile p {
+#testimonial_mobile p, .testimonial_mobile p {
     width: 90%;
     margin: 2% 0 0 5%;
     font-size: 1.35em;  
@@ -278,9 +278,13 @@ main, #content, #sidebar {
     display: none;
 }    
     
-#download {  
+#download, .download, .hide_mobile {  
     display: none;
 }
+    
+.show_mobile {
+    display: block;
+}    
     
 .contact_flex {
     display: block;

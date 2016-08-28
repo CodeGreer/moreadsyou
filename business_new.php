@@ -321,7 +321,7 @@ if ($result != NULL) {
 <!-- Mobile Testimonial -->            
             <img alt="Clickable heart with the words 'Jason says...'" class="heart_mobile" src="images/Jason.png">
 
-            <div id="testimonial_mobile">
+            <div class="testimonial_mobile">
                 <p>I always encourage members of the Georgia Manufacturing Alliance to play to their strengths and avoid wasting time on parts of their business they're not suited for. Surround yourself with professionals that can fill in your weak spots. I wish I wouldn't have waited so long to hire someone to help us refine our written marketing materials. I'm so glad that Monique is helping us look so much better.</p>
                 
                 <p>- <a class="contact" href="http://www.georgiamanufacturingalliance.com/">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
@@ -330,7 +330,7 @@ if ($result != NULL) {
             
             <img alt="Clickable heart with the words 'Cal says...'" class="heart_mobile" src="images/Cal.png">
 
-            <div id="testimonial_mobile">
+            <div class="testimonial_mobile">
                  <p>Mo is a hard working and detailed proofreader / editor. I am a private golf instructor and Mo assisted in proofreading and editing all my pictures, videos and submissions for my new website and blogs. Mo is not afraid to make suggestions or be critical about the content of the work she is proofreading or editing. All is done with a professional attitude. I would not have any other person do it other than Mo.</p>
                 
                 <p>- <a class="contact" href="http://teeitupforefun.com/">Cal Vollmer</a>, Tee It Up Fore Fun</p>

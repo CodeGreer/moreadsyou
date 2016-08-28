@@ -304,11 +304,11 @@ if ($result != NULL) {
             <br>
             
 <!-- Download Text and Button -->    
-            <p class="bold center">Why You Need an Ideal Reader Profile</p>
+            <p class="bold center hide_mobile">Why You Need an Ideal Reader Profile</p>
 
-            <p>You might have an idea of who’ll be reading your book. But your Editor will need to know some specifics to ensure the reading experience is appropriate and enjoyable for your reader. <span class="bold maroon">Click the green button to download my free Style Sheet template.</span></p>
+            <p class="hide_mobile">You might have an idea of who’ll be reading your book. But your Editor will need to know some specifics to ensure the reading experience is appropriate and enjoyable for your reader. <span class="bold maroon">Click the green button to download my free Style Sheet template.</span></p>
             
-            <div id="download">                
+            <div class="download">                
                 <form method="get" action="Ideal_Reader_Profile.pdf">
                     <button class="button button_download">Free Profile Template</button>
                 </form> 
@@ -316,11 +316,11 @@ if ($result != NULL) {
             
             <br>
             
-            <p class="bold center">Why You Need a Style Sheet</p>
+            <p class="bold center hide_mobile">Why You Need a Style Sheet</p>
 
-            <p>Your Editor has to keep track of a thousand details as she works through your manuscript. She’ll need a Style Sheet to keep it all straight. Find out why Editors use them, and why you should be using one while writing. <span class="bold maroon">Click the green button to download my free Style Sheet template.</span></p>
+            <p class="hide_mobile">Your Editor has to keep track of a thousand details as she works through your manuscript. She’ll need a Style Sheet to keep it all straight. Find out why Editors use them, and why you should be using one while writing. <span class="bold maroon">Click the green button to download my free Style Sheet template.</span></p>
             
-            <div id="download">                
+            <div class="download">                
                 <form method="get" action="Style_Sheet.docx">
                     <button class="button button_download">Free Style Template</button>
                 </form> 
@@ -328,13 +328,16 @@ if ($result != NULL) {
 <!-- End Download Text and Button --> 
             <br><br>
             
+<!-- Mobile Downloadables -->
+            <p class="show_mobile">Do you have an Ideal Reader Profile and Style Sheet? Please visit my website from your desktop or laptop to find out what they are and why you need them. You can download my free templates from there.</p>
+            
 <!-- Testimonial -->            
             <img alt="Clickable heart with the words 'Anna says...'" class="heart expander" data-expander-target="#testimonial" src="images/Anna.png">
 
             <div id="testimonial">
                 <p>I can’t recommend Monique Huenergardt highly enough. I’m a writer, and I’m pretty darned good at it. But I’m not a proofreader, and I’m not an editor, so I hired Mo. She’s really good at those things. That would be enough to earn her kudos from 90% of the writers out there. But Mo has an incredible ability to read a story and offer easy-to-implement suggestions that improve it. She’s extremely professional in everything she does, and when offering suggestions to improve pace, heighten suspense, reveal backstory, you name it, she hits the nail on the head. With Mo’s help, I was able to come away with a much better book.</p>
                 
-                <p>- <a class="contact" href="#">Anna Bendewald</a>, author of <span class="italic">Stealing Venice</span> and <span class="italic">Meet Me At Pere Lachaise</span>, CEO of Hudson-Ivy Press</p>
+                <p>- <a class="contact" href="http://www.annabendewald.com/">Anna Bendewald</a>, author of <span class="italic">Stealing Venice</span> and <span class="italic">Meet Me At Pere Lachaise</span>, CEO of Hudson-Ivy Press</p>
             </div>
 <!-- End Testimonial -->  
             
