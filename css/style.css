@@ -44,6 +44,12 @@ body {
     right: 0;
 }
 
+hr {
+    width: 80%;
+    margin: 0 10% 3em;
+    border: 0;
+    border-bottom: .2em solid #17854D;
+}
 
 /* Header */
 
@@ -318,7 +324,11 @@ a.contact:active {color: #000; }
 #sidebar > .heart {
     max-width: 100%;
     width: 60%;
-    margin: 0 15% 1% 25%;
+    margin: 3em 15% 0 25%;
+}
+
+#sidebar > .heart2 {
+    margin-top: 1em;
 }
 
 .heart:hover {
@@ -333,11 +343,11 @@ a.contact:active {color: #000; }
     display: none;
 }
 
-#testimonial, .donna, .cal {
+.testimonial, .testimonial2 {
     display: none;
 }
 
-#testimonial > p, .donna > p, .cal >p {
+.testimonial > p, .testimonial2 > p {
     font-size: 1.05em;
     margin-left: 10%
 }

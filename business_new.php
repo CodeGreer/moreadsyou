@@ -287,9 +287,9 @@ if ($result != NULL) {
             <br>
             
 <!-- Download Text and Button -->
-            <p class="bold center">Why You Need an Ideal Customer Profile</p>
+            <p class="bold center hide_mobile">Why You Need an Ideal Customer Profile</p>
 
-            <p>You know your product, and you know your customers. The clearer you are about the particulars of your Ideal Customer, the better you’ll be able to communicate with them and with new prospects. <span class="bold maroon">Click the green button to download my free Ideal Customer Profile template.</span></p>
+            <p class="hide_mobile">You know your product, and you know your customers. The clearer you are about the particulars of your Ideal Customer, the better you’ll be able to communicate with them and with new prospects. <span class="bold maroon">Click the green button to download my free Ideal Customer Profile template.</span></p>
             
             <div id="download">                
                 <form method="get" action="Ideal_Reader_business.pdf">
@@ -297,21 +297,25 @@ if ($result != NULL) {
                 </form> 
             </div>
 <!-- End Download Text and Button -->
-            <br><br>
+            
+<!-- Mobile Downloadables -->
+            <hr class="show_mobile">
+            
+            <p class="show_mobile">Do you have an Ideal Customer Profile? Please visit my website from your desktop or laptop to find out what it is and why you need one. You can download my free template from there.</p>            
             
 <!-- Testimonial -->            
-            <img alt="Clickable heart with the words 'Jason says...'" class="heart expander" data-expander-target="#testimonial" src="images/Jason.png">
+            <img alt="Clickable heart with the words 'Jason says...'" class="heart expander" data-expander-target=".testimonial" src="images/Jason.png">
 
-            <div id="testimonial">
+            <div class="testimonial">
                 <p>I always encourage members of the Georgia Manufacturing Alliance to play to their strengths and avoid wasting time on parts of their business they're not suited for. Surround yourself with professionals that can fill in your weak spots. I wish I wouldn't have waited so long to hire someone to help us refine our written marketing materials. I'm so glad that Monique is helping us look so much better.</p>
                 
                 <p>- <a class="contact" href="http://www.georgiamanufacturingalliance.com/">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
                 <br>
             </div>
             
-            <img alt="Clickable heart with the words 'Cal says...'" class="heart expander" data-expander-target=".cal" src="images/Cal.png">
+            <img alt="Clickable heart with the words 'Cal says...'" class="heart heart2 expander" data-expander-target=".testimonial2" src="images/Cal.png">
 
-            <div class="cal">
+            <div class="testimonial2">
                 <p>Mo is a hard working and detailed proofreader / editor. I am a private golf instructor and Mo assisted in proofreading and editing all my pictures, videos and submissions for my new website and blogs. Mo is not afraid to make suggestions or be critical about the content of the work she is proofreading or editing. All is done with a professional attitude. I would not have any other person do it other than Mo.</p>
                 
                 <p>- <a class="contact" href="http://teeitupforefun.com/">Cal Vollmer</a>, Tee It Up Fore Fun</p>

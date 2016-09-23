@@ -275,7 +275,7 @@ if ($result != NULL) {
         </section>
         
         <section id="sidebar">
-            <img alt="A woman sitting on a bed in a hotel room using her laptop" src="images/hotel.jpg">
+            <img alt="A woman sitting on a bed in a hotel room using her laptop" class="content_image" src="images/hotel.jpg">
             
 <!-- Contact Button -->        
             <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed">
@@ -326,15 +326,16 @@ if ($result != NULL) {
                 </form> 
             </div>
 <!-- End Download Text and Button --> 
-            <br><br>
             
 <!-- Mobile Downloadables -->
+            <hr class="show_mobile">
+            
             <p class="show_mobile">Do you have an Ideal Reader Profile and Style Sheet? Please visit my website from your desktop or laptop to find out what they are and why you need them. You can download my free templates from there.</p>
             
 <!-- Testimonial -->            
-            <img alt="Clickable heart with the words 'Anna says...'" class="heart expander" data-expander-target="#testimonial" src="images/Anna.png">
+            <img alt="Clickable heart with the words 'Anna says...'" class="heart expander" data-expander-target=".testimonial" src="images/Anna.png">
 
-            <div id="testimonial">
+            <div class="testimonial">
                 <p>I can’t recommend Monique Huenergardt highly enough. I’m a writer, and I’m pretty darned good at it. But I’m not a proofreader, and I’m not an editor, so I hired Mo. She’s really good at those things. That would be enough to earn her kudos from 90% of the writers out there. But Mo has an incredible ability to read a story and offer easy-to-implement suggestions that improve it. She’s extremely professional in everything she does, and when offering suggestions to improve pace, heighten suspense, reveal backstory, you name it, she hits the nail on the head. With Mo’s help, I was able to come away with a much better book.</p>
                 
                 <p>- <a class="contact" href="http://www.annabendewald.com/">Anna Bendewald</a>, author of <span class="italic">Stealing Venice</span> and <span class="italic">Meet Me At Pere Lachaise</span>, CEO of Hudson-Ivy Press</p>

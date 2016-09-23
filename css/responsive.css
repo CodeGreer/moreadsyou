@@ -222,10 +222,8 @@ main, #content, #sidebar {
     
 /* Sidebar */
 
-#sidebar img {
-    max-width: 100%;
-    width: 60%;
-    margin: 10% 20% 2% 20%;
+.content_image {
+    display: none;
 }
 
 #sidebar > .heart {
@@ -404,13 +402,7 @@ body {
     font-size: 90%;
 }  
     
-/* Main */
-    
-.content_image {
-    width: 90%;
-    float: none;
-    margin: 3% 5% 0 5%;
-}  
+/* Main */  
     
 #contactpage_form textarea {
     margin: -4% 5% 0 5%; 

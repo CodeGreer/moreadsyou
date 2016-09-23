@@ -289,35 +289,27 @@ if ($result != NULL) {
 <!-- End Contact Button -->
             <br>
 
-<!-- Download Text and Button     
-            <p class="bold center">Why You Need an Ideal Reader Profile</p>
+<!-- Download Text and Button -->    
+            <p class="bold center hide_mobile">Why You Need an Ideal Visitor Avatar</p>
 
-            <p>You’ve got a story, but who are you telling it to? You might have an idea of who’s going to read your book, but the clearer you are about who they are, the more enjoyable the reading experience will be for them. Also, your Editor will want one. <span class="bold maroon">Click the green button to download my free Ideal Reader Profile template.</span></p>
+            <p class="hide_mobile">You might have an idea of who’ll be visiting your site or reading your newsletter. But your Editor will need to know some specifics to ensure the reading experience is appropriate and enjoyable for your visitor. <span class="bold maroon">Click the green button to download my free Ideal Visitor Avatar template.</span></p>
             
             <div id="download">                
-                <form method="get" action="Ideal_Reader_Profile.docx">
-                    <button class="button button_download">Free Profile Template</button>
+                <form method="get" action="Ideal_Visitor_blogger.docx">
+                    <button class="button button_download">Free Visitor Avatar</button>
                 </form> 
-            </div>
-            
-            <br>
-            
-            <p class="bold center">Why You Need a Style Sheet</p>
-
-            <p>You’ve put in agonizing hours deciding on every detail of your story. And your Editor is going to make a thousand tiny decisions as she works through your manuscript. How’s she going to keep track of all that? Take a look at my Style Sheet template to find out why Editors use them, and why you should be using one while you write. <span class="bold maroon">Click the green button to download my free Style Sheet template.</span></p>
-            
-            <div id="download">                
-                <form method="get" action="Style_Sheet.docx">
-                    <button class="button button_download">Free Style Template</button>
-                </form> 
-            </div> -->
+            </div> 
 <!-- End Download Text and Button --> 
-            <br><br>
+            
+<!-- Mobile Downloadables -->
+            <hr class="show_mobile">
+            
+            <p class="show_mobile">Do you have an Ideal Visitor Profile? Please visit my website from your desktop or laptop to find out what it is and why you need one. You can download my free templates from there.</p>                   
             
 <!-- Testimonial -->            
-            <img alt="Clickable heart with the words 'Donna says...'" class="heart expander" data-expander-target=".donna" src="images/Donna.png">
+            <img alt="Clickable heart with the words 'Donna says...'" class="heart expander" data-expander-target=".testimonial" src="images/Donna.png">
 
-            <div class="donna">
+            <div class="testimonial">
                 <p>I’m so happy I was able to find Monique to help me write my online estate sale courses. It has been a long time dream of mine to start a national organization of estate sale agents and offer ongoing training and education. Monique was able to take my years of experience in the business and my rough notes and turn them into exactly the quality of training course I’d hoped for. And her help developing content for my website was invaluable. No matter what your project is if it involves expressing yourself in words Mo can make it better.</p>
                 
                 <p>- <a class="contact" href="https://naoel.com/about-us/">Donna Davis</a>, Founder and Lead Instructor, NAOEL</p>
@@ -426,7 +418,7 @@ if ($result != NULL) {
             } );
 
             // for demo purposes only
-            [].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
+            [].slice.call( document.querySelectorAll( '#contact_button' ) ).forEach( function( bttn ) { 
 				bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
             } );
         })();
