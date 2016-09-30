@@ -323,12 +323,12 @@ if ($result != NULL) {
                 <br>
             </div>
             
-            <img alt="Clickable heart with the words 'Cal says...'" class="heart heart2 expander" data-expander-target=".testimonial2" src="images/Cal.png">
+            <img alt="Clickable heart with the words 'Donna says...'" class="heart heart2 expander" data-expander-target=".testimonial2" src="images/Donna.png">
 
             <div class="testimonial2">
-                <p>Mo is a hard working and detailed proofreader / editor. I am a private golf instructor and Mo assisted in proofreading and editing all my pictures, videos and submissions for my new website and blogs. Mo is not afraid to make suggestions or be critical about the content of the work she is proofreading or editing. All is done with a professional attitude. I would not have any other person do it other than Mo.</p>
+                <p>I’m so happy I was able to find Monique to help me write my online estate sale courses. It has been a long time dream of mine to start a national organization of estate sale agents and offer ongoing training and education. Monique was able to take my years of experience in the business and my rough notes and turn them into exactly the quality of training course I’d hoped for. And her help developing content for my website was invaluable. No matter what your project is if it involves expressing yourself in words Mo can make it better.</p>
                 
-                <p>- <a class="contact" href="http://teeitupforefun.com/">Cal Vollmer</a>, Tee It Up Fore Fun</p>
+                <p>- <a class="contact" href="https://naoel.com/about-us/">Donna Davis</a>, Founder and Lead Instructor, NAOEL</p>
             </div>
 <!-- End Testimonial --> 
             
@@ -342,12 +342,12 @@ if ($result != NULL) {
                 <br><br>
             </div>
             
-            <img alt="Clickable heart with the words 'Cal says...'" class="heart_mobile" src="images/Cal.png">
+            <img alt="Clickable heart with the words 'Donna says...'" class="heart_mobile" src="images/Donna.png">
 
-            <div class="testimonial_mobile">
-                 <p>Mo is a hard working and detailed proofreader / editor. I am a private golf instructor and Mo assisted in proofreading and editing all my pictures, videos and submissions for my new website and blogs. Mo is not afraid to make suggestions or be critical about the content of the work she is proofreading or editing. All is done with a professional attitude. I would not have any other person do it other than Mo.</p>
+            <div id="testimonial_mobile">
+               <p>I’m so happy I was able to find Monique to help me write my online estate sale courses. It has been a long time dream of mine to start a national organization of estate sale agents and offer ongoing training and education. Monique was able to take my years of experience in the business and my rough notes and turn them into exactly the quality of training course I’d hoped for. And her help developing content for my website was invaluable. No matter what your project is if it involves expressing yourself in words Mo can make it better.</p>
                 
-                <p>- <a class="contact" href="http://teeitupforefun.com/">Cal Vollmer</a>, Tee It Up Fore Fun</p>
+                <p>- <a class="contact" href="https://naoel.com/about-us/">Donna Davis</a>, Founder and Lead Instructor, NAOEL</p>
             </div>
 <!-- End Mobile Testimonial -->                      
             
