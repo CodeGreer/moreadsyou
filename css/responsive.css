@@ -234,7 +234,7 @@ main, #content, #sidebar {
     display: block;
 }  
     
-#testimonial_mobile, .testimonial_mobile {
+#testimonial_mobile {
     margin: 5%;  
 }    
     
