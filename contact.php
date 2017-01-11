@@ -291,22 +291,22 @@
                         <br>
                         <ul>
                             <li>Proofreading</li>
-                            <li>One penny per word</li>
+                            <li>2 pennies per word</li>
                         </ul>
 
                         <ul>
                             <li>Copy Editing</li>
-                            <li>1&#189; pennies per word</li>
+                            <li>3 pennies per word</li>
                         </ul>
 
                         <ul>
                             <li>Developmental Editing</li>
-                            <li>1&#189; pennies per word</li>
+                            <li>3&#189; pennies per word</li>
                         </ul>
 
                         <ul>
                             <li>Please just help me write this</li>
-                            <li>Four pennies per word</li>
+                            <li>4 pennies per word</li>
                         </ul>
 
                         <ul>
@@ -326,9 +326,9 @@
                     <br>
                     <p class="mobile_center">Site Credits:</p>
                     <ul class="mobile_center">
-                        <li>Coding by <a href="http://codegreer.com/" target="_blank">Code Greer</a></li>
+                        <li>Coding by <a href="http://codegreer.com/" target="_blank">CodeGreer</a></li>
 
-                        <li>Design by Monique Huenergardt and <a href="http://codegreer.com/" target="_blank">Code Greer</a></li>
+                        <li>Design by Monique Huenergardt and <a href="http://codegreer.com/" target="_blank">CodeGreer</a></li>
 
                         <li>Written content by Monique Huenergardt</li>
 
