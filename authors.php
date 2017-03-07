@@ -304,7 +304,7 @@ if ($result != NULL) {
 <!-- Download Text and Button -->    
             <p class="bold center hide_mobile">Why You Need an Ideal Reader Profile</p>
 
-            <p class="hide_mobile">You might have an idea of who’ll be reading your book. But your Editor will need to know some specifics to ensure the reading experience is appropriate and enjoyable for your reader. <span class="bold purple">Click the green button to download my free Style Sheet template.</span></p>
+            <p class="hide_mobile">You might have an idea of who’ll be reading your book. But your Editor will need to know some specifics to ensure the reading experience is appropriate and enjoyable for your reader. <span class="bold purple">Click the green button to download my free Profile template.</span></p>
             
             <div class="download">                
                 <form method="get" action="ideal_reader_authors.docx">
