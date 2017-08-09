@@ -252,8 +252,10 @@ function get_data( $var ) {
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     
+    <link rel="canonical" href="http://www.moreadsyou.com/contact.php">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Me for Editing and Proofreading Service | Atlanta - Gwinnett | Mo Reads You</title>
     
     <meta name="keywords" content="editing, copy editor, proofreading services, Atlanta, Gwinnett" >
@@ -303,7 +305,7 @@ function get_data( $var ) {
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
 
 <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway:300,700' rel='stylesheet' type='text/css'>
     
 <!-- Javascript -->  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -405,11 +407,11 @@ function get_data( $var ) {
                         <label for="email">Your email:</label> 
                         <input type="email" name="email" id="email" value="<?php get_data("email"); ?>" required>
                         
+                        <label for="url">Your phone number:</label> 
+                        <input type="text" name="phone" id="phone" value="<?php get_data("phone"); ?>" required>
+                        
                         <label for="url">Your website (optional):</label> 
                         <input type="text" name="url" placeholder="Please include the http://" id="url" value="<?php get_data("url"); ?>" />
-
-                        <label for="url">Your phone number (optional):</label> 
-                        <input type="text" name="phone" id="phone" value="<?php get_data("phone"); ?>">
 
                         <label for="comments">What can I do for you?</label><br>
                         <textarea name="comments" id="comments"><?php get_data("comments"); ?></textarea>
@@ -492,7 +494,68 @@ function get_data( $var ) {
                 </ul>
                 <br><br>
             </div>
-        </div>  
+        </div> 
+         <br><br>
+        
+        <div class="contact_flex">
+            
+            <div id="contact_left">
+                <p><span class="bold">All right, who told you about me?</span><br>
+                I'd like to thank them in a way that really shows my appreciation...by sending them a check. If you and I end up working together, I'll send your referring friend a check equal to ten percent (10%) of what you pay me for our first project together. But, you have to tell me about your friend <span class="purple_italic">before</span> you and I start conversing about your project. So, fill out this form <span class="purple_italic">right now</span> so I can thank your friend later. </p>
+
+                <br><br>
+                <p>I PROMISE I won't spam you or your friend, and I won't sell or otherwise pass along your information to anyone. Scout's honor.</p>
+            </div>
+            
+
+            <div id="contact_right">
+                <div id="contactpage_form">
+                    <?php
+                    if ( !empty( $error_msg ) ) {
+                        echo '<p class="fail">ERROR: '. implode( "<br>", $error_msg ) . "</p>";
+                    }
+                    if ( $result != NULL ) {
+                        echo '<p id="success">'. $result . "</p>";
+                    }
+                    ?>
+                    <form action="<?php echo basename( __FILE__ ); ?>" method="post">
+                        <noscript>
+                                <p><input type="hidden" name="nojs" id="nojs" /></p>
+                        </noscript>
+
+                        <input type="hidden" name="token" value="<?php if ( is_array( $_SESSION['nonce'] ) ) echo key( $_SESSION['nonce'] ); ?>">
+
+                        <label for="name">My Name Is:</label> 
+                        <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" required>
+
+                        <label for="email">My Email Address:</label> 
+                        <input type="email" name="email" id="email" value="<?php get_data("email"); ?>" required>
+
+                        <label for="url">My Phone Number:</label> 
+                        <input type="text" name="phone" id="phone" value="<?php get_data("phone"); ?>" required>
+                        <br><br>
+
+                        <label for="name">My Friend's Name Is:</label> 
+                        <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" required>
+
+                        <label for="email">My Friend's Email Address Is:</label> 
+                        <input type="email" name="email" id="email" value="<?php get_data("email"); ?>" required>
+
+                        <label for="url">My Friend's Phone Number Is:</label> 
+                        <input type="text" name="phone" id="phone" value="<?php get_data("phone"); ?>" required>
+                        <br><br>
+                        
+                        <label for="comments">Tell me a little bit about your project.</label><br>
+                        <textarea name="comments" id="comments"><?php get_data("comments"); ?></textarea>
+
+                        <input type="submit" name="submit" id="submit" class="button button_submit" value="Send" <?php if ( isset( $disable ) && $disable === true ) echo ' disabled="disabled"'; ?> />
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
     </main>
 <!-- End Main --> 
 
@@ -514,7 +577,7 @@ function get_data( $var ) {
 
         <ul class="credits">
             <li><a class="contact" href="contact.php">Full Site Credits</a></li>
-            <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
+            <li>Site Coded by <a class="contact" href="http://codegreer.com/">CodeGreer</a></li>
         </ul>
     </footer>  
 <!-- End Footer -->  

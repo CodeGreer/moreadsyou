@@ -456,8 +456,13 @@ a.contact:active {color: #000; }
     box-shadow: .2em .2em .4em .1em rgba(50,50,50,.6);
 }
 
-#green_box, #green_box p {
+#green_box {
     font-size: 1em;
+    padding: 0% 0 4%;
+}
+
+#green_box p {
+    font-size: 1.25em;
 }
 
 #green_box_top {
@@ -488,6 +493,10 @@ a.contact:active {color: #000; }
 
 .show {
     display: none;
+}
+
+#referral {
+    width: 100%;
 }
 
 /* Button Styles */
@@ -709,6 +718,10 @@ input[type=text], input[type=password], input[type=email], input[type=number], t
     font-size: .6em;
     border-style: solid;
     border-width: .1em;
+}
+
+input[type=email] {
+    font-size: .9em !important;
 }
 
 #contactpage_form input[type=text], #contactpage_form textarea {

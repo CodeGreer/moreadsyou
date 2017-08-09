@@ -304,7 +304,7 @@ function get_data( $var ) {
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
 
 <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway:300,700' rel='stylesheet' type='text/css'>
     
 <!-- Javascript -->  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -508,7 +508,7 @@ function get_data( $var ) {
 
         <ul class="credits">
             <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
-            <li>Site Coded by <a class="contact" href="http://codegreer.com/">Code Greer</a></li>
+            <li>Site Coded by <a class="contact" href="http://codegreer.com/">CodeGreer</a></li>
         </ul>
     </footer>  
 <!-- End Footer -->  
