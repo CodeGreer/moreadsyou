@@ -528,10 +528,10 @@ function get_data( $var ) {
                         <label for="name">My Name Is:</label> 
                         <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" required>
 
-                        <label for="email">My Email Address:</label> 
+                        <label for="email">My Email Address Is:</label> 
                         <input type="email" name="email" id="email" value="<?php get_data("email"); ?>" required>
 
-                        <label for="url">My Phone Number:</label> 
+                        <label for="url">My Phone Number Is:</label> 
                         <input type="text" name="phone" id="phone" value="<?php get_data("phone"); ?>" required>
                         <br><br>
 
