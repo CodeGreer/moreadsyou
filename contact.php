@@ -306,10 +306,10 @@ function get_data( $var ) {
 
 <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Judson%7CRaleway:300,700' rel='stylesheet' type='text/css'>
+
+<!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
-<!-- Javascript -->  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
     
 </head>
   
@@ -437,32 +437,27 @@ function get_data( $var ) {
                     <br>
                     <ul>
                         <li>Proofreading</li>
-                        <li>2 pennies per word</li>
+                        <li>2 cents per word</li>
                     </ul>
 
                     <ul>
                         <li>Copy Editing</li>
-                        <li>3 pennies per word</li>
+                        <li>4 cents per word</li>
                     </ul>
 
                     <ul>
-                        <li>Developmental Editing</li>
-                        <li>3&#189; pennies per word</li>
+                        <li>Copywriting</li>
+                        <li>10 cents per word</li>
                     </ul>
 
                     <ul>
-                        <li>Please just help me write this</li>
-                        <li>4 pennies per word</li>
-                    </ul>
-
-                    <ul>
-                        <li>Beta Reading</li>
-                        <li>Let's talk. It's usually free.</li>
+                        <li>Consultation</li>
+                        <li>$30/hour</li>
                     </ul>
 
                     <ul>
                         <li>TERMS:</li>
-                        <li>50% to start, balance due within 10 days of delivery</li>
+                        <li>$100 to start, balance due within 10 days of delivery</li>
                     </ul>
                 </div>
             </div>
@@ -583,6 +578,7 @@ function get_data( $var ) {
 <!-- End Footer -->  
     
 <!-- Javascript -->  
+    <script src="js/modernizr.custom.js"></script> 
     <script src="js/bigslide.js"></script>
     <script src="js/classie.js"></script>
     
