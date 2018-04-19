@@ -309,7 +309,7 @@ function get_data( $var ) {
     
 <!-- Javascript -->  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/simple-expand.js"></script>
+    <script src="js/simple-expand.js"></script>
     <script src="js/modernizr.custom.js"></script>
     
 </head>
@@ -363,7 +363,7 @@ function get_data( $var ) {
         }
         ?>
         
-        <section id="content">
+        <div id="content">
             <p>You’ve mastered your story. You’ve developed deep, rich, compelling characters. Created the perfect setting. Crafted your plot to perfection.</p>
 
             <p>You’ve written. And rewritten. And edited. And proofread. And rewritten. And re-edited. And re-proofread. And had your mom, your best friend, and your cat read it.</p>
@@ -397,9 +397,9 @@ function get_data( $var ) {
             <p>Chat soon ~ Mo</p>
 
             <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
-        </section>
+        </div>
         
-        <section id="sidebar">
+        <div id="sidebar">
             <img alt="A woman sitting on a bed in a hotel room using her laptop" class="content_image" src="images/hotel.jpg">
             
 <!-- Contact Button -->        
@@ -489,7 +489,7 @@ function get_data( $var ) {
                 <p>- <a class="contact" href="#">Anna Bendewald</a>, author of <span class="italic">Stealing Venice</span> and <span class="italic">Meet Me At Pere Lachaise</span>, CEO of Hudson-Ivy Press</p>
             </div>
 <!-- End Mobile Testimonial -->                   
-        </section>
+        </div>
     </main>   
 <!-- End Main -->   
     

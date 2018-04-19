@@ -308,7 +308,7 @@ function get_data( $var ) {
     
 <!-- Javascript -->  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/simple-expand.js"></script>
+    <script src="js/simple-expand.js"></script>
     <script src="js/modernizr.custom.js"></script>
     
 </head>
@@ -361,7 +361,7 @@ function get_data( $var ) {
         }
         ?>
         
-        <section id="content">
+        <div id="content">
             <p>You’re an ideal person. An information lizard. A mustard of quality content production.</p>
 
             <p>See what I did there? Even just one wrong letter can skew your meaning.</p>                      
@@ -385,9 +385,9 @@ function get_data( $var ) {
             <p>Chat soon ~ Mo</p>
 
             <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
-        </section>
+        </div>
         
-        <section id="sidebar">
+        <div id="sidebar">
             <img alt="A woman sitting at a table with a cup of tea and a book while working on her laptop" class="content_image" src="images/laptop.jpg">
             
 <!-- Contact Button -->        
@@ -464,7 +464,7 @@ function get_data( $var ) {
             </div>
 <!-- End Mobile Testimonial -->                 
             
-        </section>
+        </div>
     </main>
 <!-- End Main -->     
     

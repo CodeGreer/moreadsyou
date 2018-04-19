@@ -308,7 +308,7 @@ function get_data( $var ) {
     
 <!-- Javascript -->  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/simple-expand.js"></script>
+    <script src="js/simple-expand.js"></script>
     <script src="js/modernizr.custom.js"></script>
     
 </head>
@@ -361,7 +361,7 @@ function get_data( $var ) {
         }
         ?>
         
-        <section id="content">
+        <div id="content">
             <p>You have to communicate in writing. <span class="purple_italic">We all have to communicate in writing.</span> Even if you thrive on face-to-face interactions, you still have to convey your message in writing or risk losing your audience’s fleeting attention.</p>
 
             <p>You know your product/service like the back of your hand. Your elevator speech is a thing of beauty. In your perfectly crafted presentations, prospects swoon and pull out their Gold Cards. FTF, you’ve got your business covered. In writing . . . not so much. You know what to say, because you say it every day. Now you just need to <span class="purple_italic">get that message into writing.</span></p>
@@ -379,9 +379,9 @@ function get_data( $var ) {
             <p>Chat soon ~ Mo</p>
 
             <p>P.S. If you want an idea what it will cost, my rates are on my <a class="contact" href="contact.php#contact_right2">Contact page</a>.</p>
-        </section> 
+        </div> 
         
-        <section id="sidebar">
+        <div id="sidebar">
             <img alt="A table with a cup of coffee, blank paper, and a pen." class="content_image" src="images/coffee.jpg">
             
 <!-- Contact Button -->        
@@ -426,7 +426,7 @@ function get_data( $var ) {
 
             <p class="hide_mobile">You know your product, and you know your customers. The clearer you are about the particulars of your Ideal Customer, the better you’ll be able to communicate with them and with new prospects. <span class="bold purple">Click the green button to download my free Ideal Customer Profile template.</span></p>
             
-            <div id="download">                
+            <div class="download">                
                 <form method="get" action="ideal_customer_business.docx">
                     <button class="button button_download">Free Profile Template</button>
                 </form> 
@@ -438,7 +438,7 @@ function get_data( $var ) {
 
             <p class="hide_mobile">Get a glimpse into the editing process and see a list of some of the things your editor will be checking and fixing to make your document the best it can be. <span class="bold purple">Click the green button to download “What Does an Editor Do?”</span></p>
             
-            <div id="download">                
+            <div class="download">                
                 <form method="get" action="what_does_an_editor_do_business.docx">
                     <button class="button button_download">What Editors Do</button>
                 </form> 
@@ -488,7 +488,7 @@ function get_data( $var ) {
             </div>
 <!-- End Mobile Testimonial -->                      
             
-        </section>
+        </div>
     </main>
 <!-- End Main -->    
     
