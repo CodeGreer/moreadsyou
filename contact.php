@@ -321,55 +321,34 @@ function get_data( $var ) {
 <div id="left"></div>
 <div id="right"></div> 
     
-<!-- Mobile Header -->
-    <header id="mobile_header_text" class="push">
-        <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
-            <h1 class="description">Editing &#38; Proofreading Services</h1>
-        <h3 class="menu_link_mobile"><a href="#menu" class="hamburger"> &#9776;</a></h3>
-    </header> 
-    
-    <header id="mobile_header_two" class="push">
-        <h1 class="tagline">Helping You Be a Better Writer</h1>  
-    </header>
-<!-- End Mobile Header -->      
-        
 <!-- Header -->  
     <header id="header" class="push">  
+        <div class="overlay push"></div>  
+        
+        <h3 class="title"><a href="#">Mo Reads You</a></h3>
+        <h1 class="description">Editing * Proofreading * Copywriting</h1>
+
+        <h2 class="tagline">Helping You Be a Better Writer</h2>   
+
+        <img alt="Picture of Monique" src="images/mo.jpg">
+
+        <p class="header_text purple_italic">We need to talk!<br>
+        <span class="second2">Don't be shy, tell me who you are.</span></p>
         
 <!-- Menu -->  
-        <h3 class="menu_link">Go To <a href="#menu" class="hamburger"> &#9776;</a></h3>
+        <p class="menu_link"><span class="goto">Go To</span> <a href="#menu" class="hamburger"> &#9776;</a></p>
 
         <nav id="menu" class="panel">
             <ul class="menu_links">
                 <li><a href="index.php">Home | About</a></li>
                 <li><a href="authors.php"><span class="bold_purple">A</span>uthors</a></li><li><a href="business.php"><span class="bold_purple">B</span>usinesses</a></li>
                 <li><a href="bloggers.php"><span class="bold_purple">C</span>ontent Producers</a></li>
-                <li><a href="#">Contact | Rates</a></li>
+                <li><a href="contact.php">Contact | Rates</a></li>
             </ul>
         </nav>
-<!-- End Menu -->              
-        
-        <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
-        
-        <div id="title_div">
-            <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
-            <h1 class="description">Editing &#38; Proofreading Services</h1>
-        </div> 
-        
-        <div id="tagline_div">
-            <h1 class="tagline">Helping You Be a Better Writer</h1>   
-        </div> 
-        
-        <div id="profile_image">
-            <a href="index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
-        </div>
-        
-        <div id="page_header_text">
-            <p class="first_line purple_italic">We need to talk!</p>
-            <p class="second_line purple_italic">Don't be shy, tell me who you are.</p>
-        </div>
+<!-- End Menu -->  
     </header>     
-<!-- End Header -->      
+<!-- End Header -->    
               
 
 <!-- Main --> 
@@ -432,7 +411,7 @@ function get_data( $var ) {
 
                 <div id="green_box">
                     <div id="green_box_top">
-                        <p>You might not be sure what services you need, but here are some numbers if you want to go shopping.</p>
+                        <p>Services and Rates</p>
                     </div>
                     <br>
                     <ul>
@@ -457,7 +436,7 @@ function get_data( $var ) {
 
                     <ul>
                         <li>TERMS:</li>
-                        <li>$100 to start, balance due within 10 days of delivery</li>
+                        <li>$100 to start, pay as you go</li>
                     </ul>
                 </div>
             </div>

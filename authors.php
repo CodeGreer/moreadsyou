@@ -321,56 +321,35 @@ function get_data( $var ) {
 <!-- Borders -->     
 <div id="left"></div>
 <div id="right"></div>
-    
-<!-- Mobile Header -->
-    <header id="mobile_header_text" class="push">
-        <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
-            <h1 class="description">Editing &#38; Proofreading Services</h1>
-        <h3 class="menu_link_mobile"><a href="#menu" class="hamburger"> &#9776;</a></h3>
-    </header> 
-    
-    <header id="mobile_header_two" class="push">
-        <h1 class="tagline">Helping You Be a Better Writer</h1>  
-    </header>
-<!-- End Mobile Header -->     
         
-<!-- Header -->   
-    <header id="header" class="push" >  
+<!-- Header -->  
+    <header id="header" class="push">  
+        <div class="overlay push"></div>  
+        
+        <h3 class="title"><a href="#">Mo Reads You</a></h3>
+        <h1 class="description">Editing * Proofreading * Copywriting</h1>
+
+        <h2 class="tagline">Helping You Be a Better Writer</h2>   
+
+        <img alt="Picture of Monique" src="images/mo.jpg">
+
+        <p class="header_text purple_italic">It's not just your Manuscript.<br>
+        <span class="second">It's your Reader's Bliss.</span></p>
         
 <!-- Menu -->  
-        <h3 class="menu_link">Go To <a href="#menu" class="hamburger"> &#9776;</a></h3>
+        <p class="menu_link"><span class="goto">Go To</span> <a href="#menu" class="hamburger"> &#9776;</a></p>
 
         <nav id="menu" class="panel">
             <ul class="menu_links">
                 <li><a href="index.php">Home | About</a></li>
-                <li><a href="#"><span class="bold_purple">A</span>uthors</a></li><li><a href="business.php"><span class="bold_purple">B</span>usinesses</a></li>
+                <li><a href="authors.php"><span class="bold_purple">A</span>uthors</a></li><li><a href="business.php"><span class="bold_purple">B</span>usinesses</a></li>
                 <li><a href="bloggers.php"><span class="bold_purple">C</span>ontent Producers</a></li>
                 <li><a href="contact.php">Contact | Rates</a></li>
             </ul>
         </nav>
 <!-- End Menu -->  
-        
-        <img class="tree" alt="Tree branch with green leaves." src="images/tree.jpg">
-        
-        <div id="title_div">
-            <h1 class="title"><a href="index.php">Mo Reads You</a></h1>
-            <h1 class="description">Editing &#38; Proofreading Services</h1>
-        </div> 
-        
-        <div id="tagline_div">
-            <h1 class="tagline">Helping You Be a Better Writer</h1>   
-        </div> 
-        
-        <div id="profile_image">
-            <a href="index.php"><img alt="Picture of Monique" src="images/mo.jpg"></a>
-        </div>
-        
-        <div id="page_header_text">
-            <p class="first_line purple_italic">It’s not just your Manuscript.</p>
-            <p class="second_line purple_italic">It’s your Reader’s Bliss.</p>
-        </div>
     </header>     
-<!-- End Header -->   
+<!-- End Header -->
                     
 <!-- Main -->     
     <main>
@@ -429,7 +408,7 @@ function get_data( $var ) {
                 <div class="popup_content">
                     <div>
                         <div>
-                            <h3 class="close icon_close">Close</h3>
+                            <p class="close icon_close">Close</p>
                             <!-- <h2 class="popup_title">Do you want a title?</h2> -->
                             
                         
