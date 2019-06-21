@@ -1,265 +1,13 @@
-<?php
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-
-	Jem's PHP Mail Form Premium v2.1.1
-	Secure single-page PHP mail form for your website
-	Copyright (c) Jem Turner 2014-2017
-	http://jemsmailform.com/
-
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-// OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
-
-// the email address you wish to receive these mails through
-$primary_recipient = "moreadsyou@gmail.com"; 
-
-// additional recipients to be "CC"ed into the email (the email address of these 
-// recipients will be visible in the mail); separate each email with a comma
-$cc_recipients = ""; 
-
-// additional recipients to be "BCC"ed into the email (the email address of these 
-// recipients will NOT be visible in the mail); separate each email with a comma
-$bcc_recipients = ""; 
-
-$yourWebsite = "Mo Reads You"; // the name of your website
-$thanksPage = 'thanks.html'; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
-$maxPoints = 4; // max points a person can hit before it refuses to submit - recommend 4
-$requiredFields = "name,email,comments"; // names of the fields you'd like to be required as a minimum, separate each field with a comma
-$prevent_repeats = true; // prevent rapid submits (submissions less than 60 seconds apart)
-
-
-// DO NOT EDIT BELOW HERE
-session_start();
-
-function generate_nonce( $length = 32 ) {
-	if ( function_exists( 'openssl_random_pseudo_bytes' ) ) {
-		# we have php5 :)
-		return substr( base64_encode( openssl_random_pseudo_bytes( 1000 ) ), 0, $length );
-	} else {
-		# php4 makes babies cry :(
-		return substr( base64_encode( rand( 0, 1000 ) ), 0, $length );
-	}
-}
-function destroy_nonce() {
-	unset( $_SESSION['nonce'] );
-}
-
-if ( !isset( $_SESSION['nonce'] ) ) {
-	$token = generate_nonce();
-	$_SESSION['nonce'][$token] = strtotime( "+1 hour" );
-}
-
-$error_msg = array();
-$result = null;
-
-$requiredFields = explode( ",", $requiredFields );
-
-function clean($data) {
-	$data = trim( stripslashes( strip_tags( $data ) ) );
-	return $data;
-}
-function is_bot() {
-	$bots = array( "Indy", "Blaiz", "Java", "libwww-perl", "Python", "OutfoxBot", "User-Agent", "PycURL", "AlphaServer", "T8Abot", "Syntryx", "WinHttp", "WebBandit", "nicebot", "Teoma", "alexa", "froogle", "inktomi", "looksmart", "URL_Spider_SQL", "Firefly", "NationalDirectory", "Ask Jeeves", "TECNOSEEK", "InfoSeek", "WebFindBot", "girafabot", "crawler", "www.galaxy.com", "Googlebot", "Scooter", "Slurp", "appie", "FAST", "WebBug", "Spade", "ZyBorg", "rabaz" );
-
-	foreach ( $bots as $bot )
-		if ( stripos( $_SERVER['HTTP_USER_AGENT'], $bot ) !== false )
-			return true;
-
-	if ( empty( $_SERVER['HTTP_USER_AGENT'] ) || $_SERVER['HTTP_USER_AGENT'] == " " )
-		return true;
-	
-	return false;
-}
-
-function is_valid_email( $email_address ) {
-	if ( function_exists( 'filter_var' ) ) {
-		# we have php5 :)
-		if ( filter_var( $email_address, FILTER_VALIDATE_EMAIL ) !== false )
-			return true;
-		
-		return false;
-	} else {
-		# php4 makes babies cry :(
-		if ( preg_match( '/^([a-z0-9])(([-a-z0-9._])*([a-z0-9]))*\@([a-z0-9])(([a-z0-9-])*([a-z0-9]))+(\.([a-z0-9])([-a-z0-9_-])?([a-z0-9])+)+$/i', strtolower( $email_address ) ) )
-			return true;
-		
-		return false;
-	}
-}
-function is_valid_url( $web_address ) {
-	if ( function_exists( 'filter_var' ) ) {
-		# we have php5 :)
-		if ( filter_var( $web_address, FILTER_VALIDATE_URL ) !== false )
-			return true;
-		
-		return false;
-	} else {
-		# php4 makes babies cry :(
-		if ( preg_match( '/^(http|https):\/\/(([A-Z0-9][A-Z0-9_-]*)(\.[A-Z0-9][A-Z0-9_-]*)+)(:(\d+))?\/?/i', $web_address ) )
-			return true;
-		
-		return false;
-	}
-}
-function validate_nonce( $token ) {
-	if ( !isset( $token ) || !isset( $_SESSION['nonce'][$token] ) )
-		return false; # token or session missing
-
-	if ( time() > $_SESSION['nonce'][$token] ) {
-		destroy_nonce();
-		return false; # expired
-	}
-
-	if ( $token != key( $_SESSION['nonce'] ) ) {
-		destroy_nonce();
-		return false; # submitted token doesn't match session
-	}
-	
-	return true;
-}
-
-if ( $_SERVER['REQUEST_METHOD'] == "POST" ) {
-	if ( validate_nonce( $_POST['token'] ) !== true ) {
-		$error_msg[] = "Invalid submission";
-		destroy_nonce();
-	}
-	
-	if ( is_bot() !== false )
-		$error_msg[] = "No bots please! UA reported as: ". $_SERVER['HTTP_USER_AGENT'];
-		
-	// lets check a few things - not enough to trigger an error on their own, but worth assigning a spam score.. 
-	// score quickly adds up therefore allowing genuine users with 'accidental' score through but cutting out real spam :)
-	$points = (int)0;
-	
-	if ( isset( $_SESSION['last_submit'] ) ) {
-		if ( time()-$_SESSION['last_submit'] > 60 && time()-$_SESSION['last_submit'] < 360 )
-			$points += 2;
-		
-		if ( true == $prevent_repeats && time()-$_SESSION['last_submit'] < 60 ) {
-			$error_msg[] = "You have only just filled in the form; please do not send multiple form submissions.";
-		}
-	} else {
-		$_SESSION['last_submit'] = time();
-	}
-	
-	$badwords = array("adult", "beastial", "bestial", "blowjob", "clit", "cum", "cunilingus", "cunillingus", "cunnilingus", "cunt", "ejaculate", "fag", "felatio", "fellatio", "fuck", "fuk", "fuks", "gangbang", "gangbanged", "gangbangs", "hotsex", "hardcode", "jism", "jiz", "orgasim", "orgasims", "orgasm", "orgasms", "phonesex", "phuk", "phuq", "pussies", "pussy", "spunk", "xxx", "viagra", "phentermine", "tramadol", "adipex", "advai", "alprazolam", "ambien", "ambian", "amoxicillin", "antivert", "blackjack", "backgammon", "texas", "holdem", "poker", "carisoprodol", "ciara", "ciprofloxacin", "debt", "dating", "porn", "link=", "voyeur", "content-type", "bcc:", "cc:", "document.cookie", "onclick", "onload", "javascript");
-
-	foreach ( $badwords as $word )
-		if (
-			strpos( strtolower( $_POST['comments'] ), $word ) !== false || 
-			strpos( strtolower( $_POST['name'] ), $word ) !== false
-		)
-			$points += 2;
-	
-	if ( strpos( $_POST['comments'], "http://" ) !== false || strpos( $_POST['comments'], "www." ) !== false )
-		$points += 2;
-	if ( isset( $_POST['nojs'] ) )
-		$points += 1;
-	if ( preg_match( "/(<.*>)/i", $_POST['comments'] ) )
-		$points += 2;
-	if ( strlen( $_POST['name']) < 3 )
-		$points += 1;
-	if ( strlen( $_POST['comments'] ) < 15 || strlen( $_POST['comments'] > 1500 ) )
-		$points += 2;
-	if ( preg_match( "/[bcdfghjklmnpqrstvwxyz]{7,}/i", $_POST['comments'] ) )
-		$points += 1;
-	// end score assignments
-
-	foreach($requiredFields as $field) {
-		trim( $_POST[$field] );
-		
-		if ( !isset( $_POST[$field] ) || empty( $_POST[$field] ) )
-			$error_msg['empty_fields'] = "Please fill in all required fields and submit again.";
-	}
-
-	// updated regex from http://stackoverflow.com/questions/5963228/regex-for-names-with-special-characters-unicode
-	if ( !empty( $_POST['name'] ) && !preg_match( "~^(?:[\p{L}\p{Mn}\p{Pd}\'\x{2019}]+\s?[\p{L}\p{Mn}\p{Pd}\'\x{2019}]+\s?)+$~u", stripslashes( $_POST['name'] ) ) )
-		$error_msg[] = "The name field must not contain special characters.\r\n";
-	if ( !empty( $_POST['email'] ) && !is_valid_email( $_POST['email'] ) )
-		$error_msg[] = "That is not a valid e-mail address.\r\n";
-	if ( !empty( $_POST['url'] ) && !is_valid_url( $_POST['url'] ) )
-		$error_msg[] = "Invalid website url.\r\n";
-	
-	if ( $error_msg == NULL && $points <= $maxPoints ) {
-		$subject = "Home Contact Button - ". $yourWebsite;
-		
-		$message = "You received this e-mail message through your website: \n\n";
-		foreach ( $_POST as $key => $val ) {
-			if ( $key == 'token' || $key == 'submit' )
-				continue; // we don't need these in the email
-			
-			if ( is_array( $val ) ) {
-				foreach ( $val as $subval ) {
-					$message .= ucwords( $key ) . ": " . clean( $subval ) . "\r\n";
-				}
-			} else {
-				$message .= ucwords( $key ) . ": " . clean( $val ) . "\r\n";
-			}
-		}
-		$message .= "\r\n";
-		$message .= 'IP: '. $_SERVER['REMOTE_ADDR']."\r\n";
-		$message .= 'Browser: '. $_SERVER['HTTP_USER_AGENT']."\r\n";
-		$message .= 'Points: '. $points;
-
-		if ( strstr( $_SERVER['SERVER_SOFTWARE'], "Win" ) ) {
-			$headers   = "From: $primary_recipient\r\n";
-		} else {
-			$headers   = "From: $yourWebsite <$primary_recipient>\r\n";	
-		}
-		$headers  .= "Reply-To: {$_POST['email']}\r\n";
-
-		if ( '' != $cc_recipients ) {
-			$headers .= "CC: ". $cc_recipients;
-		}		
-		if ( '' != $bcc_recipients ) {
-			$headers .= "BCC: ". $bcc_recipients;
-		}
-		
-		$headers .= "Content-Transfer-Encoding: 8bit\r\n";
-		$headers .= "Content-type: text/plain; charset=UTF-8\r\n";
-		
-
-		if ( mail( $primary_recipient, $subject, $message, $headers ) ) {
-			destroy_nonce();
-			
-			if ( !empty( $thanksPage ) ) {
-				header( "Location: $thanksPage" );
-				exit;
-			} else {
-				$result = 'Your message was successfully sent.';
-				$disable = true;
-			}
-		} else {
-			destory_nonce();
-			$error_msg[] = 'Your message could not be sent this time. ['.$points.']';
-		}
-	} else {
-		if ( empty( $error_msg ) ) {
-			// error message is empty so it must be a points problem
-			$error_msg[] = 'Your message looks too much like spam, and could not be sent at this time. ['.$points.']';
-		} else {
-			// ooops, someone made an error - let's remove the last submission time so they don't get peed off
-			unset( $_SESSION['last_submit'] );
-		}
-	}
-}
-function get_data( $var ) {
-	if ( isset( $_POST[$var] ) )
-		echo htmlspecialchars( $_POST[$var] );
-}
-?>
-<!-- End PHP -->  
-
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     
-    <title>Editing and Proofreading Service for Authors, Bloggers, and Business | Atlanta - Gwinnett | Mo Reads You</title>
+    <title>Editing and Proofreading Service for Authors, Bloggers, and Business| Mo Reads You</title>
 
     <link rel="canonical" href="http://www.moreadsyou.com/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="editing, copy editor, proofreading service, writing, author, blogger, blog content, business content, Atlanta, Gwinnett" >
+    <meta name="keywords" content="editing, copy editor, proofreading service, writing, author, blogger, blog content, business content" >
     <meta name="description" content="What have you got to say for yourself? I can help you say it better. Editing and proofreading services for authors, content producers, and everyone else.">
 
 <!-- Facebook -->
@@ -281,28 +29,16 @@ function get_data( $var ) {
 
     
 <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b10909">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#59297f">
+    <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     
 <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     
 
 <!-- Google Fonts -->
@@ -325,7 +61,31 @@ function get_data( $var ) {
     
 <!-- Header -->  
     <header id="header" class="push">  
-        <div class="overlay push"></div>  
+        <!-- <div class="overlay push"></div>  --> 
+        
+        <!-- Menu -->
+        <a href="#navigation" id="main-menu-toggle" class="menu-toggle">
+            <span>&#9776;</span>
+        </a>
+
+        <nav id="navigation" class="main-menu">
+
+            <a href="#tab-navigation" id="main-menu-close" class="menu-close">
+              <span>&#215;</span>
+            </a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Why Hire Mo?</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+
+        </nav>
+
+        <a href="#main-menu-toggle" class="backdrop" hidden></a>   
+<!-- End Menu -->
         
         <h3 class="title"><a href="#">Mo Reads You</a></h3>
         <h1 class="description">Editing * Proofreading * Copywriting</h1>
@@ -334,53 +94,85 @@ function get_data( $var ) {
 
         <img alt="Picture of Monique" src="images/mo.jpg">
 
-        <p class="header_text purple_italic">So, what have you got to say for yourself?<br>
-        <span class="second">I can help you say it better.</span></p>
+        <!-- <p class="header_text purple_italic">So, what have you got to say for yourself?<br>
+        <span class="second">I can help you say it better.</span></p> -->
         
-<!-- Menu -->  
-        <p class="menu_link"><span class="goto">Go To</span> <a href="#menu" class="hamburger"> &#9776;</a></p>
-
-        <nav id="menu" class="panel">
-            <ul class="menu_links">
-                <li><a href="index.php">Home | About</a></li>
-                <li><a href="authors.php"><span class="bold_purple">A</span>uthors</a></li><li><a href="business.php"><span class="bold_purple">B</span>usinesses</a></li>
-                <li><a href="bloggers.php"><span class="bold_purple">C</span>ontent Producers</a></li>
-                <li><a href="contact.php">Contact | Rates</a></li>
-            </ul>
-        </nav>
-<!-- End Menu -->  
     </header>     
 <!-- End Header -->      
                     
 <!-- Main -->     
     <main>
         
-        <?php
-        if ( !empty( $error_msg ) ) {
-            echo '<p class="fail">ERROR: '. implode( "<br>", $error_msg ) . "</p>";
-        }
-        if ( $result != NULL ) {
-            echo '<p id="success">'. $result . "</p>";
-        }
-        ?>
+        <p class="bold center">What I Can Do for You</p>
         
-        <div id="left_button">
-            <form method="get" action="authors.php">
-                <button class="button button_index">You’re writing the next Great American Novel and need someone to help massage it into shape. And to check your grammar.<span class="more">More...</span></button>
+        <p class="center">I work with writers and authors to take their manuscript from good to great. Or from mediocre to good to great. Or from disastrous to mediocre to good to great.</p>
+        
+        <p class="center">No matter what condition your manuscript is in, I’ll help you get it where you want it to be. If you’re not sure what your manuscript needs, <a class="contact" href="mailto:moreadsyou@outlook.com">send it to me</a> and I’ll give you specific recommendations, a Scope of Work, and the estimated cost.</p>
+        
+        <p class="center">Or <a class="contact" href="contact.php">contact me</a> so we can chat about your project.</p>
+        <br>
+        
+        <p class="bold">Rates and Terms</p>
+        
+        <p>Proofreading – 2 cents per word<br>
+        Copy and Structural Editing – 4 cents per word<br>
+        Copywriting and Cowriting – 10 cents per word<br>
+        Consultation - $30/hour<br>
+        Terms: 25% to start, installments as negotiated, final payment upon your approval and acceptance of edited manuscript.</p>
+        <br>
+        
+        <!-- Contact Form 
+    <div id="contact" class="full">  
+
+        <h3>Let's Chat</h3>
+            <p>Ready to get started? Not sure what you need? Looking for an estimate? Fill out the form below and let's set up a time to talk about your project.</p>
+            
+            <p>You can also <a href="https://twitter.com/codegreer">find me on Twitter</a>, <a href="https://www.facebook.com/codegreer/">check out my Facebook page</a>, email me directly at <a style="white-space:nowrap;" href="mailto:hello@codegreer.com">hello@codegreer.com</a>, or give me at call at <a style="white-space:nowrap;" href="tel:770-765-5303">770-765-5303</a>.</p>
+  
+        <div id="contact_form">
+            <form method="post" action="submit.php" class="cg_form">
+                
+                <div class="cg_column">
+	           
+                    <label for="name">Your name </label> 
+                    <input name="name" required />
+
+                    <label for="email">Your email </label>
+                    <input name="email" required />
+
+                    <label for="website">Your domain </label>
+                    <input name="website" />
+                    
+                    <p style="display:none !important">Leave this empty: <input type="text" name="contact-next-week" style="display:none !important" tabindex="-1" autocomplete="false"></p>
+                </div>
+
+                <div class="cg_text">
+                    <label class="forcomments" for="comments">Tell me about your project</label>
+                    <textarea name="message"></textarea>
+                </div>
+                
+                <div class="cg_submit_wrap">
+                     <input type="submit" class="submitbutton cg_submit" value="Send" />
+                </div>
+            
             </form>
-        </div>
+            <br>
+        </div>   
+    </div> 
+<!-- End Contact Form -->  
         
-        <div id="middle_button">
-            <form method="get" action="bloggers.php">
-                <button class="button button_index">You have Brilliant Ideas that will Change the Internet and need to be sure typos don’t make you look like an amateur. Before you hit the publish button.<span class="more">More...</span></button>
+        <p class="bold right">About Me</p>
+        
+        <p class="right">I'm Monique. I'm that annoying person who notices the one tiny error in just about anything and points it out. I've always been an avid reader and will generally take a shot at reading just about anything a friend recommends. I love being pulled into someone else's mind, their ideas, their world. I love a lovely turn of phrase, a delightful word, a perfectly expressed sentiment. I hate garden path sentences, confusing punctuation, and anything else that interrupts absolute immersion in the reading experience. I channel that passion into helping other people tell their story as clearly and seamlessly as possible. I help them be better writers. I'd like to help you, too.</p>
+        
+        
+<!-- Contact Button Mobile -->        
+        <div class="contact_popup_index2 show">
+            <form method="get" action="contact.php#contact_right">
+                <button class="button button_contact">Get in touch!</button>
             </form>    
         </div>
-        
-        <div id="right_button">
-            <form method="get" action="business.php">
-                <button class="button button_index">You’ve got something to say and need help using your words. Without being lectured to by your 5th grade English teacher.<span class="more">More...</span></button>
-            </form>    
-        </div>
+<!-- End Contact Button Mobile -->         
         
 <!-- Contact Button -->        
         <div id="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
@@ -389,48 +181,33 @@ function get_data( $var ) {
 				<div>
 				    <div>
 				        <p class="close icon_close">Close</p>
-				        <!-- <h2 class="popup_title">Do you want a title?</h2> -->
                         
-                        
-                        
-                        <form action="<?php echo basename( __FILE__ ); ?>" method="post">
-                            <noscript>
-                                    <p><input type="hidden" name="nojs" id="nojs" /></p>
-                            </noscript>
-                           
-                            <input type="hidden" name="token" value="<?php if ( is_array( $_SESSION['nonce'] ) ) echo key( $_SESSION['nonce'] ); ?>">
+                        <form method="post" action="submit.php">
+                
+                            <label for="name">Your name: </label> 
+                            <input name="name" type="text" required />
 
-                            <label for="name">Your name:</label> 
-                            <input type="text" name="name" id="name" value="<?php get_data("name"); ?>" required>
+                            <label for="email">Your email: </label>
+                            <input name="email" type="email" required />
 
-                            <label for="email">Your email:</label> 
-                            <input type="email" name="email" id="email" value="<?php get_data("email"); ?>" required>
+                            <label for="phone">Your phone number (optional): </label>
+                            <input name="phone" type="tel" />
 
-                            <label for="url">Your phone number (optional):</label> 
-                            <input type="text" name="phone" id="phone" value="<?php get_data("phone"); ?>">
-
+                            <p style="display:none !important">Leave this empty: <input type="text" name="contact-next-week" style="display:none !important" tabindex="-1" autocomplete="false"></p>
+                            
                             <label for="comments">What can I do for you?</label><br>
-                            <textarea name="comments" id="comments"><?php get_data("comments"); ?></textarea>
-
-                            <input type="submit" name="submit" id="submit" class="button button_submit" value="Send" <?php if ( isset( $disable ) && $disable === true ) echo ' disabled="disabled"'; ?> />
+                            <textarea name="message"></textarea>
                           
+                            <input type="submit" class="button button_submit" value="Send" />
                         </form>
 				    </div>
 				</div>
             </div>
         </div>
-<!-- End Contact Button -->             
+<!-- End Contact Button -->          
         
-<!-- Contact Button Mobile -->        
-        <div class="contact_popup_index2 show">
-            <form method="get" action="contact.php#contact_right">
-                <button class="button button_contact">Get in touch!</button>
-            </form>    
-        </div>
-<!-- End Contact Button Mobile -->  
-        <br>
         
-        <p>Hey, I'm Monique. I'm that annoying person who notices the one tiny error in just about anything, and points it out. I've always been an avid reader, and will generally take a shot at reading just about anything a friend recommends. I love being pulled into someone else's mind, their ideas, their world. I love a lovely turn of phrase, a delightful word, a perfectly expressed sentiment. I hate garden path sentences, confusing punctuation, and anything else that interrupts absolute immersion in the reading experience. I channel that passion into helping other people express themselves in writing as clearly and seamlessly as possible. I help them be better writers. I'd like to help you, too.</p>
+        
     </main>   
 <!-- End Main -->      
     
@@ -447,18 +224,17 @@ function get_data( $var ) {
         <ul class="copyright">
             <li>&#169; Monique Huenergardt</li>
             <li><a class="contact" href="mailto:moreadsyou@outlook.com">MoReadsYou@outlook.com</a></li>
-            <li>Lawrenceville, GA, USA</li>
+            <li>Nashville, TN, USA</li>
         </ul>   
 
         <ul class="credits">
             <li><a class="contact" href="contact.php#contact_right2">Full Site Credits</a></li>
-            <li>Site Coded by <a class="contact" href="http://codegreer.com/">CodeGreer</a></li>
+            <li>Site Coded by <a class="contact" href="https://codegreer.com/">CodeGreer</a></li>
         </ul>
     </footer>  
 <!-- End Footer -->  
     
 <!-- Javascript -->  
-    <script src="js/bigslide.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/uiMorphingButton_fixed.js"></script>
     <script>
@@ -527,12 +303,7 @@ function get_data( $var ) {
         })();
     </script>
     
-<!-- Big Slide -->
-    <script>
-        $(document).ready(function() {
-        $('.menu_link, .menu_link_mobile').bigSlide();
-        });
-    </script>  
+
 <!-- End Javascript -->                   
     
 </body> 
