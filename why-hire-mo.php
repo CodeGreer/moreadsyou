@@ -1,19 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    
-    <title>Editing, Proofreading, and copywriting for Authors | Mo Reads You</title>
-
-    <link rel="canonical" href="http://www.moreadsyou.com/">
+	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="editing, copy editor, proofreading service, writing, author, authors" >
+    
+    <title>Why Hire Mo? | Mo Reads You</title>
+    
+    <meta name="keywords" content="manuscript editing, manuscript copy editor, manuscript proofreading services, story copy editor, book editor, book proofreader, authors" >
     <meta name="description" content="What have you got to say for yourself? I can help you say it better. Editing, proofreading, and copywriting for authors.">
 
 <!-- Facebook -->
-    <meta property="og:title" content="Mo Reads You | Editing, proofreading, and copywriting." >
+    <meta property="og:title" content="Mo Reads You | Why Hire Mo?" >
     <meta property="og:site_name" content="Mo Reads You">
-    <meta property="og:url" content="http://www.moreadsyou.com/" >
+    <meta property="og:url" content="http://www.moreadsyou.com/why-hire-mo.php" >
     <meta property="og:description" content="What have you got to say for yourself? I can help you say it better. Editing, proofreading, and copywriting for authors." >
     <meta property="og:image" content="http://www.moreadsyou.com/images/mo.jpg" >
     <meta property="og:type" content="website" >
@@ -21,10 +20,10 @@
 
 <!--Twitter-->
     <meta property="twitter:card" content="summary" >
-    <meta property="twitter:title" content="Mo Reads You | Editing, proofreading, and copywriting." >
+    <meta property="twitter:title" content="Mo Reads You | Why Hire Mo?" >
     <meta property="twitter:description" content="What have you got to say for yourself? I can help you say it better. Editing, proofreading, and copywriting for authors." >
     <meta property="twitter:creator" content="@moreadsyou" >
-    <meta property="twitter:url" content="http://www.moreadsyou.com/" >
+    <meta property="twitter:url" content="http://www.moreadsyou.com/why-hire-mo.php" >
     <meta property="twitter:image" content="http://www.moreadsyou.com/images/mo.jpg" >
 
     
@@ -46,9 +45,9 @@
     
 </head>
   
-<body id="top" class="site"> 
+<body id="top" class="site">
     
-<!-- start my code -->
+<!-- start my code -->  
     
     <div id="container">   
     
@@ -61,7 +60,7 @@
         
         <h1 class="description">Editing * Proofreading * Copywriting</h1>
         
-        <h2 class="tagline">Helping You Be a Better Writer</h2>        
+        <h2 class="tagline">Helping You Be a Better Writer</h2>     
         
     <!-- Contact Button -->        
         <div id="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
@@ -97,7 +96,7 @@
 
     </header>     
 <!-- End Header -->      
-                    
+
 <!-- Main -->     
     <main>
         
@@ -123,51 +122,50 @@
 
         <a href="#main-menu-toggle" class="backdrop" hidden></a>   
     <!-- End Menu -->
-        
-        <div class="block">
-            
-            <img alt="A woman sitting on a bed in a hotel room using her laptop" class="content_image img-right" src="images/hotel.jpg">
-            
-            <div>
-                <p class="judsonbold">What I Can Do for You</p>
 
-                <p>I work with writers and authors to take their manuscript from good to great. Or from mediocre to good to great. Or from disastrous to mediocre to good to great.</p>
+        <div class="content">
+            
+            <p class="judsonbold">Why Hire Mo?</p>
+            
+            <p class="ralewaysemiitalic">It's not just your Manuscript. It's your Reader's Bliss.</p>
+            
+            <p>You’ve mastered your story. You’ve developed deep, rich, compelling characters. Created the perfect setting. Crafted your plot to perfection.</p>
 
-                <p>No matter what condition your manuscript is in, I’ll help you get it where you want it to be. If you’re not sure what your manuscript needs, <a class="text-link" href="mailto:moreadsyou@outlook.com">send it to me</a> and I’ll give you specific recommendations, a Scope of Work, and the estimated cost.</p>
-                
-                <p>Or <a class="text-link" href="#top">contact me</a> so we can chat about your project.</p>
-            </div>
+            <p>You’ve written. And rewritten. And edited. And proofread. And rewritten. And re-edited. And re-proofread. And had your mom, your best friend, and your cat read it.</p>
+
+            <p>It’s perfect!</p>
+
+            <p>Now what?</p>
+
+            <p>Now you send it to me. <span class="purple_italic">I’ll help you make it even better.</span></p>
+
+            <p>Because, let’s face it, you’ve been staring at this thing for a really long time. You've read it over and over and over. You’ve memorized entire passages, and rewritten others so many times you’re not sure which version you kept. You’re pretty sure moving those four scenes around didn’t mess with your timeline. And your cat ran it through Spellcheck at least three times.</p> 
+
+            <p>But . . .</p>
+
+            <p>You need another set of eyes. You need someone to read your masterpiece <span class="purple_italic">like your reader will.</span></p>
+
+            <p>And, that’s what I do. I read your manuscript <span class="purple_italic">with the eyes of your reader</span>, and I tell you what your reader thinks of it. Before your reader gets a hold of it. Before you get that first bad review on Amazon.</p>
+
+            <p>And, I do all the other stuff you expect an editor to do. Like checking grammar and spelling. And making sure your main character’s hair doesn’t inexplicably turn from red to blonde in chapter three, and that it didn’t take four days to drive ten miles.</p>
+
+            <p>Because readers notice these things. And it bugs them. <span class="purple_italic">And you don’t want to bug your readers, do you?</span></p>
+
+            <p>But, you’re nervous. You’ve slaved over this book, and you’ve agonized over how to tell your story in your own voice. And you don’t want some <span class="maroon">Evil Editor</span> with a <span class="maroon">Big Fat Red Sharpie</span> slashing away at your manuscript.</p>
+
+            <p>Don’t worry. I won’t do that. I don’t even own a red Sharpie. I’ll make suggestions. I’ll point out possible improvements. I’ll highlight the things that are great. And, yes, I’ll fix spelling and grammar and do all of that other stuff that makes writing more readable, <span class="purple_italic">while keeping it distinctly “you.”</span></p>
+
+            <p>So reading your book is a pleasure for your reader. Because that’s what you want, right? For your book to be <span class="purple_italic">Your Reader’s Bliss.</span></p>
+
+            <p>So, <a class="text-link" href="mailto:moreadsyou@outlook.com">get in touch with me</a>, tell me about your project, and let’s get started.</p>
+
+            <p>Chat soon ~ Mo</p>
         </div>
         
-        <div class="block-middle">
-            
-            <img alt="A table with a cup of coffee, blank paper, and a pen." class="content_image img-left" src="images/coffee.jpg">
-            
-            <div>
-                <p class="judsonbold right">Rates and Terms</p>
-
-                <p class="right"><span class="ralewaysemi">Proofreading</span> – 2 cents per word<br>
-                    <span class="ralewaysemi">Copy and Structural Editing</span> – 4 cents per word<br>
-                    <span class="ralewaysemi">Copywriting and Cowriting</span> – 10 cents per word<br>
-                    <span class="ralewaysemi">Consultation</span> - $30/hour<br><br>
-                    <span class="ralewaysemiitalic">Terms:</span> <span class="italic">25% to start, installments as negotiated, final payment upon your approval and acceptance of edited manuscript.</span></p>
-            </div>
-        </div>
         
-        <div class="block">
-            
-            <img alt="A woman sitting at a table with a cup of tea and a book while working on her laptop" class="content_image img-right" src="images/laptop.jpg">
-            
-            <div>
-                <p class="judsonbold">About Me</p>
-            
-                <p>I'm Monique. I'm that annoying person who notices the one tiny error in just about anything and points it out. I've always been an avid reader and will generally take a shot at reading just about anything a friend recommends. I love being pulled into someone else's mind, their ideas, their world. I love a lovely turn of phrase, a delightful word, a perfectly expressed sentiment. I hate garden path sentences, confusing punctuation, and anything else that interrupts absolute immersion in the reading experience. I channel that passion into helping other people tell their story as clearly and seamlessly as possible. I help them be better writers. I'd like to help you, too.</p>
-            </div>
-        </div>
-
     </main>   
-<!-- End Main -->      
-     
+<!-- End Main -->   
+        
 <!-- Footer -->      
     <footer>
          
@@ -185,9 +183,9 @@
 
     </footer>  
 <!-- End Footer -->  
-    </div>
+</div>
     
-<!-- Javascript -->  
+<!-- Javascript --> 
     <script src="js/classie.js"></script>
     <script src="js/uiMorphingButton_fixed.js"></script>
     <script>
@@ -249,15 +247,14 @@
                 } );
             } );
 
-            // causing issues with linkable buttons so used div selector
-            [].slice.call( document.querySelectorAll( '#contact_button_index' ) ).forEach( function( bttn ) { 
+            // the selector is generic when no linkable button present
+            [].slice.call( document.querySelectorAll( '#contact_button' ) ).forEach( function( bttn ) { 
 				bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
             } );
         })();
     </script>
-    
-
-<!-- End Javascript -->                   
+       
+<!-- End Javascript -->          
     
 </body> 
 </html>
