@@ -64,7 +64,7 @@
         <h2 class="tagline">Helping You Be a Better Writer</h2>        
         
     <!-- Contact Button -->        
-        <div id="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
+        <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
             <button type="button" class="button button_contact">Get in touch!</button> 
             <div class="popup_content">
 				<div>
@@ -97,6 +97,8 @@
 
     </header>     
 <!-- End Header -->      
+    
+         
                     
 <!-- Main -->     
     <main>
@@ -119,18 +121,18 @@
                 <li><a href="why-hire-mo.php">Why Hire Mo?</a></li>
             </ul>
 
-        </nav>
-
-        <a href="#main-menu-toggle" class="backdrop" hidden></a>   
+        </nav>  
+        
+        <a href="#main-menu-toggle" class="backdrop" hidden></a>
     <!-- End Menu -->
+        
+        <p class="judsonbold width-800">What I Can Do for You</p>
         
         <div class="block">
             
             <img alt="A woman sitting on a bed in a hotel room using her laptop" class="content_image img-right" src="images/hotel.jpg">
             
             <div>
-                <p class="judsonbold">What I Can Do for You</p>
-
                 <p>I work with writers and authors to take their manuscript from good to great. Or from mediocre to good to great. Or from disastrous to mediocre to good to great.</p>
 
                 <p>No matter what condition your manuscript is in, I’ll help you get it where you want it to be. If you’re not sure what your manuscript needs, <a class="text-link" href="mailto:moreadsyou@outlook.com">send it to me</a> and I’ll give you specific recommendations, a Scope of Work, and the estimated cost.</p>
@@ -139,13 +141,13 @@
             </div>
         </div>
         
+        <p class="judsonbold right width-800">Rates and Terms</p>
+        
         <div class="block-middle">
             
             <img alt="A table with a cup of coffee, blank paper, and a pen." class="content_image img-left" src="images/coffee.jpg">
             
             <div>
-                <p class="judsonbold right">Rates and Terms</p>
-
                 <p class="right"><span class="ralewaysemi">Proofreading</span> – 2 cents per word<br>
                     <span class="ralewaysemi">Copy and Structural Editing</span> – 4 cents per word<br>
                     <span class="ralewaysemi">Copywriting and Cowriting</span> – 10 cents per word<br>
@@ -154,13 +156,13 @@
             </div>
         </div>
         
+        <p class="judsonbold width-800">About Me</p>
+        
         <div class="block">
             
             <img alt="A woman sitting at a table with a cup of tea and a book while working on her laptop" class="content_image img-right" src="images/laptop.jpg">
             
-            <div>
-                <p class="judsonbold">About Me</p>
-            
+            <div>    
                 <p>I'm Monique. I'm that annoying person who notices the one tiny error in just about anything and points it out. I've always been an avid reader and will generally take a shot at reading just about anything a friend recommends. I love being pulled into someone else's mind, their ideas, their world. I love a lovely turn of phrase, a delightful word, a perfectly expressed sentiment. I hate garden path sentences, confusing punctuation, and anything else that interrupts absolute immersion in the reading experience. I channel that passion into helping other people tell their story as clearly and seamlessly as possible. I help them be better writers. I'd like to help you, too.</p>
             </div>
         </div>

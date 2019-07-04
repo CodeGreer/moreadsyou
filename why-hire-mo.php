@@ -63,7 +63,7 @@
         <h2 class="tagline">Helping You Be a Better Writer</h2>     
         
     <!-- Contact Button -->        
-        <div id="contact_popup_index" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
+        <div id="contact_popup" class="popup_button popup_button_modal popup_button_modal3 popup_button_fixed hide">
             <button type="button" class="button button_contact">Get in touch!</button> 
             <div class="popup_content">
 				<div>
