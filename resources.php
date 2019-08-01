@@ -37,7 +37,7 @@
     <meta name="theme-color" content="#ffffff">
     
 <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
     
 <!-- Javascript -->  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -141,48 +141,50 @@
                 <p class="ralewaysemi">About Writing:</p>
 
                 <ul>
-                    <li><a class="text-link" href="https://firstmanuscript.com/format-dialogue/">How to Format Dialogue</a></li>
+                    <li><a class="text-link" target="_blank" href="https://firstmanuscript.com/format-dialogue/">How to Format Dialogue</a></li>
 
-                    <li><a class="text-link" href="https://writerunboxed.com/2017/04/12/third-person-narration-using-the-zoom-lens/">Third Person Narration</a></li>
+                    <li><a class="text-link" target="_blank" href="https://writerunboxed.com/2017/04/12/third-person-narration-using-the-zoom-lens/">Third Person Narration</a></li>
 
-                    <li><a class="text-link" href="https://i.pinimg.com/originals/bf/33/e9/bf33e991ff6fa69bb22755396204e01c.jpg">16 Boring Words and What to Use Instead</a></li>
+                    <li><a class="text-link" target="_blank" href="https://i.pinimg.com/originals/bf/33/e9/bf33e991ff6fa69bb22755396204e01c.jpg">16 Boring Words and What to Use Instead</a></li>
 
-                    <li><a class="text-link" href="https://writerunboxed.com/2016/04/01/the-myth-of-the-average-reader/">The Myth of the Average Reader</a></li>
+                    <li><a class="text-link" target="_blank" href="https://writerunboxed.com/2016/04/01/the-myth-of-the-average-reader/">The Myth of the Average Reader</a></li>
                 </ul>
 
 
                 <p class="ralewaysemi">About Drafts and Revisions:</p>
 
                 <ul>
-                    <li><a class="text-link" href="https://writersedit.com/fiction-writing/comprehensive-post-draft-game-plan-novel/">Post-Draft Game Plan</a></li>
+                    <li><a class="text-link" target="_blank" href="https://writersedit.com/fiction-writing/comprehensive-post-draft-game-plan-novel/">Post-Draft Game Plan</a></li>
 
-                    <li><a class="text-link" href="https://writerunboxed.com/2016/08/25/revising-revising-revising-what/">Revising, Revising, and How to Make it Through</a></li>
+                    <li><a class="text-link" target="_blank" href="https://writerunboxed.com/2016/08/25/revising-revising-revising-what/">Revising, Revising, and How to Make it Through</a></li>
 
-                    <li><a class="text-link" href="https://writersedit.com/fiction-writing/ultimate-guide-work-beta-readers/">How to Work with Beta Readers</a></li>
+                    <li><a class="text-link" target="_blank" href="https://writersedit.com/fiction-writing/ultimate-guide-work-beta-readers/">How to Work with Beta Readers</a></li>
 
-                    <li><a class="text-link" href="https://1106design.com/2017/08/time-self-publish-book/">How Long Will It Take to Self-Publish My Book?</a></li>
+                    <li><a class="text-link" target="_blank" href="https://1106design.com/2017/08/time-self-publish-book/">How Long Will It Take to Self-Publish My Book?</a></li>
                 </ul>
 
 
                 <p class="ralewaysemi">About Finding and Working with an Editor:</p>
 
                 <ul>
-                    <li><a class="text-link" href="https://writerunboxed.com/2017/08/20/how-a-professional-editor-can-improve-your-writing/">How a Professional Editor Can Improve Your Writing</a></li>
+                    <li><a class="text-link" target="_blank" href="https://www.louiseharnbyproofreader.com/podcast.html">The Editing Podcast</a></li>
+                    
+                    <li><a class="text-link" target="_blank" href="https://writerunboxed.com/2017/08/20/how-a-professional-editor-can-improve-your-writing/">How a Professional Editor Can Improve Your Writing</a></li>
 
-                    <li><a class="text-link" href="http://lisapoisso.com/2017/09/11/types-of-editing/">Types of Editing</a></li>
+                    <li><a class="text-link" target="_blank" href="http://lisapoisso.com/2017/09/11/types-of-editing/">Types of Editing</a></li>
 
-                    <li><a class="text-link" href="https://1106design.com/2016/08/editing-service-right-heres-find/">Which Editing Service is Right for You?</a></li>
+                    <li><a class="text-link" target="_blank" href="https://1106design.com/2016/08/editing-service-right-heres-find/">Which Editing Service is Right for You?</a></li>
 
-                    <li><a class="text-link" href="https://www.writersdigest.com/online-editor/10-things-your-freelance-editor-might-not-tell-you-but-should">10 Things Your Freelance Editor Might Not Tell You—But Should</a></li>
+                    <li><a class="text-link" target="_blank" href="https://www.writersdigest.com/online-editor/10-things-your-freelance-editor-might-not-tell-you-but-should">10 Things Your Freelance Editor Might Not Tell You—But Should</a></li>
 
-                    <li><a class="text-link" href="https://writerunboxed.com/2017/06/20/two-coins-in-the-hundred/">Two Coins in the Hundred (working with an Editor)</a></li>
+                    <li><a class="text-link" target="_blank" href="https://writerunboxed.com/2017/06/20/two-coins-in-the-hundred/">Two Coins in the Hundred (working with an Editor)</a></li>
 
                 </ul>
 
                 <p class="ralewaysemi">Other Miscellaneous &amp; Useful Articles:</p>
 
                 <ul class="last">
-                    <li><a class="text-link" href="https://www.pinterest.com/momamabear/for-authors/">Check out my Pinterest Page for Authors</a></li>
+                    <li><a class="text-link" target="_blank" href="https://www.pinterest.com/momamabear/for-authors/">Check out my Pinterest Page for Authors</a></li>
                 </ul>
 
             </div>
@@ -203,7 +205,7 @@
                 <a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a>
                 <a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></p>
 
-                <p>Site Coded by <a class="text-link" href="https://codegreer.com/">CodeGreer</a></p>
+                <p>Site Coded by <a class="text-link" target="_blank" href="https://codegreer.com/">CodeGreer</a></p>
             </div>
 
         </footer>  

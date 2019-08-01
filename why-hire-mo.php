@@ -37,7 +37,7 @@
     <meta name="theme-color" content="#ffffff">
     
 <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
     
 <!-- Javascript -->  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -178,7 +178,7 @@
             <a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a>
             <a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></p>
             
-            <p>Site Coded by <a class="text-link" href="https://codegreer.com/">CodeGreer</a></p>
+            <p>Site Coded by <a class="text-link" target="_blank" href="https://codegreer.com/">CodeGreer</a></p>
         </div>
 
     </footer>  

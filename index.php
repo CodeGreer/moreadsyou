@@ -38,7 +38,7 @@
     <meta name="theme-color" content="#ffffff">
     
 <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
     
 <!-- Javascript -->  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -163,7 +163,7 @@
             <img alt="A woman sitting at a table with a cup of tea and a book while working on her laptop" class="content_image img-right" src="images/laptop.jpg">
             
             <div>    
-                <p>I'm Monique. I'm that annoying person who notices the one tiny error in just about anything and points it out. I've always been an avid reader and will generally take a shot at reading just about anything a friend recommends. I love being pulled into someone else's mind, their ideas, their world. I love a lovely turn of phrase, a delightful word, a perfectly expressed sentiment. I hate garden path sentences, confusing punctuation, and anything else that interrupts absolute immersion in the reading experience. I channel that passion into helping other people tell their story as clearly and seamlessly as possible. I help them be better writers. I'd like to help you, too.</p>
+                <p>I'm Monique. I have a knack for spotting errors just about everywhere. I've always been an avid reader and love being pulled into someone else's mind, their ideas, their world. I adore a lovely turn of phrase, a delightful word, a perfectly expressed sentiment. I hate garden path sentences, confusing punctuation, and anything else that interrupts immersion in the reading experience. I help people tell their story as clearly and seamlessly as possible. I'd like to help you, too.</p>
             </div>
         </div>
 
@@ -182,7 +182,7 @@
             <a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a>
             <a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></p>
             
-            <p>Site Coded by <a class="text-link" href="https://codegreer.com/">CodeGreer</a></p>
+            <p>Site Coded by <a class="text-link" target="_blank" href="https://codegreer.com/">CodeGreer</a></p>
         </div>
 
     </footer>  

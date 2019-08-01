@@ -37,7 +37,7 @@
     <meta name="theme-color" content="#ffffff">
     
 <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
     
 <!-- Javascript -->  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -127,23 +127,30 @@
             
             <p class="judsonbold">Testimonials</p>
             
+            <p class="ralewayitalic">"I met Monique Huenergardt two years ago at a party of a mutual friend. I learned that she was an editor during our brief conversation.  I shared with her that I was working on my second novel. Unable to hire her at the time because I already had an editor, I took her card thinking I might need it later.<br><br>
+                
+            Once I decided to write a third novel, a love story, I telephoned Monique. She agreed to read my manuscript, so I emailed it to her. In less than twenty-four hours, I received an email with her critique. She was gracious in her review, which surprised me. She celebrated my writing strengths, and she gently pointed out my flaws and areas of improvement.  After we discussed her critique by phone, I was confident I found myself a good editor.<br><br>
+                
+            Together we forged an excellent working relationship. During our time together, I learned so much about the art of writing and telling a good solid story. When it was all said and done three months later, I felt more confident in my writing skills. I had become a better writer, and I have Monique to thank for that. Her wisdom, guidance, sense of humor, and genuine interest in my work inspired me to be a better storyteller. I will forever be indebted to her, and for that reason, I recommend her services to any author who values and needs a good editor."</p>
+                
+            <p class="indent">- <a class="text-link" target="_blank" href="https://adixonthomas2017.blog/">Anita Dixon Thomas</a></p>
             
             
             <p class="ralewayitalic">"I can’t recommend Monique Huenergardt highly enough. I’m a writer, and I’m pretty darned good at it. But I’m not a proofreader, and I’m not an editor, so I hired Mo. She’s really good at those things. That would be enough to earn her kudos from 90% of the writers out there. But Mo has an incredible ability to read a story and offer easy-to-implement suggestions that improve it. She’s extremely professional in everything she does, and when offering suggestions to improve pace, heighten suspense, reveal backstory, you name it, she hits the nail on the head. With Mo’s help, I was able to come away with a much better book."</p>
                 
-            <p class="indent">- <a class="text-link" href="http://www.annabendewald.com/">Anna Bendewald</a>, author of <span class="ralewayitalic">Stealing Venice</span> and <span class="ralewayitalic">Meet Me At Pere Lachaise</span>, CEO of Hudson-Ivy Press</p>
+            <p class="indent">- <a class="text-link" target="_blank" href="http://www.annabendewald.com/">Anna Bendewald</a>, author of <span class="ralewayitalic">Stealing Venice</span> and <span class="ralewayitalic">Meet Me At Pere Lachaise</span>, CEO of Hudson-Ivy Press</p>
             
-            <p class="ralewayitalic">"Mo is a hard working and detailed proofreader / editor. I am a private golf instructor and Mo assisted in proofreading and editing all my pictures, videos and submissions for my new website and blogs. Mo is not afraid to make suggestions or be critical about the content of the work she is proofreading or editing. All is done with a professional attitude. I would not have any other person do it other than Mo."</p>
+            <!-- <p class="ralewayitalic">"Mo is a hard working and detailed proofreader / editor. I am a private golf instructor and Mo assisted in proofreading and editing all my pictures, videos and submissions for my new website and blogs. Mo is not afraid to make suggestions or be critical about the content of the work she is proofreading or editing. All is done with a professional attitude. I would not have any other person do it other than Mo."</p>
                 
-            <p class="indent">- <a class="text-link" href="http://teeitupforefun.com/">Cal Vollmer</a>, Tee It Up Fore Fun</p>
+            <p class="indent">- <a class="text-link" href="http://teeitupforefun.com/">Cal Vollmer</a>, Tee It Up Fore Fun</p> 
 
             <p class="ralewayitalic">"I always encourage members of the Georgia Manufacturing Alliance to play to their strengths and avoid wasting time on parts of their business they're not suited for. Surround yourself with professionals that can fill in your weak spots. I wish I wouldn't have waited so long to hire someone to help us refine our written marketing materials. I'm so glad that Monique is helping us look so much better."</p>
                 
-            <p class="indent">- <a class="text-link" href="http://www.georgiamanufacturingalliance.com/">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p>
+            <p class="indent">- <a class="text-link" href="http://www.georgiamanufacturingalliance.com/">Jason Moss</a>, Master Networker, CEO of Georgia Manufacturing Alliance</p> -->
             
             <p class="ralewayitalic">"I’m so happy I was able to find Monique to help me write my online estate sale courses. It has been a long time dream of mine to start a national organization of estate sale agents and offer ongoing training and education. Monique was able to take my years of experience in the business and my rough notes and turn them into exactly the quality of training course I’d hoped for. And her help developing content for my website was invaluable. No matter what your project is if it involves expressing yourself in words Mo can make it better."</p>
                 
-            <p class="indent">- <a class="text-link" href="https://naoel.com/about-us/">Donna Davis</a>, Founder and Lead Instructor, NAOEL</p>
+            <p class="indent">- <a class="text-link" target="_blank" href="https://naoel.com/about-us/">Donna Davis</a>, Founder and Lead Instructor, NAOEL</p>
             
             <p class="ralewayitalic">"When it comes to editing, there is no question you need a second set of eyes. Mo's eyes are great. You could say her eyes have got your back. Now, she might read that and change it to something even better. However, I didn't send it to her, so she didn't get the chance. We had Mo proof and edit two eBooks for us, and, as a result, both of the projects are less convoluted and more enjoyable to read. In addition to talented, she was also timely and affordable. Don't let mistakes and typ0s get in the way of your message. I highly recommend Mo for your second set of eyes."</p>
             
@@ -167,7 +174,7 @@
             <a href="https://www.facebook.com/monique.huenergardt" target="_blank"><img alt="Facebook" src="images/facebook.jpg"></a>
             <a href="https://www.linkedin.com/in/moniquehuenergardt" target="_blank"><img alt="LinkedIn" src="images/linkedin.jpg"></a></p>
             
-            <p>Site Coded by <a class="text-link" href="https://codegreer.com/">CodeGreer</a></p>
+            <p>Site Coded by <a class="text-link" target="_blank" href="https://codegreer.com/">CodeGreer</a></p>
         </div>
 
     </footer>  

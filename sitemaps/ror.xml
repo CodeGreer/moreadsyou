@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://moreadsyou.com/</title>
+  <link>http://moreadsyou.com/</link>
+
+<item>
+     <link>http://moreadsyou.com/</link>
+     <title>Editing, Proofreading, and copywriting for Authors | Mo Reads You</title>
+     <description>What have you got to say for yourself? I can help you say it better. Editing, proofreading, and copywriting for authors.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://moreadsyou.com/index.php</link>
+     <title>Editing, Proofreading, and copywriting for Authors | Mo Reads You</title>
+     <description>What have you got to say for yourself? I can help you say it better. Editing, proofreading, and copywriting for authors.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://moreadsyou.com/resources.php</link>
+     <title>Resources | Mo Reads You</title>
+     <description>What have you got to say for yourself? I can help you say it better. Editing, proofreading, and copywriting for authors.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://moreadsyou.com/testimonials.php</link>
+     <title>Testimonials | Mo Reads You</title>
+     <description>What have you got to say for yourself? I can help you say it better. Editing, proofreading, and copywriting for authors.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://moreadsyou.com/why-hire-mo.php</link>
+     <title>Why Hire Mo? | Mo Reads You</title>
+     <description>What have you got to say for yourself? I can help you say it better. Editing, proofreading, and copywriting for authors.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://moreadsyou.com/download/ideal_reader_authors.docx</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://moreadsyou.com/download/stylesheet.docx</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
